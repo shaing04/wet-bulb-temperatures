@@ -2,20 +2,64 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Wet-bulb Temperatures</title>
-    <meta
-      name="description"
-      content="Wet-bulb temperature visualizations and calculations"
-    />
-    <link rel="icon" href="favicon.ico" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Wet-bulb Temperatures</h1>
-    </header>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Annual Average Wet-Bulb Temperatures</title>
 
-    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="main.js"></script>
+  </head>
+
+  <body>
+    <h1>Annual Average Wet-Bulb Temperatures</h1>
+    <p>text here</p>
+    <div id="scrolly-sd" class="scrolly-container">
+      <h2>San Diego County Wet-Bulb Temperatures</h2>
+
+      <div id="map-column-sd">
+        <svg id="map-sd" width="400" height="400"></svg>
+        <div id="sd-legend"></div>
+      </div>
+
+      <div id="text-column-sd">
+        <div id="text-sd"></div>
+      </div>
+    </div>
+
+    <h2>California Wet-Bulb Temperatures</h2>
+    <p>
+      In 2025, California has an average Wet-Bulb Temperature of: XXX, but as
+      time goes on, we can more and more of California turn darker as the
+      average Wet-Bulb Temperature for the state increases over time. Currently,
+      California is on track to hit XXX by the year 2050, and XXX by 2100, which
+      may not seem like a lot but when we take into account that a dangerous
+      level of Wet-Bulb Temperature is 30 degrees Celcius, where it simply gets
+      too hot that the human body is unable to sweat enough to cool down,
+      increasing risk of heat stroke, and other heat related afflictions.
+    </p>
+    <div id="scrolly-ca" class="scrolly-container">
+      <div id="tooltip"></div>
+
+      <div id="map-column">
+        <svg id="map-ca" width="600" height="600"></svg>
+        <div id="ca-legend"></div>
+      </div>
+
+      <div id="text-column">
+        <div id="text"></div>
+      </div>
+    </div>
+
+    <div id="scrolly-us" class="scrolly-container">
+      <h2>United States Wet-Bulb Temperatures</h2>
+
+      <div id="map-us-column">
+        <svg id="map-us" width="900" height="550"></svg>
+        <div id="us-legend"></div>
+      </div>
+
+      <div id="text-us-column">
+        <div id="text-us"></div>
+      </div>
+    </div>
   </body>
 </html>
