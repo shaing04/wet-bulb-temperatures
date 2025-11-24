@@ -336,7 +336,7 @@ const widthUS = +svgUS.attr('width');
 const heightUS = +svgUS.attr('height');
 
 Promise.all([
-  d3.json('data/us-states.geojson'),
+  d3.json('data/us-states.json'),
   d3.json('data/wetbulb_max_us_regions.json'),
 ]).then(([usGeo, usData]) => {
   const yearsUS = d3.range(2020, 2101, 10); // or whatever interval you saved
