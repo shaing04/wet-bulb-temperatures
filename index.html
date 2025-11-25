@@ -27,9 +27,17 @@
       too hot that the human body is unable to sweat enough to cool down,
       increasing risk of heat stroke, and other heat related afflictions.
     </p>
+
     <div id="scrolly-ca" class="scrolly-container">
-      <div id="map-column">
-        <h6 id="year-title">California Wet Bulb Temperature In:</h6>
+      <div id="map-column" class="sticky-fade">
+        <h6 id="year-title">
+          California Wet Bulb Temperature In:
+          <span
+            id="year-subtitle-ca"
+            style="font-size: 0.7em; display: block; margin-top: 4px"
+          ></span>
+        </h6>
+
         <svg id="map-ca" width="600" height="600"></svg>
         <div id="ca-legend"></div>
       </div>
@@ -39,10 +47,25 @@
       </div>
     </div>
 
+    <div class="transition-section">
+      <h2>Zooming Out to the United States</h2>
+      <p>
+        We've seen how wet-bulb temperatures evolve across California. Now let's
+        zoom out and explore how the entire country changes through time.
+      </p>
+    </div>
+    <hr class="section-divider" />
+
     <!-- United States -->
     <div id="scrolly-us" class="scrolly-container">
-      <div id="map-us-column">
-        <h2 id="us-year-title">US Wet Bulb Temperature In:</h2>
+      <div id="map-us-column" class="sticky-fade sticky-hidden">
+        <h2 id="us-year-title">
+          US Wet Bulb Temperature In:
+          <span
+            id="year-subtitle-us"
+            style="font-size: 0.7em; display: block; margin-top: 4px"
+          ></span>
+        </h2>
         <svg id="map-us" width="900" height="550"></svg>
         <div id="us-legend"></div>
       </div>

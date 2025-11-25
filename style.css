@@ -25,8 +25,8 @@ p {
   padding: 2rem;
   position: relative;
   z-index: 1;
-  border-top: 1px solid #ddd; /* optional: visual separators */
-  border-bottom: 1px solid #ddd;
+  /* border-top: 1px solid #ddd;
+  /*border-bottom: 1px solid #ddd; */
 }
 
 #scrolly-ca {
@@ -136,6 +136,20 @@ p {
 
 #tooltip,
 #tooltip-us {
+  position: absolute;
+  pointer-events: none;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 6px 8px;
+  border-radius: 4px;
+  z-index: 999999;
+  transition: opacity 0.1s ease-in-out;
+  opacity: 0;
+  min-width: 120px;
+  min-height: 20px;
+}
+
+#tooltip-us {
   position: fixed;
   pointer-events: none;
   background: white;
@@ -153,4 +167,28 @@ p {
 #map-us {
   position: relative;
   z-index: 1;
+}
+
+.transition-section {
+  margin: 15rem auto;
+  max-width: 700px;
+  text-align: center;
+  opacity: 0.95;
+}
+
+.section-divider {
+  width: 80%;
+  margin: 3rem auto;
+  border: none;
+  border-top: 2px solid #ddd;
+  display: none;
+}
+
+.sticky-fade {
+  transition: opacity 0.6s ease;
+}
+
+.sticky-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
