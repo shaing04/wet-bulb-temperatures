@@ -52,6 +52,10 @@ p {
   flex: 1; /* take remaining horizontal space */
 }
 
+#text-us-column {
+  margin-top: 20rem;
+}
+
 #year-title {
   position: sticky;
   top: 0; /* sticks to top of viewport */
@@ -74,6 +78,22 @@ p {
   position: absolute;
   top: 500px; /* distance from the top of the map */
   left: 10px; /* distance from the left of the map */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* semi-transparent background for readability */
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  z-index: 10; /* above the map */
+}
+
+#us-legend {
+  position: absolute;
+  top: 300px; /* distance from the top of the map */
+  left: -1px; /* distance from the left of the map */
   background-color: rgba(
     255,
     255,
@@ -114,7 +134,8 @@ p {
   }
 }
 
-#tooltip {
+#tooltip,
+#tooltip-us {
   position: fixed;
   pointer-events: none;
   background: white;
@@ -122,10 +143,14 @@ p {
   padding: 6px 8px;
   border-radius: 4px;
   z-index: 999999;
+  transition: opacity 0.1s ease-in-out;
+  opacity: 0;
+  min-width: 120px;
+  min-height: 20px;
 }
 
-#california-map,
-#us-map {
+#map-ca,
+#map-us {
   position: relative;
   z-index: 1;
 }

@@ -1,0 +1,5392 @@
+[
+  {
+    "state": "Alabama",
+    "year": 2016,
+    "wetbulb_C": 25.023151397705078
+  },
+  {
+    "state": "Alaska",
+    "year": 2016,
+    "wetbulb_C": 11.966798782348633
+  },
+  {
+    "state": "Arizona",
+    "year": 2016,
+    "wetbulb_C": 23.520126342773438
+  },
+  {
+    "state": "Arkansas",
+    "year": 2016,
+    "wetbulb_C": 24.467193603515625
+  },
+  {
+    "state": "California",
+    "year": 2016,
+    "wetbulb_C": 20.494260787963867
+  },
+  {
+    "state": "Colorado",
+    "year": 2016,
+    "wetbulb_C": 20.88384437561035
+  },
+  {
+    "state": "Connecticut",
+    "year": 2016,
+    "wetbulb_C": 21.055522918701172
+  },
+  {
+    "state": "Delaware",
+    "year": 2016,
+    "wetbulb_C": 22.853622436523438
+  },
+  {
+    "state": "Florida",
+    "year": 2016,
+    "wetbulb_C": 25.475561141967773
+  },
+  {
+    "state": "Georgia",
+    "year": 2016,
+    "wetbulb_C": 24.278961181640625
+  },
+  {
+    "state": "Hawaii",
+    "year": 2016,
+    "wetbulb_C": 22.610633850097656
+  },
+  {
+    "state": "Idaho",
+    "year": 2016,
+    "wetbulb_C": 15.479921340942383
+  },
+  {
+    "state": "Illinois",
+    "year": 2016,
+    "wetbulb_C": 22.751405715942383
+  },
+  {
+    "state": "Indiana",
+    "year": 2016,
+    "wetbulb_C": 21.975095748901367
+  },
+  {
+    "state": "Iowa",
+    "year": 2016,
+    "wetbulb_C": 22.715435028076172
+  },
+  {
+    "state": "Kansas",
+    "year": 2016,
+    "wetbulb_C": 23.310287475585938
+  },
+  {
+    "state": "Kentucky",
+    "year": 2016,
+    "wetbulb_C": 22.72162628173828
+  },
+  {
+    "state": "Louisiana",
+    "year": 2016,
+    "wetbulb_C": 25.394763946533203
+  },
+  {
+    "state": "Maine",
+    "year": 2016,
+    "wetbulb_C": 19.398876190185547
+  },
+  {
+    "state": "Maryland",
+    "year": 2016,
+    "wetbulb_C": 22.256755828857422
+  },
+  {
+    "state": "Massachusetts",
+    "year": 2016,
+    "wetbulb_C": 20.3553409576416
+  },
+  {
+    "state": "Michigan",
+    "year": 2016,
+    "wetbulb_C": 20.50252342224121
+  },
+  {
+    "state": "Minnesota",
+    "year": 2016,
+    "wetbulb_C": 21.188493728637695
+  },
+  {
+    "state": "Mississippi",
+    "year": 2016,
+    "wetbulb_C": 24.855777740478516
+  },
+  {
+    "state": "Missouri",
+    "year": 2016,
+    "wetbulb_C": 23.24722671508789
+  },
+  {
+    "state": "Montana",
+    "year": 2016,
+    "wetbulb_C": 17.67084312438965
+  },
+  {
+    "state": "Nebraska",
+    "year": 2016,
+    "wetbulb_C": 22.694753646850586
+  },
+  {
+    "state": "Nevada",
+    "year": 2016,
+    "wetbulb_C": 17.4783878326416
+  },
+  {
+    "state": "New Hampshire",
+    "year": 2016,
+    "wetbulb_C": 19.236387252807617
+  },
+  {
+    "state": "New Jersey",
+    "year": 2016,
+    "wetbulb_C": 22.3199405670166
+  },
+  {
+    "state": "New Mexico",
+    "year": 2016,
+    "wetbulb_C": 21.306293487548828
+  },
+  {
+    "state": "New York",
+    "year": 2016,
+    "wetbulb_C": 20.538040161132812
+  },
+  {
+    "state": "North Carolina",
+    "year": 2016,
+    "wetbulb_C": 24.262378692626953
+  },
+  {
+    "state": "North Dakota",
+    "year": 2016,
+    "wetbulb_C": 20.53603172302246
+  },
+  {
+    "state": "Ohio",
+    "year": 2016,
+    "wetbulb_C": 21.037967681884766
+  },
+  {
+    "state": "Oklahoma",
+    "year": 2016,
+    "wetbulb_C": 23.973798751831055
+  },
+  {
+    "state": "Oregon",
+    "year": 2016,
+    "wetbulb_C": 14.83376693725586
+  },
+  {
+    "state": "Pennsylvania",
+    "year": 2016,
+    "wetbulb_C": 21.090730667114258
+  },
+  {
+    "state": "South Carolina",
+    "year": 2016,
+    "wetbulb_C": 24.510046005249023
+  },
+  {
+    "state": "South Dakota",
+    "year": 2016,
+    "wetbulb_C": 21.2862548828125
+  },
+  {
+    "state": "Tennessee",
+    "year": 2016,
+    "wetbulb_C": 23.346797943115234
+  },
+  {
+    "state": "Texas",
+    "year": 2016,
+    "wetbulb_C": 25.486846923828125
+  },
+  {
+    "state": "Utah",
+    "year": 2016,
+    "wetbulb_C": 17.24428367614746
+  },
+  {
+    "state": "Vermont",
+    "year": 2016,
+    "wetbulb_C": 19.205944061279297
+  },
+  {
+    "state": "Virginia",
+    "year": 2016,
+    "wetbulb_C": 22.708641052246094
+  },
+  {
+    "state": "Washington",
+    "year": 2016,
+    "wetbulb_C": 15.636959075927734
+  },
+  {
+    "state": "West Virginia",
+    "year": 2016,
+    "wetbulb_C": 21.131345748901367
+  },
+  {
+    "state": "Wisconsin",
+    "year": 2016,
+    "wetbulb_C": 21.489412307739258
+  },
+  {
+    "state": "Wyoming",
+    "year": 2016,
+    "wetbulb_C": 18.41751480102539
+  },
+  {
+    "state": "Alabama",
+    "year": 2020,
+    "wetbulb_C": 25.747509002685547
+  },
+  {
+    "state": "Alaska",
+    "year": 2020,
+    "wetbulb_C": 11.789173126220703
+  },
+  {
+    "state": "Arizona",
+    "year": 2020,
+    "wetbulb_C": 21.361122131347656
+  },
+  {
+    "state": "Arkansas",
+    "year": 2020,
+    "wetbulb_C": 24.66291618347168
+  },
+  {
+    "state": "California",
+    "year": 2020,
+    "wetbulb_C": 18.743249893188477
+  },
+  {
+    "state": "Colorado",
+    "year": 2020,
+    "wetbulb_C": 18.98988914489746
+  },
+  {
+    "state": "Connecticut",
+    "year": 2020,
+    "wetbulb_C": 21.290225982666016
+  },
+  {
+    "state": "Delaware",
+    "year": 2020,
+    "wetbulb_C": 23.72562026977539
+  },
+  {
+    "state": "Florida",
+    "year": 2020,
+    "wetbulb_C": 25.78134536743164
+  },
+  {
+    "state": "Georgia",
+    "year": 2020,
+    "wetbulb_C": 25.074050903320312
+  },
+  {
+    "state": "Hawaii",
+    "year": 2020,
+    "wetbulb_C": 23.278953552246094
+  },
+  {
+    "state": "Idaho",
+    "year": 2020,
+    "wetbulb_C": 15.805427551269531
+  },
+  {
+    "state": "Illinois",
+    "year": 2020,
+    "wetbulb_C": 23.482694625854492
+  },
+  {
+    "state": "Indiana",
+    "year": 2020,
+    "wetbulb_C": 22.910598754882812
+  },
+  {
+    "state": "Iowa",
+    "year": 2020,
+    "wetbulb_C": 21.94113540649414
+  },
+  {
+    "state": "Kansas",
+    "year": 2020,
+    "wetbulb_C": 23.401554107666016
+  },
+  {
+    "state": "Kentucky",
+    "year": 2020,
+    "wetbulb_C": 23.526155471801758
+  },
+  {
+    "state": "Louisiana",
+    "year": 2020,
+    "wetbulb_C": 25.902435302734375
+  },
+  {
+    "state": "Maine",
+    "year": 2020,
+    "wetbulb_C": 20.100440979003906
+  },
+  {
+    "state": "Maryland",
+    "year": 2020,
+    "wetbulb_C": 23.224401473999023
+  },
+  {
+    "state": "Massachusetts",
+    "year": 2020,
+    "wetbulb_C": 20.7759952545166
+  },
+  {
+    "state": "Michigan",
+    "year": 2020,
+    "wetbulb_C": 20.76714324951172
+  },
+  {
+    "state": "Minnesota",
+    "year": 2020,
+    "wetbulb_C": 20.558752059936523
+  },
+  {
+    "state": "Mississippi",
+    "year": 2020,
+    "wetbulb_C": 25.369712829589844
+  },
+  {
+    "state": "Missouri",
+    "year": 2020,
+    "wetbulb_C": 23.70503807067871
+  },
+  {
+    "state": "Montana",
+    "year": 2020,
+    "wetbulb_C": 17.79384994506836
+  },
+  {
+    "state": "Nebraska",
+    "year": 2020,
+    "wetbulb_C": 22.405059814453125
+  },
+  {
+    "state": "Nevada",
+    "year": 2020,
+    "wetbulb_C": 16.504072189331055
+  },
+  {
+    "state": "New Hampshire",
+    "year": 2020,
+    "wetbulb_C": 19.857057571411133
+  },
+  {
+    "state": "New Jersey",
+    "year": 2020,
+    "wetbulb_C": 22.971115112304688
+  },
+  {
+    "state": "New Mexico",
+    "year": 2020,
+    "wetbulb_C": 20.834379196166992
+  },
+  {
+    "state": "New York",
+    "year": 2020,
+    "wetbulb_C": 20.951900482177734
+  },
+  {
+    "state": "North Carolina",
+    "year": 2020,
+    "wetbulb_C": 24.5097713470459
+  },
+  {
+    "state": "North Dakota",
+    "year": 2020,
+    "wetbulb_C": 20.304506301879883
+  },
+  {
+    "state": "Ohio",
+    "year": 2020,
+    "wetbulb_C": 22.10808753967285
+  },
+  {
+    "state": "Oklahoma",
+    "year": 2020,
+    "wetbulb_C": 24.196317672729492
+  },
+  {
+    "state": "Oregon",
+    "year": 2020,
+    "wetbulb_C": 15.686344146728516
+  },
+  {
+    "state": "Pennsylvania",
+    "year": 2020,
+    "wetbulb_C": 21.804309844970703
+  },
+  {
+    "state": "South Carolina",
+    "year": 2020,
+    "wetbulb_C": 25.041156768798828
+  },
+  {
+    "state": "South Dakota",
+    "year": 2020,
+    "wetbulb_C": 21.524757385253906
+  },
+  {
+    "state": "Tennessee",
+    "year": 2020,
+    "wetbulb_C": 24.0363712310791
+  },
+  {
+    "state": "Texas",
+    "year": 2020,
+    "wetbulb_C": 25.893503189086914
+  },
+  {
+    "state": "Utah",
+    "year": 2020,
+    "wetbulb_C": 15.135808944702148
+  },
+  {
+    "state": "Vermont",
+    "year": 2020,
+    "wetbulb_C": 19.724287033081055
+  },
+  {
+    "state": "Virginia",
+    "year": 2020,
+    "wetbulb_C": 23.681476593017578
+  },
+  {
+    "state": "Washington",
+    "year": 2020,
+    "wetbulb_C": 16.9427433013916
+  },
+  {
+    "state": "West Virginia",
+    "year": 2020,
+    "wetbulb_C": 21.97655487060547
+  },
+  {
+    "state": "Wisconsin",
+    "year": 2020,
+    "wetbulb_C": 21.287818908691406
+  },
+  {
+    "state": "Wyoming",
+    "year": 2020,
+    "wetbulb_C": 17.588232040405273
+  },
+  {
+    "state": "Alabama",
+    "year": 2024,
+    "wetbulb_C": 24.82014274597168
+  },
+  {
+    "state": "Alaska",
+    "year": 2024,
+    "wetbulb_C": 15.162010192871094
+  },
+  {
+    "state": "Arizona",
+    "year": 2024,
+    "wetbulb_C": 23.480424880981445
+  },
+  {
+    "state": "Arkansas",
+    "year": 2024,
+    "wetbulb_C": 24.31787109375
+  },
+  {
+    "state": "California",
+    "year": 2024,
+    "wetbulb_C": 19.73259735107422
+  },
+  {
+    "state": "Colorado",
+    "year": 2024,
+    "wetbulb_C": 19.554555892944336
+  },
+  {
+    "state": "Connecticut",
+    "year": 2024,
+    "wetbulb_C": 19.80621910095215
+  },
+  {
+    "state": "Delaware",
+    "year": 2024,
+    "wetbulb_C": 22.611953735351562
+  },
+  {
+    "state": "Florida",
+    "year": 2024,
+    "wetbulb_C": 25.912776947021484
+  },
+  {
+    "state": "Georgia",
+    "year": 2024,
+    "wetbulb_C": 24.045713424682617
+  },
+  {
+    "state": "Hawaii",
+    "year": 2024,
+    "wetbulb_C": 23.84774398803711
+  },
+  {
+    "state": "Idaho",
+    "year": 2024,
+    "wetbulb_C": 15.91689682006836
+  },
+  {
+    "state": "Illinois",
+    "year": 2024,
+    "wetbulb_C": 23.534626007080078
+  },
+  {
+    "state": "Indiana",
+    "year": 2024,
+    "wetbulb_C": 22.871389389038086
+  },
+  {
+    "state": "Iowa",
+    "year": 2024,
+    "wetbulb_C": 22.11746597290039
+  },
+  {
+    "state": "Kansas",
+    "year": 2024,
+    "wetbulb_C": 23.037813186645508
+  },
+  {
+    "state": "Kentucky",
+    "year": 2024,
+    "wetbulb_C": 23.571346282958984
+  },
+  {
+    "state": "Louisiana",
+    "year": 2024,
+    "wetbulb_C": 25.414783477783203
+  },
+  {
+    "state": "Maine",
+    "year": 2024,
+    "wetbulb_C": 17.79171371459961
+  },
+  {
+    "state": "Maryland",
+    "year": 2024,
+    "wetbulb_C": 22.24795150756836
+  },
+  {
+    "state": "Massachusetts",
+    "year": 2024,
+    "wetbulb_C": 18.779884338378906
+  },
+  {
+    "state": "Michigan",
+    "year": 2024,
+    "wetbulb_C": 20.533130645751953
+  },
+  {
+    "state": "Minnesota",
+    "year": 2024,
+    "wetbulb_C": 20.322254180908203
+  },
+  {
+    "state": "Mississippi",
+    "year": 2024,
+    "wetbulb_C": 24.618717193603516
+  },
+  {
+    "state": "Missouri",
+    "year": 2024,
+    "wetbulb_C": 23.731325149536133
+  },
+  {
+    "state": "Montana",
+    "year": 2024,
+    "wetbulb_C": 18.91246795654297
+  },
+  {
+    "state": "Nebraska",
+    "year": 2024,
+    "wetbulb_C": 22.026090621948242
+  },
+  {
+    "state": "Nevada",
+    "year": 2024,
+    "wetbulb_C": 17.491661071777344
+  },
+  {
+    "state": "New Hampshire",
+    "year": 2024,
+    "wetbulb_C": 17.422082901000977
+  },
+  {
+    "state": "New Jersey",
+    "year": 2024,
+    "wetbulb_C": 21.66291046142578
+  },
+  {
+    "state": "New Mexico",
+    "year": 2024,
+    "wetbulb_C": 20.893932342529297
+  },
+  {
+    "state": "New York",
+    "year": 2024,
+    "wetbulb_C": 19.514034271240234
+  },
+  {
+    "state": "North Carolina",
+    "year": 2024,
+    "wetbulb_C": 23.9114990234375
+  },
+  {
+    "state": "North Dakota",
+    "year": 2024,
+    "wetbulb_C": 19.603792190551758
+  },
+  {
+    "state": "Ohio",
+    "year": 2024,
+    "wetbulb_C": 21.44024085998535
+  },
+  {
+    "state": "Oklahoma",
+    "year": 2024,
+    "wetbulb_C": 23.42399024963379
+  },
+  {
+    "state": "Oregon",
+    "year": 2024,
+    "wetbulb_C": 16.128742218017578
+  },
+  {
+    "state": "Pennsylvania",
+    "year": 2024,
+    "wetbulb_C": 20.526336669921875
+  },
+  {
+    "state": "South Carolina",
+    "year": 2024,
+    "wetbulb_C": 24.253616333007812
+  },
+  {
+    "state": "South Dakota",
+    "year": 2024,
+    "wetbulb_C": 20.659879684448242
+  },
+  {
+    "state": "Tennessee",
+    "year": 2024,
+    "wetbulb_C": 23.781570434570312
+  },
+  {
+    "state": "Texas",
+    "year": 2024,
+    "wetbulb_C": 25.558412551879883
+  },
+  {
+    "state": "Utah",
+    "year": 2024,
+    "wetbulb_C": 16.370275497436523
+  },
+  {
+    "state": "Vermont",
+    "year": 2024,
+    "wetbulb_C": 17.507671356201172
+  },
+  {
+    "state": "Virginia",
+    "year": 2024,
+    "wetbulb_C": 22.708505630493164
+  },
+  {
+    "state": "Washington",
+    "year": 2024,
+    "wetbulb_C": 16.08245086669922
+  },
+  {
+    "state": "West Virginia",
+    "year": 2024,
+    "wetbulb_C": 21.358388900756836
+  },
+  {
+    "state": "Wisconsin",
+    "year": 2024,
+    "wetbulb_C": 21.253814697265625
+  },
+  {
+    "state": "Wyoming",
+    "year": 2024,
+    "wetbulb_C": 18.321718215942383
+  },
+  {
+    "state": "Alabama",
+    "year": 2028,
+    "wetbulb_C": 24.68435287475586
+  },
+  {
+    "state": "Alaska",
+    "year": 2028,
+    "wetbulb_C": 13.555946350097656
+  },
+  {
+    "state": "Arizona",
+    "year": 2028,
+    "wetbulb_C": 24.134553909301758
+  },
+  {
+    "state": "Arkansas",
+    "year": 2028,
+    "wetbulb_C": 23.537097930908203
+  },
+  {
+    "state": "California",
+    "year": 2028,
+    "wetbulb_C": 21.73285484313965
+  },
+  {
+    "state": "Colorado",
+    "year": 2028,
+    "wetbulb_C": 19.804702758789062
+  },
+  {
+    "state": "Connecticut",
+    "year": 2028,
+    "wetbulb_C": 19.67670249938965
+  },
+  {
+    "state": "Delaware",
+    "year": 2028,
+    "wetbulb_C": 21.10446548461914
+  },
+  {
+    "state": "Florida",
+    "year": 2028,
+    "wetbulb_C": 25.598512649536133
+  },
+  {
+    "state": "Georgia",
+    "year": 2028,
+    "wetbulb_C": 24.04088592529297
+  },
+  {
+    "state": "Hawaii",
+    "year": 2028,
+    "wetbulb_C": 23.337055206298828
+  },
+  {
+    "state": "Idaho",
+    "year": 2028,
+    "wetbulb_C": 16.187870025634766
+  },
+  {
+    "state": "Illinois",
+    "year": 2028,
+    "wetbulb_C": 21.71963882446289
+  },
+  {
+    "state": "Indiana",
+    "year": 2028,
+    "wetbulb_C": 21.066858291625977
+  },
+  {
+    "state": "Iowa",
+    "year": 2028,
+    "wetbulb_C": 19.666229248046875
+  },
+  {
+    "state": "Kansas",
+    "year": 2028,
+    "wetbulb_C": 21.635669708251953
+  },
+  {
+    "state": "Kentucky",
+    "year": 2028,
+    "wetbulb_C": 21.974824905395508
+  },
+  {
+    "state": "Louisiana",
+    "year": 2028,
+    "wetbulb_C": 25.50867462158203
+  },
+  {
+    "state": "Maine",
+    "year": 2028,
+    "wetbulb_C": 18.544523239135742
+  },
+  {
+    "state": "Maryland",
+    "year": 2028,
+    "wetbulb_C": 20.69130516052246
+  },
+  {
+    "state": "Massachusetts",
+    "year": 2028,
+    "wetbulb_C": 18.63644027709961
+  },
+  {
+    "state": "Michigan",
+    "year": 2028,
+    "wetbulb_C": 18.206279754638672
+  },
+  {
+    "state": "Minnesota",
+    "year": 2028,
+    "wetbulb_C": 18.837127685546875
+  },
+  {
+    "state": "Mississippi",
+    "year": 2028,
+    "wetbulb_C": 24.71688461303711
+  },
+  {
+    "state": "Missouri",
+    "year": 2028,
+    "wetbulb_C": 21.851125717163086
+  },
+  {
+    "state": "Montana",
+    "year": 2028,
+    "wetbulb_C": 17.614730834960938
+  },
+  {
+    "state": "Nebraska",
+    "year": 2028,
+    "wetbulb_C": 20.3986759185791
+  },
+  {
+    "state": "Nevada",
+    "year": 2028,
+    "wetbulb_C": 19.651029586791992
+  },
+  {
+    "state": "New Hampshire",
+    "year": 2028,
+    "wetbulb_C": 17.66712760925293
+  },
+  {
+    "state": "New Jersey",
+    "year": 2028,
+    "wetbulb_C": 20.694604873657227
+  },
+  {
+    "state": "New Mexico",
+    "year": 2028,
+    "wetbulb_C": 22.59950828552246
+  },
+  {
+    "state": "New York",
+    "year": 2028,
+    "wetbulb_C": 18.022411346435547
+  },
+  {
+    "state": "North Carolina",
+    "year": 2028,
+    "wetbulb_C": 23.344369888305664
+  },
+  {
+    "state": "North Dakota",
+    "year": 2028,
+    "wetbulb_C": 18.41790008544922
+  },
+  {
+    "state": "Ohio",
+    "year": 2028,
+    "wetbulb_C": 19.61241912841797
+  },
+  {
+    "state": "Oklahoma",
+    "year": 2028,
+    "wetbulb_C": 23.467876434326172
+  },
+  {
+    "state": "Oregon",
+    "year": 2028,
+    "wetbulb_C": 16.849864959716797
+  },
+  {
+    "state": "Pennsylvania",
+    "year": 2028,
+    "wetbulb_C": 18.672975540161133
+  },
+  {
+    "state": "South Carolina",
+    "year": 2028,
+    "wetbulb_C": 24.058338165283203
+  },
+  {
+    "state": "South Dakota",
+    "year": 2028,
+    "wetbulb_C": 19.088592529296875
+  },
+  {
+    "state": "Tennessee",
+    "year": 2028,
+    "wetbulb_C": 22.38214683532715
+  },
+  {
+    "state": "Texas",
+    "year": 2028,
+    "wetbulb_C": 25.826120376586914
+  },
+  {
+    "state": "Utah",
+    "year": 2028,
+    "wetbulb_C": 17.674177169799805
+  },
+  {
+    "state": "Vermont",
+    "year": 2028,
+    "wetbulb_C": 17.211559295654297
+  },
+  {
+    "state": "Virginia",
+    "year": 2028,
+    "wetbulb_C": 21.580974578857422
+  },
+  {
+    "state": "Washington",
+    "year": 2028,
+    "wetbulb_C": 16.518863677978516
+  },
+  {
+    "state": "West Virginia",
+    "year": 2028,
+    "wetbulb_C": 19.748920440673828
+  },
+  {
+    "state": "Wisconsin",
+    "year": 2028,
+    "wetbulb_C": 18.881282806396484
+  },
+  {
+    "state": "Wyoming",
+    "year": 2028,
+    "wetbulb_C": 18.57610321044922
+  },
+  {
+    "state": "Alabama",
+    "year": 2032,
+    "wetbulb_C": 25.884340286254883
+  },
+  {
+    "state": "Alaska",
+    "year": 2032,
+    "wetbulb_C": 12.169900894165039
+  },
+  {
+    "state": "Arizona",
+    "year": 2032,
+    "wetbulb_C": 22.641786575317383
+  },
+  {
+    "state": "Arkansas",
+    "year": 2032,
+    "wetbulb_C": 25.861547470092773
+  },
+  {
+    "state": "California",
+    "year": 2032,
+    "wetbulb_C": 20.065353393554688
+  },
+  {
+    "state": "Colorado",
+    "year": 2032,
+    "wetbulb_C": 20.116561889648438
+  },
+  {
+    "state": "Connecticut",
+    "year": 2032,
+    "wetbulb_C": 20.427501678466797
+  },
+  {
+    "state": "Delaware",
+    "year": 2032,
+    "wetbulb_C": 23.404380798339844
+  },
+  {
+    "state": "Florida",
+    "year": 2032,
+    "wetbulb_C": 26.172618865966797
+  },
+  {
+    "state": "Georgia",
+    "year": 2032,
+    "wetbulb_C": 25.677824020385742
+  },
+  {
+    "state": "Hawaii",
+    "year": 2032,
+    "wetbulb_C": 23.393362045288086
+  },
+  {
+    "state": "Idaho",
+    "year": 2032,
+    "wetbulb_C": 15.19991683959961
+  },
+  {
+    "state": "Illinois",
+    "year": 2032,
+    "wetbulb_C": 25.278711318969727
+  },
+  {
+    "state": "Indiana",
+    "year": 2032,
+    "wetbulb_C": 24.638729095458984
+  },
+  {
+    "state": "Iowa",
+    "year": 2032,
+    "wetbulb_C": 23.507450103759766
+  },
+  {
+    "state": "Kansas",
+    "year": 2032,
+    "wetbulb_C": 24.479907989501953
+  },
+  {
+    "state": "Kentucky",
+    "year": 2032,
+    "wetbulb_C": 25.297679901123047
+  },
+  {
+    "state": "Louisiana",
+    "year": 2032,
+    "wetbulb_C": 26.263071060180664
+  },
+  {
+    "state": "Maine",
+    "year": 2032,
+    "wetbulb_C": 18.56722068786621
+  },
+  {
+    "state": "Maryland",
+    "year": 2032,
+    "wetbulb_C": 23.21478271484375
+  },
+  {
+    "state": "Massachusetts",
+    "year": 2032,
+    "wetbulb_C": 19.41282081604004
+  },
+  {
+    "state": "Michigan",
+    "year": 2032,
+    "wetbulb_C": 21.715030670166016
+  },
+  {
+    "state": "Minnesota",
+    "year": 2032,
+    "wetbulb_C": 21.202566146850586
+  },
+  {
+    "state": "Mississippi",
+    "year": 2032,
+    "wetbulb_C": 25.64877700805664
+  },
+  {
+    "state": "Missouri",
+    "year": 2032,
+    "wetbulb_C": 25.348499298095703
+  },
+  {
+    "state": "Montana",
+    "year": 2032,
+    "wetbulb_C": 17.98828887939453
+  },
+  {
+    "state": "Nebraska",
+    "year": 2032,
+    "wetbulb_C": 23.153287887573242
+  },
+  {
+    "state": "Nevada",
+    "year": 2032,
+    "wetbulb_C": 17.052156448364258
+  },
+  {
+    "state": "New Hampshire",
+    "year": 2032,
+    "wetbulb_C": 18.172000885009766
+  },
+  {
+    "state": "New Jersey",
+    "year": 2032,
+    "wetbulb_C": 22.409503936767578
+  },
+  {
+    "state": "New Mexico",
+    "year": 2032,
+    "wetbulb_C": 21.91697883605957
+  },
+  {
+    "state": "New York",
+    "year": 2032,
+    "wetbulb_C": 20.132888793945312
+  },
+  {
+    "state": "North Carolina",
+    "year": 2032,
+    "wetbulb_C": 25.309179306030273
+  },
+  {
+    "state": "North Dakota",
+    "year": 2032,
+    "wetbulb_C": 19.985172271728516
+  },
+  {
+    "state": "Ohio",
+    "year": 2032,
+    "wetbulb_C": 22.960506439208984
+  },
+  {
+    "state": "Oklahoma",
+    "year": 2032,
+    "wetbulb_C": 24.762069702148438
+  },
+  {
+    "state": "Oregon",
+    "year": 2032,
+    "wetbulb_C": 15.888286590576172
+  },
+  {
+    "state": "Pennsylvania",
+    "year": 2032,
+    "wetbulb_C": 21.191457748413086
+  },
+  {
+    "state": "South Carolina",
+    "year": 2032,
+    "wetbulb_C": 26.169307708740234
+  },
+  {
+    "state": "South Dakota",
+    "year": 2032,
+    "wetbulb_C": 21.264934539794922
+  },
+  {
+    "state": "Tennessee",
+    "year": 2032,
+    "wetbulb_C": 25.624094009399414
+  },
+  {
+    "state": "Texas",
+    "year": 2032,
+    "wetbulb_C": 26.067768096923828
+  },
+  {
+    "state": "Utah",
+    "year": 2032,
+    "wetbulb_C": 15.505151748657227
+  },
+  {
+    "state": "Vermont",
+    "year": 2032,
+    "wetbulb_C": 18.208810806274414
+  },
+  {
+    "state": "Virginia",
+    "year": 2032,
+    "wetbulb_C": 23.809608459472656
+  },
+  {
+    "state": "Washington",
+    "year": 2032,
+    "wetbulb_C": 16.205150604248047
+  },
+  {
+    "state": "West Virginia",
+    "year": 2032,
+    "wetbulb_C": 22.901092529296875
+  },
+  {
+    "state": "Wisconsin",
+    "year": 2032,
+    "wetbulb_C": 22.267894744873047
+  },
+  {
+    "state": "Wyoming",
+    "year": 2032,
+    "wetbulb_C": 18.140857696533203
+  },
+  {
+    "state": "Alabama",
+    "year": 2036,
+    "wetbulb_C": 26.049602508544922
+  },
+  {
+    "state": "Alaska",
+    "year": 2036,
+    "wetbulb_C": 13.761787414550781
+  },
+  {
+    "state": "Arizona",
+    "year": 2036,
+    "wetbulb_C": 24.30327796936035
+  },
+  {
+    "state": "Arkansas",
+    "year": 2036,
+    "wetbulb_C": 24.985525131225586
+  },
+  {
+    "state": "California",
+    "year": 2036,
+    "wetbulb_C": 22.105993270874023
+  },
+  {
+    "state": "Colorado",
+    "year": 2036,
+    "wetbulb_C": 19.986040115356445
+  },
+  {
+    "state": "Connecticut",
+    "year": 2036,
+    "wetbulb_C": 20.471248626708984
+  },
+  {
+    "state": "Delaware",
+    "year": 2036,
+    "wetbulb_C": 22.997581481933594
+  },
+  {
+    "state": "Florida",
+    "year": 2036,
+    "wetbulb_C": 25.964136123657227
+  },
+  {
+    "state": "Georgia",
+    "year": 2036,
+    "wetbulb_C": 25.163646697998047
+  },
+  {
+    "state": "Hawaii",
+    "year": 2036,
+    "wetbulb_C": 23.255701065063477
+  },
+  {
+    "state": "Idaho",
+    "year": 2036,
+    "wetbulb_C": 16.232833862304688
+  },
+  {
+    "state": "Illinois",
+    "year": 2036,
+    "wetbulb_C": 23.055795669555664
+  },
+  {
+    "state": "Indiana",
+    "year": 2036,
+    "wetbulb_C": 22.18503189086914
+  },
+  {
+    "state": "Iowa",
+    "year": 2036,
+    "wetbulb_C": 22.16632843017578
+  },
+  {
+    "state": "Kansas",
+    "year": 2036,
+    "wetbulb_C": 23.872173309326172
+  },
+  {
+    "state": "Kentucky",
+    "year": 2036,
+    "wetbulb_C": 23.645105361938477
+  },
+  {
+    "state": "Louisiana",
+    "year": 2036,
+    "wetbulb_C": 26.487354278564453
+  },
+  {
+    "state": "Maine",
+    "year": 2036,
+    "wetbulb_C": 18.46885871887207
+  },
+  {
+    "state": "Maryland",
+    "year": 2036,
+    "wetbulb_C": 22.491052627563477
+  },
+  {
+    "state": "Massachusetts",
+    "year": 2036,
+    "wetbulb_C": 19.468502044677734
+  },
+  {
+    "state": "Michigan",
+    "year": 2036,
+    "wetbulb_C": 20.460094451904297
+  },
+  {
+    "state": "Minnesota",
+    "year": 2036,
+    "wetbulb_C": 20.966724395751953
+  },
+  {
+    "state": "Mississippi",
+    "year": 2036,
+    "wetbulb_C": 25.869525909423828
+  },
+  {
+    "state": "Missouri",
+    "year": 2036,
+    "wetbulb_C": 23.536449432373047
+  },
+  {
+    "state": "Montana",
+    "year": 2036,
+    "wetbulb_C": 19.114273071289062
+  },
+  {
+    "state": "Nebraska",
+    "year": 2036,
+    "wetbulb_C": 22.70016860961914
+  },
+  {
+    "state": "Nevada",
+    "year": 2036,
+    "wetbulb_C": 19.92421531677246
+  },
+  {
+    "state": "New Hampshire",
+    "year": 2036,
+    "wetbulb_C": 18.185787200927734
+  },
+  {
+    "state": "New Jersey",
+    "year": 2036,
+    "wetbulb_C": 22.27337646484375
+  },
+  {
+    "state": "New Mexico",
+    "year": 2036,
+    "wetbulb_C": 21.535381317138672
+  },
+  {
+    "state": "New York",
+    "year": 2036,
+    "wetbulb_C": 20.044950485229492
+  },
+  {
+    "state": "North Carolina",
+    "year": 2036,
+    "wetbulb_C": 25.01588249206543
+  },
+  {
+    "state": "North Dakota",
+    "year": 2036,
+    "wetbulb_C": 20.6882266998291
+  },
+  {
+    "state": "Ohio",
+    "year": 2036,
+    "wetbulb_C": 21.16261100769043
+  },
+  {
+    "state": "Oklahoma",
+    "year": 2036,
+    "wetbulb_C": 24.65570068359375
+  },
+  {
+    "state": "Oregon",
+    "year": 2036,
+    "wetbulb_C": 16.12668228149414
+  },
+  {
+    "state": "Pennsylvania",
+    "year": 2036,
+    "wetbulb_C": 20.77392578125
+  },
+  {
+    "state": "South Carolina",
+    "year": 2036,
+    "wetbulb_C": 25.49833869934082
+  },
+  {
+    "state": "South Dakota",
+    "year": 2036,
+    "wetbulb_C": 21.9476261138916
+  },
+  {
+    "state": "Tennessee",
+    "year": 2036,
+    "wetbulb_C": 24.461971282958984
+  },
+  {
+    "state": "Texas",
+    "year": 2036,
+    "wetbulb_C": 26.37421989440918
+  },
+  {
+    "state": "Utah",
+    "year": 2036,
+    "wetbulb_C": 17.68280792236328
+  },
+  {
+    "state": "Vermont",
+    "year": 2036,
+    "wetbulb_C": 18.360279083251953
+  },
+  {
+    "state": "Virginia",
+    "year": 2036,
+    "wetbulb_C": 23.23678207397461
+  },
+  {
+    "state": "Washington",
+    "year": 2036,
+    "wetbulb_C": 16.08976936340332
+  },
+  {
+    "state": "West Virginia",
+    "year": 2036,
+    "wetbulb_C": 21.173755645751953
+  },
+  {
+    "state": "Wisconsin",
+    "year": 2036,
+    "wetbulb_C": 21.059816360473633
+  },
+  {
+    "state": "Wyoming",
+    "year": 2036,
+    "wetbulb_C": 19.223691940307617
+  },
+  {
+    "state": "Alabama",
+    "year": 2040,
+    "wetbulb_C": 25.77866554260254
+  },
+  {
+    "state": "Alaska",
+    "year": 2040,
+    "wetbulb_C": 13.98043441772461
+  },
+  {
+    "state": "Arizona",
+    "year": 2040,
+    "wetbulb_C": 25.175487518310547
+  },
+  {
+    "state": "Arkansas",
+    "year": 2040,
+    "wetbulb_C": 24.79337501525879
+  },
+  {
+    "state": "California",
+    "year": 2040,
+    "wetbulb_C": 24.381120681762695
+  },
+  {
+    "state": "Colorado",
+    "year": 2040,
+    "wetbulb_C": 20.09769630432129
+  },
+  {
+    "state": "Connecticut",
+    "year": 2040,
+    "wetbulb_C": 21.85134506225586
+  },
+  {
+    "state": "Delaware",
+    "year": 2040,
+    "wetbulb_C": 24.137086868286133
+  },
+  {
+    "state": "Florida",
+    "year": 2040,
+    "wetbulb_C": 25.980703353881836
+  },
+  {
+    "state": "Georgia",
+    "year": 2040,
+    "wetbulb_C": 24.84359359741211
+  },
+  {
+    "state": "Hawaii",
+    "year": 2040,
+    "wetbulb_C": 24.57477378845215
+  },
+  {
+    "state": "Idaho",
+    "year": 2040,
+    "wetbulb_C": 18.271665573120117
+  },
+  {
+    "state": "Illinois",
+    "year": 2040,
+    "wetbulb_C": 24.33750343322754
+  },
+  {
+    "state": "Indiana",
+    "year": 2040,
+    "wetbulb_C": 23.817081451416016
+  },
+  {
+    "state": "Iowa",
+    "year": 2040,
+    "wetbulb_C": 24.202436447143555
+  },
+  {
+    "state": "Kansas",
+    "year": 2040,
+    "wetbulb_C": 24.204513549804688
+  },
+  {
+    "state": "Kentucky",
+    "year": 2040,
+    "wetbulb_C": 24.261974334716797
+  },
+  {
+    "state": "Louisiana",
+    "year": 2040,
+    "wetbulb_C": 25.931161880493164
+  },
+  {
+    "state": "Maine",
+    "year": 2040,
+    "wetbulb_C": 20.64475440979004
+  },
+  {
+    "state": "Maryland",
+    "year": 2040,
+    "wetbulb_C": 23.790224075317383
+  },
+  {
+    "state": "Massachusetts",
+    "year": 2040,
+    "wetbulb_C": 21.13863182067871
+  },
+  {
+    "state": "Michigan",
+    "year": 2040,
+    "wetbulb_C": 22.338212966918945
+  },
+  {
+    "state": "Minnesota",
+    "year": 2040,
+    "wetbulb_C": 22.80480194091797
+  },
+  {
+    "state": "Mississippi",
+    "year": 2040,
+    "wetbulb_C": 25.404369354248047
+  },
+  {
+    "state": "Missouri",
+    "year": 2040,
+    "wetbulb_C": 24.584304809570312
+  },
+  {
+    "state": "Montana",
+    "year": 2040,
+    "wetbulb_C": 20.589481353759766
+  },
+  {
+    "state": "Nebraska",
+    "year": 2040,
+    "wetbulb_C": 23.7932186126709
+  },
+  {
+    "state": "Nevada",
+    "year": 2040,
+    "wetbulb_C": 22.408485412597656
+  },
+  {
+    "state": "New Hampshire",
+    "year": 2040,
+    "wetbulb_C": 20.289884567260742
+  },
+  {
+    "state": "New Jersey",
+    "year": 2040,
+    "wetbulb_C": 23.419422149658203
+  },
+  {
+    "state": "New Mexico",
+    "year": 2040,
+    "wetbulb_C": 21.11946678161621
+  },
+  {
+    "state": "New York",
+    "year": 2040,
+    "wetbulb_C": 21.145051956176758
+  },
+  {
+    "state": "North Carolina",
+    "year": 2040,
+    "wetbulb_C": 25.517518997192383
+  },
+  {
+    "state": "North Dakota",
+    "year": 2040,
+    "wetbulb_C": 21.853717803955078
+  },
+  {
+    "state": "Ohio",
+    "year": 2040,
+    "wetbulb_C": 22.819175720214844
+  },
+  {
+    "state": "Oklahoma",
+    "year": 2040,
+    "wetbulb_C": 24.390073776245117
+  },
+  {
+    "state": "Oregon",
+    "year": 2040,
+    "wetbulb_C": 18.09366798400879
+  },
+  {
+    "state": "Pennsylvania",
+    "year": 2040,
+    "wetbulb_C": 21.984760284423828
+  },
+  {
+    "state": "South Carolina",
+    "year": 2040,
+    "wetbulb_C": 25.80821990966797
+  },
+  {
+    "state": "South Dakota",
+    "year": 2040,
+    "wetbulb_C": 23.523103713989258
+  },
+  {
+    "state": "Tennessee",
+    "year": 2040,
+    "wetbulb_C": 24.65190887451172
+  },
+  {
+    "state": "Texas",
+    "year": 2040,
+    "wetbulb_C": 25.573257446289062
+  },
+  {
+    "state": "Utah",
+    "year": 2040,
+    "wetbulb_C": 19.9033260345459
+  },
+  {
+    "state": "Vermont",
+    "year": 2040,
+    "wetbulb_C": 20.110305786132812
+  },
+  {
+    "state": "Virginia",
+    "year": 2040,
+    "wetbulb_C": 24.2476863861084
+  },
+  {
+    "state": "Washington",
+    "year": 2040,
+    "wetbulb_C": 18.81397247314453
+  },
+  {
+    "state": "West Virginia",
+    "year": 2040,
+    "wetbulb_C": 22.731897354125977
+  },
+  {
+    "state": "Wisconsin",
+    "year": 2040,
+    "wetbulb_C": 23.119579315185547
+  },
+  {
+    "state": "Wyoming",
+    "year": 2040,
+    "wetbulb_C": 19.54073715209961
+  },
+  {
+    "state": "Alabama",
+    "year": 2044,
+    "wetbulb_C": 25.60917091369629
+  },
+  {
+    "state": "Alaska",
+    "year": 2044,
+    "wetbulb_C": 13.400398254394531
+  },
+  {
+    "state": "Arizona",
+    "year": 2044,
+    "wetbulb_C": 24.286643981933594
+  },
+  {
+    "state": "Arkansas",
+    "year": 2044,
+    "wetbulb_C": 25.02109146118164
+  },
+  {
+    "state": "California",
+    "year": 2044,
+    "wetbulb_C": 21.78999137878418
+  },
+  {
+    "state": "Colorado",
+    "year": 2044,
+    "wetbulb_C": 21.228187561035156
+  },
+  {
+    "state": "Connecticut",
+    "year": 2044,
+    "wetbulb_C": 20.95804786682129
+  },
+  {
+    "state": "Delaware",
+    "year": 2044,
+    "wetbulb_C": 22.948755264282227
+  },
+  {
+    "state": "Florida",
+    "year": 2044,
+    "wetbulb_C": 26.010385513305664
+  },
+  {
+    "state": "Georgia",
+    "year": 2044,
+    "wetbulb_C": 25.020187377929688
+  },
+  {
+    "state": "Hawaii",
+    "year": 2044,
+    "wetbulb_C": 23.662681579589844
+  },
+  {
+    "state": "Idaho",
+    "year": 2044,
+    "wetbulb_C": 18.43355941772461
+  },
+  {
+    "state": "Illinois",
+    "year": 2044,
+    "wetbulb_C": 24.42112922668457
+  },
+  {
+    "state": "Indiana",
+    "year": 2044,
+    "wetbulb_C": 23.8336238861084
+  },
+  {
+    "state": "Iowa",
+    "year": 2044,
+    "wetbulb_C": 23.29495620727539
+  },
+  {
+    "state": "Kansas",
+    "year": 2044,
+    "wetbulb_C": 23.444555282592773
+  },
+  {
+    "state": "Kentucky",
+    "year": 2044,
+    "wetbulb_C": 24.498062133789062
+  },
+  {
+    "state": "Louisiana",
+    "year": 2044,
+    "wetbulb_C": 25.806982040405273
+  },
+  {
+    "state": "Maine",
+    "year": 2044,
+    "wetbulb_C": 19.825550079345703
+  },
+  {
+    "state": "Maryland",
+    "year": 2044,
+    "wetbulb_C": 22.937349319458008
+  },
+  {
+    "state": "Massachusetts",
+    "year": 2044,
+    "wetbulb_C": 19.957958221435547
+  },
+  {
+    "state": "Michigan",
+    "year": 2044,
+    "wetbulb_C": 21.895578384399414
+  },
+  {
+    "state": "Minnesota",
+    "year": 2044,
+    "wetbulb_C": 21.413915634155273
+  },
+  {
+    "state": "Mississippi",
+    "year": 2044,
+    "wetbulb_C": 25.396976470947266
+  },
+  {
+    "state": "Missouri",
+    "year": 2044,
+    "wetbulb_C": 24.674022674560547
+  },
+  {
+    "state": "Montana",
+    "year": 2044,
+    "wetbulb_C": 19.207599639892578
+  },
+  {
+    "state": "Nebraska",
+    "year": 2044,
+    "wetbulb_C": 22.545072555541992
+  },
+  {
+    "state": "Nevada",
+    "year": 2044,
+    "wetbulb_C": 19.812986373901367
+  },
+  {
+    "state": "New Hampshire",
+    "year": 2044,
+    "wetbulb_C": 19.13338851928711
+  },
+  {
+    "state": "New Jersey",
+    "year": 2044,
+    "wetbulb_C": 22.088804244995117
+  },
+  {
+    "state": "New Mexico",
+    "year": 2044,
+    "wetbulb_C": 21.814029693603516
+  },
+  {
+    "state": "New York",
+    "year": 2044,
+    "wetbulb_C": 20.033037185668945
+  },
+  {
+    "state": "North Carolina",
+    "year": 2044,
+    "wetbulb_C": 24.560361862182617
+  },
+  {
+    "state": "North Dakota",
+    "year": 2044,
+    "wetbulb_C": 20.483951568603516
+  },
+  {
+    "state": "Ohio",
+    "year": 2044,
+    "wetbulb_C": 22.942461013793945
+  },
+  {
+    "state": "Oklahoma",
+    "year": 2044,
+    "wetbulb_C": 23.989303588867188
+  },
+  {
+    "state": "Oregon",
+    "year": 2044,
+    "wetbulb_C": 18.54290008544922
+  },
+  {
+    "state": "Pennsylvania",
+    "year": 2044,
+    "wetbulb_C": 20.95993995666504
+  },
+  {
+    "state": "South Carolina",
+    "year": 2044,
+    "wetbulb_C": 25.14598846435547
+  },
+  {
+    "state": "South Dakota",
+    "year": 2044,
+    "wetbulb_C": 21.641197204589844
+  },
+  {
+    "state": "Tennessee",
+    "year": 2044,
+    "wetbulb_C": 24.758298873901367
+  },
+  {
+    "state": "Texas",
+    "year": 2044,
+    "wetbulb_C": 25.914087295532227
+  },
+  {
+    "state": "Utah",
+    "year": 2044,
+    "wetbulb_C": 19.001798629760742
+  },
+  {
+    "state": "Vermont",
+    "year": 2044,
+    "wetbulb_C": 19.044078826904297
+  },
+  {
+    "state": "Virginia",
+    "year": 2044,
+    "wetbulb_C": 23.272003173828125
+  },
+  {
+    "state": "Washington",
+    "year": 2044,
+    "wetbulb_C": 18.730310440063477
+  },
+  {
+    "state": "West Virginia",
+    "year": 2044,
+    "wetbulb_C": 22.692384719848633
+  },
+  {
+    "state": "Wisconsin",
+    "year": 2044,
+    "wetbulb_C": 22.458789825439453
+  },
+  {
+    "state": "Wyoming",
+    "year": 2044,
+    "wetbulb_C": 19.215463638305664
+  },
+  {
+    "state": "Alabama",
+    "year": 2048,
+    "wetbulb_C": 25.844764709472656
+  },
+  {
+    "state": "Alaska",
+    "year": 2048,
+    "wetbulb_C": 14.53073501586914
+  },
+  {
+    "state": "Arizona",
+    "year": 2048,
+    "wetbulb_C": 24.457902908325195
+  },
+  {
+    "state": "Arkansas",
+    "year": 2048,
+    "wetbulb_C": 25.040607452392578
+  },
+  {
+    "state": "California",
+    "year": 2048,
+    "wetbulb_C": 20.26872444152832
+  },
+  {
+    "state": "Colorado",
+    "year": 2048,
+    "wetbulb_C": 20.466808319091797
+  },
+  {
+    "state": "Connecticut",
+    "year": 2048,
+    "wetbulb_C": 21.09755516052246
+  },
+  {
+    "state": "Delaware",
+    "year": 2048,
+    "wetbulb_C": 23.1710147857666
+  },
+  {
+    "state": "Florida",
+    "year": 2048,
+    "wetbulb_C": 26.25959014892578
+  },
+  {
+    "state": "Georgia",
+    "year": 2048,
+    "wetbulb_C": 24.96799087524414
+  },
+  {
+    "state": "Hawaii",
+    "year": 2048,
+    "wetbulb_C": 24.685346603393555
+  },
+  {
+    "state": "Idaho",
+    "year": 2048,
+    "wetbulb_C": 17.885395050048828
+  },
+  {
+    "state": "Illinois",
+    "year": 2048,
+    "wetbulb_C": 24.13194465637207
+  },
+  {
+    "state": "Indiana",
+    "year": 2048,
+    "wetbulb_C": 23.40892791748047
+  },
+  {
+    "state": "Iowa",
+    "year": 2048,
+    "wetbulb_C": 22.787090301513672
+  },
+  {
+    "state": "Kansas",
+    "year": 2048,
+    "wetbulb_C": 23.77684783935547
+  },
+  {
+    "state": "Kentucky",
+    "year": 2048,
+    "wetbulb_C": 24.541067123413086
+  },
+  {
+    "state": "Louisiana",
+    "year": 2048,
+    "wetbulb_C": 26.072433471679688
+  },
+  {
+    "state": "Maine",
+    "year": 2048,
+    "wetbulb_C": 19.793216705322266
+  },
+  {
+    "state": "Maryland",
+    "year": 2048,
+    "wetbulb_C": 22.92831802368164
+  },
+  {
+    "state": "Massachusetts",
+    "year": 2048,
+    "wetbulb_C": 20.3167724609375
+  },
+  {
+    "state": "Michigan",
+    "year": 2048,
+    "wetbulb_C": 21.313308715820312
+  },
+  {
+    "state": "Minnesota",
+    "year": 2048,
+    "wetbulb_C": 21.939104080200195
+  },
+  {
+    "state": "Mississippi",
+    "year": 2048,
+    "wetbulb_C": 25.338577270507812
+  },
+  {
+    "state": "Missouri",
+    "year": 2048,
+    "wetbulb_C": 24.438583374023438
+  },
+  {
+    "state": "Montana",
+    "year": 2048,
+    "wetbulb_C": 19.876659393310547
+  },
+  {
+    "state": "Nebraska",
+    "year": 2048,
+    "wetbulb_C": 22.733980178833008
+  },
+  {
+    "state": "Nevada",
+    "year": 2048,
+    "wetbulb_C": 18.084884643554688
+  },
+  {
+    "state": "New Hampshire",
+    "year": 2048,
+    "wetbulb_C": 19.264751434326172
+  },
+  {
+    "state": "New Jersey",
+    "year": 2048,
+    "wetbulb_C": 22.400970458984375
+  },
+  {
+    "state": "New Mexico",
+    "year": 2048,
+    "wetbulb_C": 22.198570251464844
+  },
+  {
+    "state": "New York",
+    "year": 2048,
+    "wetbulb_C": 20.45615005493164
+  },
+  {
+    "state": "North Carolina",
+    "year": 2048,
+    "wetbulb_C": 24.506671905517578
+  },
+  {
+    "state": "North Dakota",
+    "year": 2048,
+    "wetbulb_C": 21.402400970458984
+  },
+  {
+    "state": "Ohio",
+    "year": 2048,
+    "wetbulb_C": 22.36090087890625
+  },
+  {
+    "state": "Oklahoma",
+    "year": 2048,
+    "wetbulb_C": 24.175033569335938
+  },
+  {
+    "state": "Oregon",
+    "year": 2048,
+    "wetbulb_C": 17.371240615844727
+  },
+  {
+    "state": "Pennsylvania",
+    "year": 2048,
+    "wetbulb_C": 21.17080307006836
+  },
+  {
+    "state": "South Carolina",
+    "year": 2048,
+    "wetbulb_C": 25.250347137451172
+  },
+  {
+    "state": "South Dakota",
+    "year": 2048,
+    "wetbulb_C": 22.554101943969727
+  },
+  {
+    "state": "Tennessee",
+    "year": 2048,
+    "wetbulb_C": 24.8682861328125
+  },
+  {
+    "state": "Texas",
+    "year": 2048,
+    "wetbulb_C": 26.626644134521484
+  },
+  {
+    "state": "Utah",
+    "year": 2048,
+    "wetbulb_C": 17.249608993530273
+  },
+  {
+    "state": "Vermont",
+    "year": 2048,
+    "wetbulb_C": 19.051544189453125
+  },
+  {
+    "state": "Virginia",
+    "year": 2048,
+    "wetbulb_C": 23.391786575317383
+  },
+  {
+    "state": "Washington",
+    "year": 2048,
+    "wetbulb_C": 18.5982666015625
+  },
+  {
+    "state": "West Virginia",
+    "year": 2048,
+    "wetbulb_C": 22.21708106994629
+  },
+  {
+    "state": "Wisconsin",
+    "year": 2048,
+    "wetbulb_C": 22.02756690979004
+  },
+  {
+    "state": "Wyoming",
+    "year": 2048,
+    "wetbulb_C": 19.88512420654297
+  },
+  {
+    "state": "Alabama",
+    "year": 2052,
+    "wetbulb_C": 26.37136459350586
+  },
+  {
+    "state": "Alaska",
+    "year": 2052,
+    "wetbulb_C": 14.859014511108398
+  },
+  {
+    "state": "Arizona",
+    "year": 2052,
+    "wetbulb_C": 24.1884708404541
+  },
+  {
+    "state": "Arkansas",
+    "year": 2052,
+    "wetbulb_C": 26.233570098876953
+  },
+  {
+    "state": "California",
+    "year": 2052,
+    "wetbulb_C": 21.622461318969727
+  },
+  {
+    "state": "Colorado",
+    "year": 2052,
+    "wetbulb_C": 21.666147232055664
+  },
+  {
+    "state": "Connecticut",
+    "year": 2052,
+    "wetbulb_C": 20.44985008239746
+  },
+  {
+    "state": "Delaware",
+    "year": 2052,
+    "wetbulb_C": 23.737316131591797
+  },
+  {
+    "state": "Florida",
+    "year": 2052,
+    "wetbulb_C": 26.599430084228516
+  },
+  {
+    "state": "Georgia",
+    "year": 2052,
+    "wetbulb_C": 25.665552139282227
+  },
+  {
+    "state": "Hawaii",
+    "year": 2052,
+    "wetbulb_C": 23.752782821655273
+  },
+  {
+    "state": "Idaho",
+    "year": 2052,
+    "wetbulb_C": 16.590219497680664
+  },
+  {
+    "state": "Illinois",
+    "year": 2052,
+    "wetbulb_C": 25.080860137939453
+  },
+  {
+    "state": "Indiana",
+    "year": 2052,
+    "wetbulb_C": 24.29315757751465
+  },
+  {
+    "state": "Iowa",
+    "year": 2052,
+    "wetbulb_C": 23.759824752807617
+  },
+  {
+    "state": "Kansas",
+    "year": 2052,
+    "wetbulb_C": 24.657800674438477
+  },
+  {
+    "state": "Kentucky",
+    "year": 2052,
+    "wetbulb_C": 25.268428802490234
+  },
+  {
+    "state": "Louisiana",
+    "year": 2052,
+    "wetbulb_C": 26.78061294555664
+  },
+  {
+    "state": "Maine",
+    "year": 2052,
+    "wetbulb_C": 19.138671875
+  },
+  {
+    "state": "Maryland",
+    "year": 2052,
+    "wetbulb_C": 23.548715591430664
+  },
+  {
+    "state": "Massachusetts",
+    "year": 2052,
+    "wetbulb_C": 19.742216110229492
+  },
+  {
+    "state": "Michigan",
+    "year": 2052,
+    "wetbulb_C": 21.641403198242188
+  },
+  {
+    "state": "Minnesota",
+    "year": 2052,
+    "wetbulb_C": 22.628890991210938
+  },
+  {
+    "state": "Mississippi",
+    "year": 2052,
+    "wetbulb_C": 26.153362274169922
+  },
+  {
+    "state": "Missouri",
+    "year": 2052,
+    "wetbulb_C": 25.515520095825195
+  },
+  {
+    "state": "Montana",
+    "year": 2052,
+    "wetbulb_C": 19.786344528198242
+  },
+  {
+    "state": "Nebraska",
+    "year": 2052,
+    "wetbulb_C": 23.779308319091797
+  },
+  {
+    "state": "Nevada",
+    "year": 2052,
+    "wetbulb_C": 19.25636863708496
+  },
+  {
+    "state": "New Hampshire",
+    "year": 2052,
+    "wetbulb_C": 18.81970977783203
+  },
+  {
+    "state": "New Jersey",
+    "year": 2052,
+    "wetbulb_C": 22.032649993896484
+  },
+  {
+    "state": "New Mexico",
+    "year": 2052,
+    "wetbulb_C": 22.956912994384766
+  },
+  {
+    "state": "New York",
+    "year": 2052,
+    "wetbulb_C": 20.098785400390625
+  },
+  {
+    "state": "North Carolina",
+    "year": 2052,
+    "wetbulb_C": 25.793846130371094
+  },
+  {
+    "state": "North Dakota",
+    "year": 2052,
+    "wetbulb_C": 20.927255630493164
+  },
+  {
+    "state": "Ohio",
+    "year": 2052,
+    "wetbulb_C": 23.059951782226562
+  },
+  {
+    "state": "Oklahoma",
+    "year": 2052,
+    "wetbulb_C": 25.077009201049805
+  },
+  {
+    "state": "Oregon",
+    "year": 2052,
+    "wetbulb_C": 16.575759887695312
+  },
+  {
+    "state": "Pennsylvania",
+    "year": 2052,
+    "wetbulb_C": 21.046531677246094
+  },
+  {
+    "state": "South Carolina",
+    "year": 2052,
+    "wetbulb_C": 26.00275993347168
+  },
+  {
+    "state": "South Dakota",
+    "year": 2052,
+    "wetbulb_C": 23.124683380126953
+  },
+  {
+    "state": "Tennessee",
+    "year": 2052,
+    "wetbulb_C": 25.86037254333496
+  },
+  {
+    "state": "Texas",
+    "year": 2052,
+    "wetbulb_C": 26.606611251831055
+  },
+  {
+    "state": "Utah",
+    "year": 2052,
+    "wetbulb_C": 17.62061309814453
+  },
+  {
+    "state": "Vermont",
+    "year": 2052,
+    "wetbulb_C": 18.761526107788086
+  },
+  {
+    "state": "Virginia",
+    "year": 2052,
+    "wetbulb_C": 24.342323303222656
+  },
+  {
+    "state": "Washington",
+    "year": 2052,
+    "wetbulb_C": 17.64474105834961
+  },
+  {
+    "state": "West Virginia",
+    "year": 2052,
+    "wetbulb_C": 22.91585350036621
+  },
+  {
+    "state": "Wisconsin",
+    "year": 2052,
+    "wetbulb_C": 22.792531967163086
+  },
+  {
+    "state": "Wyoming",
+    "year": 2052,
+    "wetbulb_C": 20.28938102722168
+  },
+  {
+    "state": "Alabama",
+    "year": 2056,
+    "wetbulb_C": 26.19779396057129
+  },
+  {
+    "state": "Alaska",
+    "year": 2056,
+    "wetbulb_C": 13.843027114868164
+  },
+  {
+    "state": "Arizona",
+    "year": 2056,
+    "wetbulb_C": 24.032777786254883
+  },
+  {
+    "state": "Arkansas",
+    "year": 2056,
+    "wetbulb_C": 25.13485336303711
+  },
+  {
+    "state": "California",
+    "year": 2056,
+    "wetbulb_C": 22.212751388549805
+  },
+  {
+    "state": "Colorado",
+    "year": 2056,
+    "wetbulb_C": 20.4014892578125
+  },
+  {
+    "state": "Connecticut",
+    "year": 2056,
+    "wetbulb_C": 21.19552993774414
+  },
+  {
+    "state": "Delaware",
+    "year": 2056,
+    "wetbulb_C": 23.639659881591797
+  },
+  {
+    "state": "Florida",
+    "year": 2056,
+    "wetbulb_C": 26.254852294921875
+  },
+  {
+    "state": "Georgia",
+    "year": 2056,
+    "wetbulb_C": 25.56816864013672
+  },
+  {
+    "state": "Hawaii",
+    "year": 2056,
+    "wetbulb_C": 24.65243148803711
+  },
+  {
+    "state": "Idaho",
+    "year": 2056,
+    "wetbulb_C": 16.448511123657227
+  },
+  {
+    "state": "Illinois",
+    "year": 2056,
+    "wetbulb_C": 24.42945671081543
+  },
+  {
+    "state": "Indiana",
+    "year": 2056,
+    "wetbulb_C": 23.898481369018555
+  },
+  {
+    "state": "Iowa",
+    "year": 2056,
+    "wetbulb_C": 23.39531898498535
+  },
+  {
+    "state": "Kansas",
+    "year": 2056,
+    "wetbulb_C": 23.80083465576172
+  },
+  {
+    "state": "Kentucky",
+    "year": 2056,
+    "wetbulb_C": 24.481815338134766
+  },
+  {
+    "state": "Louisiana",
+    "year": 2056,
+    "wetbulb_C": 26.636564254760742
+  },
+  {
+    "state": "Maine",
+    "year": 2056,
+    "wetbulb_C": 19.93103790283203
+  },
+  {
+    "state": "Maryland",
+    "year": 2056,
+    "wetbulb_C": 23.324321746826172
+  },
+  {
+    "state": "Massachusetts",
+    "year": 2056,
+    "wetbulb_C": 20.462478637695312
+  },
+  {
+    "state": "Michigan",
+    "year": 2056,
+    "wetbulb_C": 21.004772186279297
+  },
+  {
+    "state": "Minnesota",
+    "year": 2056,
+    "wetbulb_C": 21.207185745239258
+  },
+  {
+    "state": "Mississippi",
+    "year": 2056,
+    "wetbulb_C": 26.005094528198242
+  },
+  {
+    "state": "Missouri",
+    "year": 2056,
+    "wetbulb_C": 24.292741775512695
+  },
+  {
+    "state": "Montana",
+    "year": 2056,
+    "wetbulb_C": 19.618467330932617
+  },
+  {
+    "state": "Nebraska",
+    "year": 2056,
+    "wetbulb_C": 23.17127227783203
+  },
+  {
+    "state": "Nevada",
+    "year": 2056,
+    "wetbulb_C": 18.41951560974121
+  },
+  {
+    "state": "New Hampshire",
+    "year": 2056,
+    "wetbulb_C": 19.500064849853516
+  },
+  {
+    "state": "New Jersey",
+    "year": 2056,
+    "wetbulb_C": 22.666675567626953
+  },
+  {
+    "state": "New Mexico",
+    "year": 2056,
+    "wetbulb_C": 22.243593215942383
+  },
+  {
+    "state": "New York",
+    "year": 2056,
+    "wetbulb_C": 20.74404525756836
+  },
+  {
+    "state": "North Carolina",
+    "year": 2056,
+    "wetbulb_C": 25.967496871948242
+  },
+  {
+    "state": "North Dakota",
+    "year": 2056,
+    "wetbulb_C": 20.19921112060547
+  },
+  {
+    "state": "Ohio",
+    "year": 2056,
+    "wetbulb_C": 22.601322174072266
+  },
+  {
+    "state": "Oklahoma",
+    "year": 2056,
+    "wetbulb_C": 24.125995635986328
+  },
+  {
+    "state": "Oregon",
+    "year": 2056,
+    "wetbulb_C": 16.766048431396484
+  },
+  {
+    "state": "Pennsylvania",
+    "year": 2056,
+    "wetbulb_C": 21.668720245361328
+  },
+  {
+    "state": "South Carolina",
+    "year": 2056,
+    "wetbulb_C": 26.16883659362793
+  },
+  {
+    "state": "South Dakota",
+    "year": 2056,
+    "wetbulb_C": 21.96860122680664
+  },
+  {
+    "state": "Tennessee",
+    "year": 2056,
+    "wetbulb_C": 24.799036026000977
+  },
+  {
+    "state": "Texas",
+    "year": 2056,
+    "wetbulb_C": 26.34859275817871
+  },
+  {
+    "state": "Utah",
+    "year": 2056,
+    "wetbulb_C": 16.844757080078125
+  },
+  {
+    "state": "Vermont",
+    "year": 2056,
+    "wetbulb_C": 19.27826690673828
+  },
+  {
+    "state": "Virginia",
+    "year": 2056,
+    "wetbulb_C": 23.939836502075195
+  },
+  {
+    "state": "Washington",
+    "year": 2056,
+    "wetbulb_C": 16.75789451599121
+  },
+  {
+    "state": "West Virginia",
+    "year": 2056,
+    "wetbulb_C": 22.469329833984375
+  },
+  {
+    "state": "Wisconsin",
+    "year": 2056,
+    "wetbulb_C": 22.254016876220703
+  },
+  {
+    "state": "Wyoming",
+    "year": 2056,
+    "wetbulb_C": 19.254413604736328
+  },
+  {
+    "state": "Alabama",
+    "year": 2060,
+    "wetbulb_C": 25.96323013305664
+  },
+  {
+    "state": "Alaska",
+    "year": 2060,
+    "wetbulb_C": 14.279182434082031
+  },
+  {
+    "state": "Arizona",
+    "year": 2060,
+    "wetbulb_C": 23.72844696044922
+  },
+  {
+    "state": "Arkansas",
+    "year": 2060,
+    "wetbulb_C": 25.551179885864258
+  },
+  {
+    "state": "California",
+    "year": 2060,
+    "wetbulb_C": 21.86594581604004
+  },
+  {
+    "state": "Colorado",
+    "year": 2060,
+    "wetbulb_C": 21.79839515686035
+  },
+  {
+    "state": "Connecticut",
+    "year": 2060,
+    "wetbulb_C": 21.87885856628418
+  },
+  {
+    "state": "Delaware",
+    "year": 2060,
+    "wetbulb_C": 24.242237091064453
+  },
+  {
+    "state": "Florida",
+    "year": 2060,
+    "wetbulb_C": 26.050373077392578
+  },
+  {
+    "state": "Georgia",
+    "year": 2060,
+    "wetbulb_C": 25.239091873168945
+  },
+  {
+    "state": "Hawaii",
+    "year": 2060,
+    "wetbulb_C": 23.759857177734375
+  },
+  {
+    "state": "Idaho",
+    "year": 2060,
+    "wetbulb_C": 17.32917594909668
+  },
+  {
+    "state": "Illinois",
+    "year": 2060,
+    "wetbulb_C": 24.74981117248535
+  },
+  {
+    "state": "Indiana",
+    "year": 2060,
+    "wetbulb_C": 24.296615600585938
+  },
+  {
+    "state": "Iowa",
+    "year": 2060,
+    "wetbulb_C": 23.389013290405273
+  },
+  {
+    "state": "Kansas",
+    "year": 2060,
+    "wetbulb_C": 24.560447692871094
+  },
+  {
+    "state": "Kentucky",
+    "year": 2060,
+    "wetbulb_C": 24.991708755493164
+  },
+  {
+    "state": "Louisiana",
+    "year": 2060,
+    "wetbulb_C": 26.290939331054688
+  },
+  {
+    "state": "Maine",
+    "year": 2060,
+    "wetbulb_C": 20.904998779296875
+  },
+  {
+    "state": "Maryland",
+    "year": 2060,
+    "wetbulb_C": 24.129173278808594
+  },
+  {
+    "state": "Massachusetts",
+    "year": 2060,
+    "wetbulb_C": 21.42800521850586
+  },
+  {
+    "state": "Michigan",
+    "year": 2060,
+    "wetbulb_C": 22.27025604248047
+  },
+  {
+    "state": "Minnesota",
+    "year": 2060,
+    "wetbulb_C": 22.187484741210938
+  },
+  {
+    "state": "Mississippi",
+    "year": 2060,
+    "wetbulb_C": 25.785493850708008
+  },
+  {
+    "state": "Missouri",
+    "year": 2060,
+    "wetbulb_C": 24.912939071655273
+  },
+  {
+    "state": "Montana",
+    "year": 2060,
+    "wetbulb_C": 19.77285385131836
+  },
+  {
+    "state": "Nebraska",
+    "year": 2060,
+    "wetbulb_C": 23.366596221923828
+  },
+  {
+    "state": "Nevada",
+    "year": 2060,
+    "wetbulb_C": 20.11124038696289
+  },
+  {
+    "state": "New Hampshire",
+    "year": 2060,
+    "wetbulb_C": 20.72149658203125
+  },
+  {
+    "state": "New Jersey",
+    "year": 2060,
+    "wetbulb_C": 23.371152877807617
+  },
+  {
+    "state": "New Mexico",
+    "year": 2060,
+    "wetbulb_C": 22.72914695739746
+  },
+  {
+    "state": "New York",
+    "year": 2060,
+    "wetbulb_C": 21.76618766784668
+  },
+  {
+    "state": "North Carolina",
+    "year": 2060,
+    "wetbulb_C": 25.32089614868164
+  },
+  {
+    "state": "North Dakota",
+    "year": 2060,
+    "wetbulb_C": 21.104923248291016
+  },
+  {
+    "state": "Ohio",
+    "year": 2060,
+    "wetbulb_C": 23.534156799316406
+  },
+  {
+    "state": "Oklahoma",
+    "year": 2060,
+    "wetbulb_C": 24.73596954345703
+  },
+  {
+    "state": "Oregon",
+    "year": 2060,
+    "wetbulb_C": 17.309858322143555
+  },
+  {
+    "state": "Pennsylvania",
+    "year": 2060,
+    "wetbulb_C": 22.512474060058594
+  },
+  {
+    "state": "South Carolina",
+    "year": 2060,
+    "wetbulb_C": 25.624847412109375
+  },
+  {
+    "state": "South Dakota",
+    "year": 2060,
+    "wetbulb_C": 22.317602157592773
+  },
+  {
+    "state": "Tennessee",
+    "year": 2060,
+    "wetbulb_C": 25.26083755493164
+  },
+  {
+    "state": "Texas",
+    "year": 2060,
+    "wetbulb_C": 26.79472541809082
+  },
+  {
+    "state": "Utah",
+    "year": 2060,
+    "wetbulb_C": 18.819841384887695
+  },
+  {
+    "state": "Vermont",
+    "year": 2060,
+    "wetbulb_C": 20.699260711669922
+  },
+  {
+    "state": "Virginia",
+    "year": 2060,
+    "wetbulb_C": 24.639169692993164
+  },
+  {
+    "state": "Washington",
+    "year": 2060,
+    "wetbulb_C": 17.435932159423828
+  },
+  {
+    "state": "West Virginia",
+    "year": 2060,
+    "wetbulb_C": 23.329076766967773
+  },
+  {
+    "state": "Wisconsin",
+    "year": 2060,
+    "wetbulb_C": 22.505401611328125
+  },
+  {
+    "state": "Wyoming",
+    "year": 2060,
+    "wetbulb_C": 20.399547576904297
+  },
+  {
+    "state": "Alabama",
+    "year": 2064,
+    "wetbulb_C": 26.59377670288086
+  },
+  {
+    "state": "Alaska",
+    "year": 2064,
+    "wetbulb_C": 14.283288955688477
+  },
+  {
+    "state": "Arizona",
+    "year": 2064,
+    "wetbulb_C": 23.290321350097656
+  },
+  {
+    "state": "Arkansas",
+    "year": 2064,
+    "wetbulb_C": 25.070947647094727
+  },
+  {
+    "state": "California",
+    "year": 2064,
+    "wetbulb_C": 20.305419921875
+  },
+  {
+    "state": "Colorado",
+    "year": 2064,
+    "wetbulb_C": 21.040372848510742
+  },
+  {
+    "state": "Connecticut",
+    "year": 2064,
+    "wetbulb_C": 21.61771011352539
+  },
+  {
+    "state": "Delaware",
+    "year": 2064,
+    "wetbulb_C": 25.36005973815918
+  },
+  {
+    "state": "Florida",
+    "year": 2064,
+    "wetbulb_C": 26.66227149963379
+  },
+  {
+    "state": "Georgia",
+    "year": 2064,
+    "wetbulb_C": 25.869029998779297
+  },
+  {
+    "state": "Hawaii",
+    "year": 2064,
+    "wetbulb_C": 24.863466262817383
+  },
+  {
+    "state": "Idaho",
+    "year": 2064,
+    "wetbulb_C": 17.671524047851562
+  },
+  {
+    "state": "Illinois",
+    "year": 2064,
+    "wetbulb_C": 24.42172622680664
+  },
+  {
+    "state": "Indiana",
+    "year": 2064,
+    "wetbulb_C": 23.95269775390625
+  },
+  {
+    "state": "Iowa",
+    "year": 2064,
+    "wetbulb_C": 22.730350494384766
+  },
+  {
+    "state": "Kansas",
+    "year": 2064,
+    "wetbulb_C": 23.810054779052734
+  },
+  {
+    "state": "Kentucky",
+    "year": 2064,
+    "wetbulb_C": 24.535728454589844
+  },
+  {
+    "state": "Louisiana",
+    "year": 2064,
+    "wetbulb_C": 26.760953903198242
+  },
+  {
+    "state": "Maine",
+    "year": 2064,
+    "wetbulb_C": 20.438814163208008
+  },
+  {
+    "state": "Maryland",
+    "year": 2064,
+    "wetbulb_C": 24.77496337890625
+  },
+  {
+    "state": "Massachusetts",
+    "year": 2064,
+    "wetbulb_C": 20.473676681518555
+  },
+  {
+    "state": "Michigan",
+    "year": 2064,
+    "wetbulb_C": 21.287067413330078
+  },
+  {
+    "state": "Minnesota",
+    "year": 2064,
+    "wetbulb_C": 21.777090072631836
+  },
+  {
+    "state": "Mississippi",
+    "year": 2064,
+    "wetbulb_C": 26.26725959777832
+  },
+  {
+    "state": "Missouri",
+    "year": 2064,
+    "wetbulb_C": 24.46492576599121
+  },
+  {
+    "state": "Montana",
+    "year": 2064,
+    "wetbulb_C": 20.879138946533203
+  },
+  {
+    "state": "Nebraska",
+    "year": 2064,
+    "wetbulb_C": 23.13440704345703
+  },
+  {
+    "state": "Nevada",
+    "year": 2064,
+    "wetbulb_C": 17.5333194732666
+  },
+  {
+    "state": "New Hampshire",
+    "year": 2064,
+    "wetbulb_C": 19.650386810302734
+  },
+  {
+    "state": "New Jersey",
+    "year": 2064,
+    "wetbulb_C": 24.123018264770508
+  },
+  {
+    "state": "New Mexico",
+    "year": 2064,
+    "wetbulb_C": 22.58826446533203
+  },
+  {
+    "state": "New York",
+    "year": 2064,
+    "wetbulb_C": 20.674684524536133
+  },
+  {
+    "state": "North Carolina",
+    "year": 2064,
+    "wetbulb_C": 25.8125057220459
+  },
+  {
+    "state": "North Dakota",
+    "year": 2064,
+    "wetbulb_C": 21.380502700805664
+  },
+  {
+    "state": "Ohio",
+    "year": 2064,
+    "wetbulb_C": 23.042882919311523
+  },
+  {
+    "state": "Oklahoma",
+    "year": 2064,
+    "wetbulb_C": 24.804901123046875
+  },
+  {
+    "state": "Oregon",
+    "year": 2064,
+    "wetbulb_C": 17.676151275634766
+  },
+  {
+    "state": "Pennsylvania",
+    "year": 2064,
+    "wetbulb_C": 22.085113525390625
+  },
+  {
+    "state": "South Carolina",
+    "year": 2064,
+    "wetbulb_C": 26.203407287597656
+  },
+  {
+    "state": "South Dakota",
+    "year": 2064,
+    "wetbulb_C": 22.679777145385742
+  },
+  {
+    "state": "Tennessee",
+    "year": 2064,
+    "wetbulb_C": 24.79045295715332
+  },
+  {
+    "state": "Texas",
+    "year": 2064,
+    "wetbulb_C": 26.679595947265625
+  },
+  {
+    "state": "Utah",
+    "year": 2064,
+    "wetbulb_C": 17.35826301574707
+  },
+  {
+    "state": "Vermont",
+    "year": 2064,
+    "wetbulb_C": 19.49698257446289
+  },
+  {
+    "state": "Virginia",
+    "year": 2064,
+    "wetbulb_C": 25.171611785888672
+  },
+  {
+    "state": "Washington",
+    "year": 2064,
+    "wetbulb_C": 18.322017669677734
+  },
+  {
+    "state": "West Virginia",
+    "year": 2064,
+    "wetbulb_C": 23.175086975097656
+  },
+  {
+    "state": "Wisconsin",
+    "year": 2064,
+    "wetbulb_C": 22.19671058654785
+  },
+  {
+    "state": "Wyoming",
+    "year": 2064,
+    "wetbulb_C": 20.124298095703125
+  },
+  {
+    "state": "Alabama",
+    "year": 2068,
+    "wetbulb_C": 26.850666046142578
+  },
+  {
+    "state": "Alaska",
+    "year": 2068,
+    "wetbulb_C": 14.49057388305664
+  },
+  {
+    "state": "Arizona",
+    "year": 2068,
+    "wetbulb_C": 21.84561538696289
+  },
+  {
+    "state": "Arkansas",
+    "year": 2068,
+    "wetbulb_C": 24.880008697509766
+  },
+  {
+    "state": "California",
+    "year": 2068,
+    "wetbulb_C": 19.912498474121094
+  },
+  {
+    "state": "Colorado",
+    "year": 2068,
+    "wetbulb_C": 21.017393112182617
+  },
+  {
+    "state": "Connecticut",
+    "year": 2068,
+    "wetbulb_C": 21.201122283935547
+  },
+  {
+    "state": "Delaware",
+    "year": 2068,
+    "wetbulb_C": 22.99281120300293
+  },
+  {
+    "state": "Florida",
+    "year": 2068,
+    "wetbulb_C": 27.154611587524414
+  },
+  {
+    "state": "Georgia",
+    "year": 2068,
+    "wetbulb_C": 26.836437225341797
+  },
+  {
+    "state": "Hawaii",
+    "year": 2068,
+    "wetbulb_C": 24.859745025634766
+  },
+  {
+    "state": "Idaho",
+    "year": 2068,
+    "wetbulb_C": 18.072322845458984
+  },
+  {
+    "state": "Illinois",
+    "year": 2068,
+    "wetbulb_C": 23.865615844726562
+  },
+  {
+    "state": "Indiana",
+    "year": 2068,
+    "wetbulb_C": 23.24847412109375
+  },
+  {
+    "state": "Iowa",
+    "year": 2068,
+    "wetbulb_C": 22.945531845092773
+  },
+  {
+    "state": "Kansas",
+    "year": 2068,
+    "wetbulb_C": 24.236345291137695
+  },
+  {
+    "state": "Kentucky",
+    "year": 2068,
+    "wetbulb_C": 24.01009750366211
+  },
+  {
+    "state": "Louisiana",
+    "year": 2068,
+    "wetbulb_C": 26.943212509155273
+  },
+  {
+    "state": "Maine",
+    "year": 2068,
+    "wetbulb_C": 19.96065902709961
+  },
+  {
+    "state": "Maryland",
+    "year": 2068,
+    "wetbulb_C": 22.556034088134766
+  },
+  {
+    "state": "Massachusetts",
+    "year": 2068,
+    "wetbulb_C": 20.36905288696289
+  },
+  {
+    "state": "Michigan",
+    "year": 2068,
+    "wetbulb_C": 21.213823318481445
+  },
+  {
+    "state": "Minnesota",
+    "year": 2068,
+    "wetbulb_C": 21.786457061767578
+  },
+  {
+    "state": "Mississippi",
+    "year": 2068,
+    "wetbulb_C": 26.431537628173828
+  },
+  {
+    "state": "Missouri",
+    "year": 2068,
+    "wetbulb_C": 23.901329040527344
+  },
+  {
+    "state": "Montana",
+    "year": 2068,
+    "wetbulb_C": 20.864883422851562
+  },
+  {
+    "state": "Nebraska",
+    "year": 2068,
+    "wetbulb_C": 23.507579803466797
+  },
+  {
+    "state": "Nevada",
+    "year": 2068,
+    "wetbulb_C": 16.733461380004883
+  },
+  {
+    "state": "New Hampshire",
+    "year": 2068,
+    "wetbulb_C": 19.502254486083984
+  },
+  {
+    "state": "New Jersey",
+    "year": 2068,
+    "wetbulb_C": 22.624340057373047
+  },
+  {
+    "state": "New Mexico",
+    "year": 2068,
+    "wetbulb_C": 22.46508026123047
+  },
+  {
+    "state": "New York",
+    "year": 2068,
+    "wetbulb_C": 20.482364654541016
+  },
+  {
+    "state": "North Carolina",
+    "year": 2068,
+    "wetbulb_C": 25.628156661987305
+  },
+  {
+    "state": "North Dakota",
+    "year": 2068,
+    "wetbulb_C": 21.530506134033203
+  },
+  {
+    "state": "Ohio",
+    "year": 2068,
+    "wetbulb_C": 22.061410903930664
+  },
+  {
+    "state": "Oklahoma",
+    "year": 2068,
+    "wetbulb_C": 24.689350128173828
+  },
+  {
+    "state": "Oregon",
+    "year": 2068,
+    "wetbulb_C": 17.32382583618164
+  },
+  {
+    "state": "Pennsylvania",
+    "year": 2068,
+    "wetbulb_C": 21.06427764892578
+  },
+  {
+    "state": "South Carolina",
+    "year": 2068,
+    "wetbulb_C": 26.8792667388916
+  },
+  {
+    "state": "South Dakota",
+    "year": 2068,
+    "wetbulb_C": 22.6973819732666
+  },
+  {
+    "state": "Tennessee",
+    "year": 2068,
+    "wetbulb_C": 24.28139877319336
+  },
+  {
+    "state": "Texas",
+    "year": 2068,
+    "wetbulb_C": 26.794498443603516
+  },
+  {
+    "state": "Utah",
+    "year": 2068,
+    "wetbulb_C": 16.929670333862305
+  },
+  {
+    "state": "Vermont",
+    "year": 2068,
+    "wetbulb_C": 19.424436569213867
+  },
+  {
+    "state": "Virginia",
+    "year": 2068,
+    "wetbulb_C": 23.42552947998047
+  },
+  {
+    "state": "Washington",
+    "year": 2068,
+    "wetbulb_C": 17.232378005981445
+  },
+  {
+    "state": "West Virginia",
+    "year": 2068,
+    "wetbulb_C": 21.985172271728516
+  },
+  {
+    "state": "Wisconsin",
+    "year": 2068,
+    "wetbulb_C": 22.231189727783203
+  },
+  {
+    "state": "Wyoming",
+    "year": 2068,
+    "wetbulb_C": 20.153764724731445
+  },
+  {
+    "state": "Alabama",
+    "year": 2072,
+    "wetbulb_C": 27.35287857055664
+  },
+  {
+    "state": "Alaska",
+    "year": 2072,
+    "wetbulb_C": 16.767288208007812
+  },
+  {
+    "state": "Arizona",
+    "year": 2072,
+    "wetbulb_C": 23.547988891601562
+  },
+  {
+    "state": "Arkansas",
+    "year": 2072,
+    "wetbulb_C": 26.614168167114258
+  },
+  {
+    "state": "California",
+    "year": 2072,
+    "wetbulb_C": 21.089378356933594
+  },
+  {
+    "state": "Colorado",
+    "year": 2072,
+    "wetbulb_C": 21.77198028564453
+  },
+  {
+    "state": "Connecticut",
+    "year": 2072,
+    "wetbulb_C": 21.29050636291504
+  },
+  {
+    "state": "Delaware",
+    "year": 2072,
+    "wetbulb_C": 23.24764060974121
+  },
+  {
+    "state": "Florida",
+    "year": 2072,
+    "wetbulb_C": 27.412296295166016
+  },
+  {
+    "state": "Georgia",
+    "year": 2072,
+    "wetbulb_C": 26.15691566467285
+  },
+  {
+    "state": "Hawaii",
+    "year": 2072,
+    "wetbulb_C": 25.47863006591797
+  },
+  {
+    "state": "Idaho",
+    "year": 2072,
+    "wetbulb_C": 17.464916229248047
+  },
+  {
+    "state": "Illinois",
+    "year": 2072,
+    "wetbulb_C": 24.989198684692383
+  },
+  {
+    "state": "Indiana",
+    "year": 2072,
+    "wetbulb_C": 23.786718368530273
+  },
+  {
+    "state": "Iowa",
+    "year": 2072,
+    "wetbulb_C": 23.50998306274414
+  },
+  {
+    "state": "Kansas",
+    "year": 2072,
+    "wetbulb_C": 24.58062171936035
+  },
+  {
+    "state": "Kentucky",
+    "year": 2072,
+    "wetbulb_C": 25.53952980041504
+  },
+  {
+    "state": "Louisiana",
+    "year": 2072,
+    "wetbulb_C": 27.198617935180664
+  },
+  {
+    "state": "Maine",
+    "year": 2072,
+    "wetbulb_C": 20.13701820373535
+  },
+  {
+    "state": "Maryland",
+    "year": 2072,
+    "wetbulb_C": 22.938720703125
+  },
+  {
+    "state": "Massachusetts",
+    "year": 2072,
+    "wetbulb_C": 20.416305541992188
+  },
+  {
+    "state": "Michigan",
+    "year": 2072,
+    "wetbulb_C": 21.756662368774414
+  },
+  {
+    "state": "Minnesota",
+    "year": 2072,
+    "wetbulb_C": 21.659652709960938
+  },
+  {
+    "state": "Mississippi",
+    "year": 2072,
+    "wetbulb_C": 26.62703514099121
+  },
+  {
+    "state": "Missouri",
+    "year": 2072,
+    "wetbulb_C": 26.03844451904297
+  },
+  {
+    "state": "Montana",
+    "year": 2072,
+    "wetbulb_C": 20.397075653076172
+  },
+  {
+    "state": "Nebraska",
+    "year": 2072,
+    "wetbulb_C": 24.175556182861328
+  },
+  {
+    "state": "Nevada",
+    "year": 2072,
+    "wetbulb_C": 18.01533317565918
+  },
+  {
+    "state": "New Hampshire",
+    "year": 2072,
+    "wetbulb_C": 19.544342041015625
+  },
+  {
+    "state": "New Jersey",
+    "year": 2072,
+    "wetbulb_C": 22.56151008605957
+  },
+  {
+    "state": "New Mexico",
+    "year": 2072,
+    "wetbulb_C": 21.766267776489258
+  },
+  {
+    "state": "New York",
+    "year": 2072,
+    "wetbulb_C": 20.873130798339844
+  },
+  {
+    "state": "North Carolina",
+    "year": 2072,
+    "wetbulb_C": 25.340187072753906
+  },
+  {
+    "state": "North Dakota",
+    "year": 2072,
+    "wetbulb_C": 21.21571922302246
+  },
+  {
+    "state": "Ohio",
+    "year": 2072,
+    "wetbulb_C": 22.470733642578125
+  },
+  {
+    "state": "Oklahoma",
+    "year": 2072,
+    "wetbulb_C": 24.836780548095703
+  },
+  {
+    "state": "Oregon",
+    "year": 2072,
+    "wetbulb_C": 17.733356475830078
+  },
+  {
+    "state": "Pennsylvania",
+    "year": 2072,
+    "wetbulb_C": 21.317779541015625
+  },
+  {
+    "state": "South Carolina",
+    "year": 2072,
+    "wetbulb_C": 26.319833755493164
+  },
+  {
+    "state": "South Dakota",
+    "year": 2072,
+    "wetbulb_C": 23.180862426757812
+  },
+  {
+    "state": "Tennessee",
+    "year": 2072,
+    "wetbulb_C": 26.444000244140625
+  },
+  {
+    "state": "Texas",
+    "year": 2072,
+    "wetbulb_C": 26.96751594543457
+  },
+  {
+    "state": "Utah",
+    "year": 2072,
+    "wetbulb_C": 17.158903121948242
+  },
+  {
+    "state": "Vermont",
+    "year": 2072,
+    "wetbulb_C": 19.608606338500977
+  },
+  {
+    "state": "Virginia",
+    "year": 2072,
+    "wetbulb_C": 23.354816436767578
+  },
+  {
+    "state": "Washington",
+    "year": 2072,
+    "wetbulb_C": 17.627058029174805
+  },
+  {
+    "state": "West Virginia",
+    "year": 2072,
+    "wetbulb_C": 22.211645126342773
+  },
+  {
+    "state": "Wisconsin",
+    "year": 2072,
+    "wetbulb_C": 22.379018783569336
+  },
+  {
+    "state": "Wyoming",
+    "year": 2072,
+    "wetbulb_C": 20.53307342529297
+  },
+  {
+    "state": "Alabama",
+    "year": 2076,
+    "wetbulb_C": 26.93241310119629
+  },
+  {
+    "state": "Alaska",
+    "year": 2076,
+    "wetbulb_C": 18.11335563659668
+  },
+  {
+    "state": "Arizona",
+    "year": 2076,
+    "wetbulb_C": 24.174373626708984
+  },
+  {
+    "state": "Arkansas",
+    "year": 2076,
+    "wetbulb_C": 25.968549728393555
+  },
+  {
+    "state": "California",
+    "year": 2076,
+    "wetbulb_C": 21.68448829650879
+  },
+  {
+    "state": "Colorado",
+    "year": 2076,
+    "wetbulb_C": 21.671600341796875
+  },
+  {
+    "state": "Connecticut",
+    "year": 2076,
+    "wetbulb_C": 22.30208396911621
+  },
+  {
+    "state": "Delaware",
+    "year": 2076,
+    "wetbulb_C": 24.480497360229492
+  },
+  {
+    "state": "Florida",
+    "year": 2076,
+    "wetbulb_C": 27.023141860961914
+  },
+  {
+    "state": "Georgia",
+    "year": 2076,
+    "wetbulb_C": 26.581314086914062
+  },
+  {
+    "state": "Hawaii",
+    "year": 2076,
+    "wetbulb_C": 25.529558181762695
+  },
+  {
+    "state": "Idaho",
+    "year": 2076,
+    "wetbulb_C": 18.285114288330078
+  },
+  {
+    "state": "Illinois",
+    "year": 2076,
+    "wetbulb_C": 24.820425033569336
+  },
+  {
+    "state": "Indiana",
+    "year": 2076,
+    "wetbulb_C": 24.091089248657227
+  },
+  {
+    "state": "Iowa",
+    "year": 2076,
+    "wetbulb_C": 22.847631454467773
+  },
+  {
+    "state": "Kansas",
+    "year": 2076,
+    "wetbulb_C": 24.176002502441406
+  },
+  {
+    "state": "Kentucky",
+    "year": 2076,
+    "wetbulb_C": 25.193639755249023
+  },
+  {
+    "state": "Louisiana",
+    "year": 2076,
+    "wetbulb_C": 27.2924861907959
+  },
+  {
+    "state": "Maine",
+    "year": 2076,
+    "wetbulb_C": 20.591142654418945
+  },
+  {
+    "state": "Maryland",
+    "year": 2076,
+    "wetbulb_C": 23.9481201171875
+  },
+  {
+    "state": "Massachusetts",
+    "year": 2076,
+    "wetbulb_C": 21.171106338500977
+  },
+  {
+    "state": "Michigan",
+    "year": 2076,
+    "wetbulb_C": 22.12112045288086
+  },
+  {
+    "state": "Minnesota",
+    "year": 2076,
+    "wetbulb_C": 21.022077560424805
+  },
+  {
+    "state": "Mississippi",
+    "year": 2076,
+    "wetbulb_C": 26.503067016601562
+  },
+  {
+    "state": "Missouri",
+    "year": 2076,
+    "wetbulb_C": 25.12220001220703
+  },
+  {
+    "state": "Montana",
+    "year": 2076,
+    "wetbulb_C": 19.48843002319336
+  },
+  {
+    "state": "Nebraska",
+    "year": 2076,
+    "wetbulb_C": 23.410354614257812
+  },
+  {
+    "state": "Nevada",
+    "year": 2076,
+    "wetbulb_C": 18.649574279785156
+  },
+  {
+    "state": "New Hampshire",
+    "year": 2076,
+    "wetbulb_C": 20.111370086669922
+  },
+  {
+    "state": "New Jersey",
+    "year": 2076,
+    "wetbulb_C": 23.915847778320312
+  },
+  {
+    "state": "New Mexico",
+    "year": 2076,
+    "wetbulb_C": 21.827585220336914
+  },
+  {
+    "state": "New York",
+    "year": 2076,
+    "wetbulb_C": 21.456743240356445
+  },
+  {
+    "state": "North Carolina",
+    "year": 2076,
+    "wetbulb_C": 26.145339965820312
+  },
+  {
+    "state": "North Dakota",
+    "year": 2076,
+    "wetbulb_C": 20.149675369262695
+  },
+  {
+    "state": "Ohio",
+    "year": 2076,
+    "wetbulb_C": 23.155107498168945
+  },
+  {
+    "state": "Oklahoma",
+    "year": 2076,
+    "wetbulb_C": 24.44862937927246
+  },
+  {
+    "state": "Oregon",
+    "year": 2076,
+    "wetbulb_C": 19.234888076782227
+  },
+  {
+    "state": "Pennsylvania",
+    "year": 2076,
+    "wetbulb_C": 22.423686981201172
+  },
+  {
+    "state": "South Carolina",
+    "year": 2076,
+    "wetbulb_C": 26.830167770385742
+  },
+  {
+    "state": "South Dakota",
+    "year": 2076,
+    "wetbulb_C": 21.334619522094727
+  },
+  {
+    "state": "Tennessee",
+    "year": 2076,
+    "wetbulb_C": 25.55921173095703
+  },
+  {
+    "state": "Texas",
+    "year": 2076,
+    "wetbulb_C": 26.86612319946289
+  },
+  {
+    "state": "Utah",
+    "year": 2076,
+    "wetbulb_C": 17.663734436035156
+  },
+  {
+    "state": "Vermont",
+    "year": 2076,
+    "wetbulb_C": 19.940963745117188
+  },
+  {
+    "state": "Virginia",
+    "year": 2076,
+    "wetbulb_C": 24.663291931152344
+  },
+  {
+    "state": "Washington",
+    "year": 2076,
+    "wetbulb_C": 19.077878952026367
+  },
+  {
+    "state": "West Virginia",
+    "year": 2076,
+    "wetbulb_C": 22.88412094116211
+  },
+  {
+    "state": "Wisconsin",
+    "year": 2076,
+    "wetbulb_C": 22.414535522460938
+  },
+  {
+    "state": "Wyoming",
+    "year": 2076,
+    "wetbulb_C": 19.820621490478516
+  },
+  {
+    "state": "Alabama",
+    "year": 2080,
+    "wetbulb_C": 26.633337020874023
+  },
+  {
+    "state": "Alaska",
+    "year": 2080,
+    "wetbulb_C": 14.563690185546875
+  },
+  {
+    "state": "Arizona",
+    "year": 2080,
+    "wetbulb_C": 23.90918731689453
+  },
+  {
+    "state": "Arkansas",
+    "year": 2080,
+    "wetbulb_C": 26.441444396972656
+  },
+  {
+    "state": "California",
+    "year": 2080,
+    "wetbulb_C": 21.837554931640625
+  },
+  {
+    "state": "Colorado",
+    "year": 2080,
+    "wetbulb_C": 21.44146156311035
+  },
+  {
+    "state": "Connecticut",
+    "year": 2080,
+    "wetbulb_C": 21.83094024658203
+  },
+  {
+    "state": "Delaware",
+    "year": 2080,
+    "wetbulb_C": 24.445755004882812
+  },
+  {
+    "state": "Florida",
+    "year": 2080,
+    "wetbulb_C": 26.9945068359375
+  },
+  {
+    "state": "Georgia",
+    "year": 2080,
+    "wetbulb_C": 25.61939239501953
+  },
+  {
+    "state": "Hawaii",
+    "year": 2080,
+    "wetbulb_C": 24.176658630371094
+  },
+  {
+    "state": "Idaho",
+    "year": 2080,
+    "wetbulb_C": 16.61748695373535
+  },
+  {
+    "state": "Illinois",
+    "year": 2080,
+    "wetbulb_C": 25.697195053100586
+  },
+  {
+    "state": "Indiana",
+    "year": 2080,
+    "wetbulb_C": 25.135324478149414
+  },
+  {
+    "state": "Iowa",
+    "year": 2080,
+    "wetbulb_C": 25.455297470092773
+  },
+  {
+    "state": "Kansas",
+    "year": 2080,
+    "wetbulb_C": 25.056907653808594
+  },
+  {
+    "state": "Kentucky",
+    "year": 2080,
+    "wetbulb_C": 26.13959312438965
+  },
+  {
+    "state": "Louisiana",
+    "year": 2080,
+    "wetbulb_C": 27.09076690673828
+  },
+  {
+    "state": "Maine",
+    "year": 2080,
+    "wetbulb_C": 20.53342056274414
+  },
+  {
+    "state": "Maryland",
+    "year": 2080,
+    "wetbulb_C": 24.333032608032227
+  },
+  {
+    "state": "Massachusetts",
+    "year": 2080,
+    "wetbulb_C": 21.076139450073242
+  },
+  {
+    "state": "Michigan",
+    "year": 2080,
+    "wetbulb_C": 24.16954231262207
+  },
+  {
+    "state": "Minnesota",
+    "year": 2080,
+    "wetbulb_C": 24.84978675842285
+  },
+  {
+    "state": "Mississippi",
+    "year": 2080,
+    "wetbulb_C": 26.263778686523438
+  },
+  {
+    "state": "Missouri",
+    "year": 2080,
+    "wetbulb_C": 26.087602615356445
+  },
+  {
+    "state": "Montana",
+    "year": 2080,
+    "wetbulb_C": 21.073917388916016
+  },
+  {
+    "state": "Nebraska",
+    "year": 2080,
+    "wetbulb_C": 24.771167755126953
+  },
+  {
+    "state": "Nevada",
+    "year": 2080,
+    "wetbulb_C": 20.334125518798828
+  },
+  {
+    "state": "New Hampshire",
+    "year": 2080,
+    "wetbulb_C": 19.983837127685547
+  },
+  {
+    "state": "New Jersey",
+    "year": 2080,
+    "wetbulb_C": 23.45838737487793
+  },
+  {
+    "state": "New Mexico",
+    "year": 2080,
+    "wetbulb_C": 22.71455955505371
+  },
+  {
+    "state": "New York",
+    "year": 2080,
+    "wetbulb_C": 21.341388702392578
+  },
+  {
+    "state": "North Carolina",
+    "year": 2080,
+    "wetbulb_C": 25.9456729888916
+  },
+  {
+    "state": "North Dakota",
+    "year": 2080,
+    "wetbulb_C": 23.503562927246094
+  },
+  {
+    "state": "Ohio",
+    "year": 2080,
+    "wetbulb_C": 24.41465187072754
+  },
+  {
+    "state": "Oklahoma",
+    "year": 2080,
+    "wetbulb_C": 25.37360382080078
+  },
+  {
+    "state": "Oregon",
+    "year": 2080,
+    "wetbulb_C": 17.53349494934082
+  },
+  {
+    "state": "Pennsylvania",
+    "year": 2080,
+    "wetbulb_C": 22.445133209228516
+  },
+  {
+    "state": "South Carolina",
+    "year": 2080,
+    "wetbulb_C": 26.315418243408203
+  },
+  {
+    "state": "South Dakota",
+    "year": 2080,
+    "wetbulb_C": 24.53653335571289
+  },
+  {
+    "state": "Tennessee",
+    "year": 2080,
+    "wetbulb_C": 26.439756393432617
+  },
+  {
+    "state": "Texas",
+    "year": 2080,
+    "wetbulb_C": 27.006736755371094
+  },
+  {
+    "state": "Utah",
+    "year": 2080,
+    "wetbulb_C": 18.1841983795166
+  },
+  {
+    "state": "Vermont",
+    "year": 2080,
+    "wetbulb_C": 19.891328811645508
+  },
+  {
+    "state": "Virginia",
+    "year": 2080,
+    "wetbulb_C": 24.839323043823242
+  },
+  {
+    "state": "Washington",
+    "year": 2080,
+    "wetbulb_C": 17.31980323791504
+  },
+  {
+    "state": "West Virginia",
+    "year": 2080,
+    "wetbulb_C": 23.8400936126709
+  },
+  {
+    "state": "Wisconsin",
+    "year": 2080,
+    "wetbulb_C": 25.01459312438965
+  },
+  {
+    "state": "Wyoming",
+    "year": 2080,
+    "wetbulb_C": 21.342496871948242
+  },
+  {
+    "state": "Alabama",
+    "year": 2084,
+    "wetbulb_C": 26.693347930908203
+  },
+  {
+    "state": "Alaska",
+    "year": 2084,
+    "wetbulb_C": 15.953685760498047
+  },
+  {
+    "state": "Arizona",
+    "year": 2084,
+    "wetbulb_C": 21.862974166870117
+  },
+  {
+    "state": "Arkansas",
+    "year": 2084,
+    "wetbulb_C": 26.38504409790039
+  },
+  {
+    "state": "California",
+    "year": 2084,
+    "wetbulb_C": 20.71724510192871
+  },
+  {
+    "state": "Colorado",
+    "year": 2084,
+    "wetbulb_C": 22.1229305267334
+  },
+  {
+    "state": "Connecticut",
+    "year": 2084,
+    "wetbulb_C": 21.54818344116211
+  },
+  {
+    "state": "Delaware",
+    "year": 2084,
+    "wetbulb_C": 23.822629928588867
+  },
+  {
+    "state": "Florida",
+    "year": 2084,
+    "wetbulb_C": 26.783077239990234
+  },
+  {
+    "state": "Georgia",
+    "year": 2084,
+    "wetbulb_C": 25.951045989990234
+  },
+  {
+    "state": "Hawaii",
+    "year": 2084,
+    "wetbulb_C": 25.817941665649414
+  },
+  {
+    "state": "Idaho",
+    "year": 2084,
+    "wetbulb_C": 19.854578018188477
+  },
+  {
+    "state": "Illinois",
+    "year": 2084,
+    "wetbulb_C": 25.04317855834961
+  },
+  {
+    "state": "Indiana",
+    "year": 2084,
+    "wetbulb_C": 24.159265518188477
+  },
+  {
+    "state": "Iowa",
+    "year": 2084,
+    "wetbulb_C": 24.98503875732422
+  },
+  {
+    "state": "Kansas",
+    "year": 2084,
+    "wetbulb_C": 26.35257339477539
+  },
+  {
+    "state": "Kentucky",
+    "year": 2084,
+    "wetbulb_C": 25.172836303710938
+  },
+  {
+    "state": "Louisiana",
+    "year": 2084,
+    "wetbulb_C": 26.99359703063965
+  },
+  {
+    "state": "Maine",
+    "year": 2084,
+    "wetbulb_C": 20.429100036621094
+  },
+  {
+    "state": "Maryland",
+    "year": 2084,
+    "wetbulb_C": 23.496450424194336
+  },
+  {
+    "state": "Massachusetts",
+    "year": 2084,
+    "wetbulb_C": 20.966665267944336
+  },
+  {
+    "state": "Michigan",
+    "year": 2084,
+    "wetbulb_C": 22.589435577392578
+  },
+  {
+    "state": "Minnesota",
+    "year": 2084,
+    "wetbulb_C": 23.812219619750977
+  },
+  {
+    "state": "Mississippi",
+    "year": 2084,
+    "wetbulb_C": 26.518362045288086
+  },
+  {
+    "state": "Missouri",
+    "year": 2084,
+    "wetbulb_C": 25.649370193481445
+  },
+  {
+    "state": "Montana",
+    "year": 2084,
+    "wetbulb_C": 20.717788696289062
+  },
+  {
+    "state": "Nebraska",
+    "year": 2084,
+    "wetbulb_C": 25.481245040893555
+  },
+  {
+    "state": "Nevada",
+    "year": 2084,
+    "wetbulb_C": 17.964143753051758
+  },
+  {
+    "state": "New Hampshire",
+    "year": 2084,
+    "wetbulb_C": 20.246278762817383
+  },
+  {
+    "state": "New Jersey",
+    "year": 2084,
+    "wetbulb_C": 22.91572380065918
+  },
+  {
+    "state": "New Mexico",
+    "year": 2084,
+    "wetbulb_C": 23.007095336914062
+  },
+  {
+    "state": "New York",
+    "year": 2084,
+    "wetbulb_C": 21.27924346923828
+  },
+  {
+    "state": "North Carolina",
+    "year": 2084,
+    "wetbulb_C": 25.456314086914062
+  },
+  {
+    "state": "North Dakota",
+    "year": 2084,
+    "wetbulb_C": 22.52875518798828
+  },
+  {
+    "state": "Ohio",
+    "year": 2084,
+    "wetbulb_C": 23.0268497467041
+  },
+  {
+    "state": "Oklahoma",
+    "year": 2084,
+    "wetbulb_C": 26.743398666381836
+  },
+  {
+    "state": "Oregon",
+    "year": 2084,
+    "wetbulb_C": 19.92143440246582
+  },
+  {
+    "state": "Pennsylvania",
+    "year": 2084,
+    "wetbulb_C": 21.844907760620117
+  },
+  {
+    "state": "South Carolina",
+    "year": 2084,
+    "wetbulb_C": 26.215269088745117
+  },
+  {
+    "state": "South Dakota",
+    "year": 2084,
+    "wetbulb_C": 24.65406608581543
+  },
+  {
+    "state": "Tennessee",
+    "year": 2084,
+    "wetbulb_C": 25.66488265991211
+  },
+  {
+    "state": "Texas",
+    "year": 2084,
+    "wetbulb_C": 27.156700134277344
+  },
+  {
+    "state": "Utah",
+    "year": 2084,
+    "wetbulb_C": 18.114112854003906
+  },
+  {
+    "state": "Vermont",
+    "year": 2084,
+    "wetbulb_C": 20.255578994750977
+  },
+  {
+    "state": "Virginia",
+    "year": 2084,
+    "wetbulb_C": 24.020957946777344
+  },
+  {
+    "state": "Washington",
+    "year": 2084,
+    "wetbulb_C": 20.968605041503906
+  },
+  {
+    "state": "West Virginia",
+    "year": 2084,
+    "wetbulb_C": 22.75216293334961
+  },
+  {
+    "state": "Wisconsin",
+    "year": 2084,
+    "wetbulb_C": 23.499431610107422
+  },
+  {
+    "state": "Wyoming",
+    "year": 2084,
+    "wetbulb_C": 20.501699447631836
+  },
+  {
+    "state": "Alabama",
+    "year": 2088,
+    "wetbulb_C": 26.546348571777344
+  },
+  {
+    "state": "Alaska",
+    "year": 2088,
+    "wetbulb_C": 15.698871612548828
+  },
+  {
+    "state": "Arizona",
+    "year": 2088,
+    "wetbulb_C": 23.527511596679688
+  },
+  {
+    "state": "Arkansas",
+    "year": 2088,
+    "wetbulb_C": 25.287866592407227
+  },
+  {
+    "state": "California",
+    "year": 2088,
+    "wetbulb_C": 21.90265655517578
+  },
+  {
+    "state": "Colorado",
+    "year": 2088,
+    "wetbulb_C": 20.776123046875
+  },
+  {
+    "state": "Connecticut",
+    "year": 2088,
+    "wetbulb_C": 21.526975631713867
+  },
+  {
+    "state": "Delaware",
+    "year": 2088,
+    "wetbulb_C": 24.790512084960938
+  },
+  {
+    "state": "Florida",
+    "year": 2088,
+    "wetbulb_C": 26.91025161743164
+  },
+  {
+    "state": "Georgia",
+    "year": 2088,
+    "wetbulb_C": 25.767763137817383
+  },
+  {
+    "state": "Hawaii",
+    "year": 2088,
+    "wetbulb_C": 25.95294952392578
+  },
+  {
+    "state": "Idaho",
+    "year": 2088,
+    "wetbulb_C": 18.725521087646484
+  },
+  {
+    "state": "Illinois",
+    "year": 2088,
+    "wetbulb_C": 23.72235679626465
+  },
+  {
+    "state": "Indiana",
+    "year": 2088,
+    "wetbulb_C": 23.307937622070312
+  },
+  {
+    "state": "Iowa",
+    "year": 2088,
+    "wetbulb_C": 22.468128204345703
+  },
+  {
+    "state": "Kansas",
+    "year": 2088,
+    "wetbulb_C": 24.2552547454834
+  },
+  {
+    "state": "Kentucky",
+    "year": 2088,
+    "wetbulb_C": 24.128856658935547
+  },
+  {
+    "state": "Louisiana",
+    "year": 2088,
+    "wetbulb_C": 26.975051879882812
+  },
+  {
+    "state": "Maine",
+    "year": 2088,
+    "wetbulb_C": 19.834354400634766
+  },
+  {
+    "state": "Maryland",
+    "year": 2088,
+    "wetbulb_C": 24.16390609741211
+  },
+  {
+    "state": "Massachusetts",
+    "year": 2088,
+    "wetbulb_C": 20.584400177001953
+  },
+  {
+    "state": "Michigan",
+    "year": 2088,
+    "wetbulb_C": 21.57448959350586
+  },
+  {
+    "state": "Minnesota",
+    "year": 2088,
+    "wetbulb_C": 21.544137954711914
+  },
+  {
+    "state": "Mississippi",
+    "year": 2088,
+    "wetbulb_C": 26.376436233520508
+  },
+  {
+    "state": "Missouri",
+    "year": 2088,
+    "wetbulb_C": 23.921703338623047
+  },
+  {
+    "state": "Montana",
+    "year": 2088,
+    "wetbulb_C": 20.14483642578125
+  },
+  {
+    "state": "Nebraska",
+    "year": 2088,
+    "wetbulb_C": 22.50355339050293
+  },
+  {
+    "state": "Nevada",
+    "year": 2088,
+    "wetbulb_C": 18.216583251953125
+  },
+  {
+    "state": "New Hampshire",
+    "year": 2088,
+    "wetbulb_C": 19.497215270996094
+  },
+  {
+    "state": "New Jersey",
+    "year": 2088,
+    "wetbulb_C": 23.74266815185547
+  },
+  {
+    "state": "New Mexico",
+    "year": 2088,
+    "wetbulb_C": 22.37318229675293
+  },
+  {
+    "state": "New York",
+    "year": 2088,
+    "wetbulb_C": 21.232070922851562
+  },
+  {
+    "state": "North Carolina",
+    "year": 2088,
+    "wetbulb_C": 25.60089874267578
+  },
+  {
+    "state": "North Dakota",
+    "year": 2088,
+    "wetbulb_C": 21.137853622436523
+  },
+  {
+    "state": "Ohio",
+    "year": 2088,
+    "wetbulb_C": 22.380870819091797
+  },
+  {
+    "state": "Oklahoma",
+    "year": 2088,
+    "wetbulb_C": 25.091697692871094
+  },
+  {
+    "state": "Oregon",
+    "year": 2088,
+    "wetbulb_C": 18.70318031311035
+  },
+  {
+    "state": "Pennsylvania",
+    "year": 2088,
+    "wetbulb_C": 22.199176788330078
+  },
+  {
+    "state": "South Carolina",
+    "year": 2088,
+    "wetbulb_C": 26.14002227783203
+  },
+  {
+    "state": "South Dakota",
+    "year": 2088,
+    "wetbulb_C": 21.603002548217773
+  },
+  {
+    "state": "Tennessee",
+    "year": 2088,
+    "wetbulb_C": 24.569900512695312
+  },
+  {
+    "state": "Texas",
+    "year": 2088,
+    "wetbulb_C": 27.413429260253906
+  },
+  {
+    "state": "Utah",
+    "year": 2088,
+    "wetbulb_C": 18.203149795532227
+  },
+  {
+    "state": "Vermont",
+    "year": 2088,
+    "wetbulb_C": 19.785694122314453
+  },
+  {
+    "state": "Virginia",
+    "year": 2088,
+    "wetbulb_C": 24.620872497558594
+  },
+  {
+    "state": "Washington",
+    "year": 2088,
+    "wetbulb_C": 19.30048179626465
+  },
+  {
+    "state": "West Virginia",
+    "year": 2088,
+    "wetbulb_C": 22.383037567138672
+  },
+  {
+    "state": "Wisconsin",
+    "year": 2088,
+    "wetbulb_C": 22.218570709228516
+  },
+  {
+    "state": "Wyoming",
+    "year": 2088,
+    "wetbulb_C": 20.482839584350586
+  },
+  {
+    "state": "Alabama",
+    "year": 2092,
+    "wetbulb_C": 27.228450775146484
+  },
+  {
+    "state": "Alaska",
+    "year": 2092,
+    "wetbulb_C": 15.240245819091797
+  },
+  {
+    "state": "Arizona",
+    "year": 2092,
+    "wetbulb_C": 24.662456512451172
+  },
+  {
+    "state": "Arkansas",
+    "year": 2092,
+    "wetbulb_C": 26.41551971435547
+  },
+  {
+    "state": "California",
+    "year": 2092,
+    "wetbulb_C": 22.945556640625
+  },
+  {
+    "state": "Colorado",
+    "year": 2092,
+    "wetbulb_C": 23.18836212158203
+  },
+  {
+    "state": "Connecticut",
+    "year": 2092,
+    "wetbulb_C": 21.968881607055664
+  },
+  {
+    "state": "Delaware",
+    "year": 2092,
+    "wetbulb_C": 24.026390075683594
+  },
+  {
+    "state": "Florida",
+    "year": 2092,
+    "wetbulb_C": 27.245479583740234
+  },
+  {
+    "state": "Georgia",
+    "year": 2092,
+    "wetbulb_C": 26.470502853393555
+  },
+  {
+    "state": "Hawaii",
+    "year": 2092,
+    "wetbulb_C": 24.378293991088867
+  },
+  {
+    "state": "Idaho",
+    "year": 2092,
+    "wetbulb_C": 18.99684715270996
+  },
+  {
+    "state": "Illinois",
+    "year": 2092,
+    "wetbulb_C": 25.04525375366211
+  },
+  {
+    "state": "Indiana",
+    "year": 2092,
+    "wetbulb_C": 23.984975814819336
+  },
+  {
+    "state": "Iowa",
+    "year": 2092,
+    "wetbulb_C": 23.71091079711914
+  },
+  {
+    "state": "Kansas",
+    "year": 2092,
+    "wetbulb_C": 25.30889892578125
+  },
+  {
+    "state": "Kentucky",
+    "year": 2092,
+    "wetbulb_C": 25.522666931152344
+  },
+  {
+    "state": "Louisiana",
+    "year": 2092,
+    "wetbulb_C": 27.554317474365234
+  },
+  {
+    "state": "Maine",
+    "year": 2092,
+    "wetbulb_C": 21.063989639282227
+  },
+  {
+    "state": "Maryland",
+    "year": 2092,
+    "wetbulb_C": 23.798341751098633
+  },
+  {
+    "state": "Massachusetts",
+    "year": 2092,
+    "wetbulb_C": 21.098289489746094
+  },
+  {
+    "state": "Michigan",
+    "year": 2092,
+    "wetbulb_C": 21.924175262451172
+  },
+  {
+    "state": "Minnesota",
+    "year": 2092,
+    "wetbulb_C": 22.675251007080078
+  },
+  {
+    "state": "Mississippi",
+    "year": 2092,
+    "wetbulb_C": 26.94286346435547
+  },
+  {
+    "state": "Missouri",
+    "year": 2092,
+    "wetbulb_C": 25.422719955444336
+  },
+  {
+    "state": "Montana",
+    "year": 2092,
+    "wetbulb_C": 21.245548248291016
+  },
+  {
+    "state": "Nebraska",
+    "year": 2092,
+    "wetbulb_C": 24.635395050048828
+  },
+  {
+    "state": "Nevada",
+    "year": 2092,
+    "wetbulb_C": 20.32932472229004
+  },
+  {
+    "state": "New Hampshire",
+    "year": 2092,
+    "wetbulb_C": 20.291776657104492
+  },
+  {
+    "state": "New Jersey",
+    "year": 2092,
+    "wetbulb_C": 23.232337951660156
+  },
+  {
+    "state": "New Mexico",
+    "year": 2092,
+    "wetbulb_C": 22.509950637817383
+  },
+  {
+    "state": "New York",
+    "year": 2092,
+    "wetbulb_C": 21.14022445678711
+  },
+  {
+    "state": "North Carolina",
+    "year": 2092,
+    "wetbulb_C": 26.378238677978516
+  },
+  {
+    "state": "North Dakota",
+    "year": 2092,
+    "wetbulb_C": 22.168989181518555
+  },
+  {
+    "state": "Ohio",
+    "year": 2092,
+    "wetbulb_C": 23.043611526489258
+  },
+  {
+    "state": "Oklahoma",
+    "year": 2092,
+    "wetbulb_C": 25.872421264648438
+  },
+  {
+    "state": "Oregon",
+    "year": 2092,
+    "wetbulb_C": 18.52642822265625
+  },
+  {
+    "state": "Pennsylvania",
+    "year": 2092,
+    "wetbulb_C": 21.74957275390625
+  },
+  {
+    "state": "South Carolina",
+    "year": 2092,
+    "wetbulb_C": 26.97784996032715
+  },
+  {
+    "state": "South Dakota",
+    "year": 2092,
+    "wetbulb_C": 24.072349548339844
+  },
+  {
+    "state": "Tennessee",
+    "year": 2092,
+    "wetbulb_C": 25.9706974029541
+  },
+  {
+    "state": "Texas",
+    "year": 2092,
+    "wetbulb_C": 27.131263732910156
+  },
+  {
+    "state": "Utah",
+    "year": 2092,
+    "wetbulb_C": 18.386667251586914
+  },
+  {
+    "state": "Vermont",
+    "year": 2092,
+    "wetbulb_C": 20.01133155822754
+  },
+  {
+    "state": "Virginia",
+    "year": 2092,
+    "wetbulb_C": 24.585201263427734
+  },
+  {
+    "state": "Washington",
+    "year": 2092,
+    "wetbulb_C": 19.502315521240234
+  },
+  {
+    "state": "West Virginia",
+    "year": 2092,
+    "wetbulb_C": 23.3311710357666
+  },
+  {
+    "state": "Wisconsin",
+    "year": 2092,
+    "wetbulb_C": 22.589797973632812
+  },
+  {
+    "state": "Wyoming",
+    "year": 2092,
+    "wetbulb_C": 21.719446182250977
+  },
+  {
+    "state": "Alabama",
+    "year": 2096,
+    "wetbulb_C": 27.225133895874023
+  },
+  {
+    "state": "Alaska",
+    "year": 2096,
+    "wetbulb_C": 15.608207702636719
+  },
+  {
+    "state": "Arizona",
+    "year": 2096,
+    "wetbulb_C": 24.69901466369629
+  },
+  {
+    "state": "Arkansas",
+    "year": 2096,
+    "wetbulb_C": 25.965911865234375
+  },
+  {
+    "state": "California",
+    "year": 2096,
+    "wetbulb_C": 21.9213924407959
+  },
+  {
+    "state": "Colorado",
+    "year": 2096,
+    "wetbulb_C": 21.59572982788086
+  },
+  {
+    "state": "Connecticut",
+    "year": 2096,
+    "wetbulb_C": 21.442115783691406
+  },
+  {
+    "state": "Delaware",
+    "year": 2096,
+    "wetbulb_C": 23.6864013671875
+  },
+  {
+    "state": "Florida",
+    "year": 2096,
+    "wetbulb_C": 27.253602981567383
+  },
+  {
+    "state": "Georgia",
+    "year": 2096,
+    "wetbulb_C": 26.290666580200195
+  },
+  {
+    "state": "Hawaii",
+    "year": 2096,
+    "wetbulb_C": 25.853248596191406
+  },
+  {
+    "state": "Idaho",
+    "year": 2096,
+    "wetbulb_C": 18.59126091003418
+  },
+  {
+    "state": "Illinois",
+    "year": 2096,
+    "wetbulb_C": 24.9353084564209
+  },
+  {
+    "state": "Indiana",
+    "year": 2096,
+    "wetbulb_C": 24.07998275756836
+  },
+  {
+    "state": "Iowa",
+    "year": 2096,
+    "wetbulb_C": 23.4132080078125
+  },
+  {
+    "state": "Kansas",
+    "year": 2096,
+    "wetbulb_C": 24.183156967163086
+  },
+  {
+    "state": "Kentucky",
+    "year": 2096,
+    "wetbulb_C": 25.169443130493164
+  },
+  {
+    "state": "Louisiana",
+    "year": 2096,
+    "wetbulb_C": 27.36214828491211
+  },
+  {
+    "state": "Maine",
+    "year": 2096,
+    "wetbulb_C": 20.19687843322754
+  },
+  {
+    "state": "Maryland",
+    "year": 2096,
+    "wetbulb_C": 23.232778549194336
+  },
+  {
+    "state": "Massachusetts",
+    "year": 2096,
+    "wetbulb_C": 20.6570987701416
+  },
+  {
+    "state": "Michigan",
+    "year": 2096,
+    "wetbulb_C": 21.161611557006836
+  },
+  {
+    "state": "Minnesota",
+    "year": 2096,
+    "wetbulb_C": 22.046846389770508
+  },
+  {
+    "state": "Mississippi",
+    "year": 2096,
+    "wetbulb_C": 26.784229278564453
+  },
+  {
+    "state": "Missouri",
+    "year": 2096,
+    "wetbulb_C": 25.26453399658203
+  },
+  {
+    "state": "Montana",
+    "year": 2096,
+    "wetbulb_C": 19.962034225463867
+  },
+  {
+    "state": "Nebraska",
+    "year": 2096,
+    "wetbulb_C": 23.701993942260742
+  },
+  {
+    "state": "Nevada",
+    "year": 2096,
+    "wetbulb_C": 19.555198669433594
+  },
+  {
+    "state": "New Hampshire",
+    "year": 2096,
+    "wetbulb_C": 19.65846824645996
+  },
+  {
+    "state": "New Jersey",
+    "year": 2096,
+    "wetbulb_C": 22.950454711914062
+  },
+  {
+    "state": "New Mexico",
+    "year": 2096,
+    "wetbulb_C": 23.24220085144043
+  },
+  {
+    "state": "New York",
+    "year": 2096,
+    "wetbulb_C": 20.76905632019043
+  },
+  {
+    "state": "North Carolina",
+    "year": 2096,
+    "wetbulb_C": 26.32828140258789
+  },
+  {
+    "state": "North Dakota",
+    "year": 2096,
+    "wetbulb_C": 21.125226974487305
+  },
+  {
+    "state": "Ohio",
+    "year": 2096,
+    "wetbulb_C": 22.19540786743164
+  },
+  {
+    "state": "Oklahoma",
+    "year": 2096,
+    "wetbulb_C": 24.89482307434082
+  },
+  {
+    "state": "Oregon",
+    "year": 2096,
+    "wetbulb_C": 19.205427169799805
+  },
+  {
+    "state": "Pennsylvania",
+    "year": 2096,
+    "wetbulb_C": 21.321691513061523
+  },
+  {
+    "state": "South Carolina",
+    "year": 2096,
+    "wetbulb_C": 26.933671951293945
+  },
+  {
+    "state": "South Dakota",
+    "year": 2096,
+    "wetbulb_C": 22.96844482421875
+  },
+  {
+    "state": "Tennessee",
+    "year": 2096,
+    "wetbulb_C": 25.67212677001953
+  },
+  {
+    "state": "Texas",
+    "year": 2096,
+    "wetbulb_C": 27.22858238220215
+  },
+  {
+    "state": "Utah",
+    "year": 2096,
+    "wetbulb_C": 18.80147361755371
+  },
+  {
+    "state": "Vermont",
+    "year": 2096,
+    "wetbulb_C": 19.463531494140625
+  },
+  {
+    "state": "Virginia",
+    "year": 2096,
+    "wetbulb_C": 23.922998428344727
+  },
+  {
+    "state": "Washington",
+    "year": 2096,
+    "wetbulb_C": 19.458452224731445
+  },
+  {
+    "state": "West Virginia",
+    "year": 2096,
+    "wetbulb_C": 22.671934127807617
+  },
+  {
+    "state": "Wisconsin",
+    "year": 2096,
+    "wetbulb_C": 21.767704010009766
+  },
+  {
+    "state": "Wyoming",
+    "year": 2096,
+    "wetbulb_C": 19.911670684814453
+  },
+  {
+    "state": "Alabama",
+    "year": 2100,
+    "wetbulb_C": 27.352962493896484
+  },
+  {
+    "state": "Alaska",
+    "year": 2100,
+    "wetbulb_C": 15.545677185058594
+  },
+  {
+    "state": "Arizona",
+    "year": 2100,
+    "wetbulb_C": 23.943204879760742
+  },
+  {
+    "state": "Arkansas",
+    "year": 2100,
+    "wetbulb_C": 25.244342803955078
+  },
+  {
+    "state": "California",
+    "year": 2100,
+    "wetbulb_C": 22.004779815673828
+  },
+  {
+    "state": "Colorado",
+    "year": 2100,
+    "wetbulb_C": 21.86269760131836
+  },
+  {
+    "state": "Connecticut",
+    "year": 2100,
+    "wetbulb_C": 22.33321189880371
+  },
+  {
+    "state": "Delaware",
+    "year": 2100,
+    "wetbulb_C": 24.714954376220703
+  },
+  {
+    "state": "Florida",
+    "year": 2100,
+    "wetbulb_C": 27.468429565429688
+  },
+  {
+    "state": "Georgia",
+    "year": 2100,
+    "wetbulb_C": 26.864486694335938
+  },
+  {
+    "state": "Hawaii",
+    "year": 2100,
+    "wetbulb_C": 25.610580444335938
+  },
+  {
+    "state": "Idaho",
+    "year": 2100,
+    "wetbulb_C": 18.777830123901367
+  },
+  {
+    "state": "Illinois",
+    "year": 2100,
+    "wetbulb_C": 24.748815536499023
+  },
+  {
+    "state": "Indiana",
+    "year": 2100,
+    "wetbulb_C": 24.41147232055664
+  },
+  {
+    "state": "Iowa",
+    "year": 2100,
+    "wetbulb_C": 24.384544372558594
+  },
+  {
+    "state": "Kansas",
+    "year": 2100,
+    "wetbulb_C": 23.867183685302734
+  },
+  {
+    "state": "Kentucky",
+    "year": 2100,
+    "wetbulb_C": 24.864521026611328
+  },
+  {
+    "state": "Louisiana",
+    "year": 2100,
+    "wetbulb_C": 27.475749969482422
+  },
+  {
+    "state": "Maine",
+    "year": 2100,
+    "wetbulb_C": 21.02364158630371
+  },
+  {
+    "state": "Maryland",
+    "year": 2100,
+    "wetbulb_C": 24.401784896850586
+  },
+  {
+    "state": "Massachusetts",
+    "year": 2100,
+    "wetbulb_C": 21.57781410217285
+  },
+  {
+    "state": "Michigan",
+    "year": 2100,
+    "wetbulb_C": 23.459543228149414
+  },
+  {
+    "state": "Minnesota",
+    "year": 2100,
+    "wetbulb_C": 22.93857765197754
+  },
+  {
+    "state": "Mississippi",
+    "year": 2100,
+    "wetbulb_C": 26.916898727416992
+  },
+  {
+    "state": "Missouri",
+    "year": 2100,
+    "wetbulb_C": 24.591840744018555
+  },
+  {
+    "state": "Montana",
+    "year": 2100,
+    "wetbulb_C": 20.31540870666504
+  },
+  {
+    "state": "Nebraska",
+    "year": 2100,
+    "wetbulb_C": 23.252580642700195
+  },
+  {
+    "state": "Nevada",
+    "year": 2100,
+    "wetbulb_C": 18.96240997314453
+  },
+  {
+    "state": "New Hampshire",
+    "year": 2100,
+    "wetbulb_C": 20.615154266357422
+  },
+  {
+    "state": "New Jersey",
+    "year": 2100,
+    "wetbulb_C": 23.84724998474121
+  },
+  {
+    "state": "New Mexico",
+    "year": 2100,
+    "wetbulb_C": 23.63182258605957
+  },
+  {
+    "state": "New York",
+    "year": 2100,
+    "wetbulb_C": 21.84164047241211
+  },
+  {
+    "state": "North Carolina",
+    "year": 2100,
+    "wetbulb_C": 26.230316162109375
+  },
+  {
+    "state": "North Dakota",
+    "year": 2100,
+    "wetbulb_C": 21.74346351623535
+  },
+  {
+    "state": "Ohio",
+    "year": 2100,
+    "wetbulb_C": 23.90420913696289
+  },
+  {
+    "state": "Oklahoma",
+    "year": 2100,
+    "wetbulb_C": 25.11072540283203
+  },
+  {
+    "state": "Oregon",
+    "year": 2100,
+    "wetbulb_C": 19.44257354736328
+  },
+  {
+    "state": "Pennsylvania",
+    "year": 2100,
+    "wetbulb_C": 22.481855392456055
+  },
+  {
+    "state": "South Carolina",
+    "year": 2100,
+    "wetbulb_C": 26.976877212524414
+  },
+  {
+    "state": "South Dakota",
+    "year": 2100,
+    "wetbulb_C": 22.659854888916016
+  },
+  {
+    "state": "Tennessee",
+    "year": 2100,
+    "wetbulb_C": 25.36884880065918
+  },
+  {
+    "state": "Texas",
+    "year": 2100,
+    "wetbulb_C": 27.073867797851562
+  },
+  {
+    "state": "Utah",
+    "year": 2100,
+    "wetbulb_C": 18.063587188720703
+  },
+  {
+    "state": "Vermont",
+    "year": 2100,
+    "wetbulb_C": 20.633708953857422
+  },
+  {
+    "state": "Virginia",
+    "year": 2100,
+    "wetbulb_C": 25.009883880615234
+  },
+  {
+    "state": "Washington",
+    "year": 2100,
+    "wetbulb_C": 20.120201110839844
+  },
+  {
+    "state": "West Virginia",
+    "year": 2100,
+    "wetbulb_C": 23.604087829589844
+  },
+  {
+    "state": "Wisconsin",
+    "year": 2100,
+    "wetbulb_C": 24.042734146118164
+  },
+  {
+    "state": "Wyoming",
+    "year": 2100,
+    "wetbulb_C": 20.21546173095703
+  }
+]
