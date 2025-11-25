@@ -1,0 +1,2862 @@
+[
+  {
+    "county": "Alameda",
+    "year": 2016,
+    "wetbulb_C": 16.916351318359375
+  },
+  {
+    "county": "Amador",
+    "year": 2016,
+    "wetbulb_C": 15.329532623291016
+  },
+  {
+    "county": "Glenn",
+    "year": 2016,
+    "wetbulb_C": 17.007814407348633
+  },
+  {
+    "county": "Humboldt",
+    "year": 2016,
+    "wetbulb_C": 14.950080871582031
+  },
+  {
+    "county": "Inyo",
+    "year": 2016,
+    "wetbulb_C": 15.485769271850586
+  },
+  {
+    "county": "Kern",
+    "year": 2016,
+    "wetbulb_C": 16.661296844482422
+  },
+  {
+    "county": "Lassen",
+    "year": 2016,
+    "wetbulb_C": 13.267192840576172
+  },
+  {
+    "county": "Los Angeles",
+    "year": 2016,
+    "wetbulb_C": 17.347543716430664
+  },
+  {
+    "county": "Madera",
+    "year": 2016,
+    "wetbulb_C": 13.31454086303711
+  },
+  {
+    "county": "Mendocino",
+    "year": 2016,
+    "wetbulb_C": 16.81147575378418
+  },
+  {
+    "county": "Merced",
+    "year": 2016,
+    "wetbulb_C": 16.772441864013672
+  },
+  {
+    "county": "Modoc",
+    "year": 2016,
+    "wetbulb_C": 13.22134017944336
+  },
+  {
+    "county": "Mono",
+    "year": 2016,
+    "wetbulb_C": 12.659669876098633
+  },
+  {
+    "county": "Monterey",
+    "year": 2016,
+    "wetbulb_C": 16.544116973876953
+  },
+  {
+    "county": "Nevada",
+    "year": 2016,
+    "wetbulb_C": 13.929359436035156
+  },
+  {
+    "county": "Riverside",
+    "year": 2016,
+    "wetbulb_C": 20.494260787963867
+  },
+  {
+    "county": "San Benito",
+    "year": 2016,
+    "wetbulb_C": 17.534801483154297
+  },
+  {
+    "county": "San Bernardino",
+    "year": 2016,
+    "wetbulb_C": 18.77009391784668
+  },
+  {
+    "county": "San Luis Obispo",
+    "year": 2016,
+    "wetbulb_C": 17.639219284057617
+  },
+  {
+    "county": "Shasta",
+    "year": 2016,
+    "wetbulb_C": 15.637710571289062
+  },
+  {
+    "county": "Siskiyou",
+    "year": 2016,
+    "wetbulb_C": 15.086584091186523
+  },
+  {
+    "county": "Solano",
+    "year": 2016,
+    "wetbulb_C": 17.841737747192383
+  },
+  {
+    "county": "Sonoma",
+    "year": 2016,
+    "wetbulb_C": 16.461977005004883
+  },
+  {
+    "county": "Trinity",
+    "year": 2016,
+    "wetbulb_C": 16.17479133605957
+  },
+  {
+    "county": "Tulare",
+    "year": 2016,
+    "wetbulb_C": 15.921895980834961
+  },
+  {
+    "county": "Ventura",
+    "year": 2016,
+    "wetbulb_C": 17.8962459564209
+  },
+  {
+    "county": "Alameda",
+    "year": 2020,
+    "wetbulb_C": 17.55316925048828
+  },
+  {
+    "county": "Amador",
+    "year": 2020,
+    "wetbulb_C": 16.07840347290039
+  },
+  {
+    "county": "Glenn",
+    "year": 2020,
+    "wetbulb_C": 17.71932601928711
+  },
+  {
+    "county": "Humboldt",
+    "year": 2020,
+    "wetbulb_C": 15.590948104858398
+  },
+  {
+    "county": "Inyo",
+    "year": 2020,
+    "wetbulb_C": 15.804075241088867
+  },
+  {
+    "county": "Kern",
+    "year": 2020,
+    "wetbulb_C": 17.153053283691406
+  },
+  {
+    "county": "Lassen",
+    "year": 2020,
+    "wetbulb_C": 13.710769653320312
+  },
+  {
+    "county": "Los Angeles",
+    "year": 2020,
+    "wetbulb_C": 17.592967987060547
+  },
+  {
+    "county": "Madera",
+    "year": 2020,
+    "wetbulb_C": 13.663005828857422
+  },
+  {
+    "county": "Mendocino",
+    "year": 2020,
+    "wetbulb_C": 17.430749893188477
+  },
+  {
+    "county": "Merced",
+    "year": 2020,
+    "wetbulb_C": 17.495635986328125
+  },
+  {
+    "county": "Modoc",
+    "year": 2020,
+    "wetbulb_C": 13.374452590942383
+  },
+  {
+    "county": "Mono",
+    "year": 2020,
+    "wetbulb_C": 12.82996940612793
+  },
+  {
+    "county": "Monterey",
+    "year": 2020,
+    "wetbulb_C": 17.115924835205078
+  },
+  {
+    "county": "Nevada",
+    "year": 2020,
+    "wetbulb_C": 14.604190826416016
+  },
+  {
+    "county": "Riverside",
+    "year": 2020,
+    "wetbulb_C": 18.743249893188477
+  },
+  {
+    "county": "San Benito",
+    "year": 2020,
+    "wetbulb_C": 18.06697654724121
+  },
+  {
+    "county": "San Bernardino",
+    "year": 2020,
+    "wetbulb_C": 17.635971069335938
+  },
+  {
+    "county": "San Luis Obispo",
+    "year": 2020,
+    "wetbulb_C": 18.12575340270996
+  },
+  {
+    "county": "Shasta",
+    "year": 2020,
+    "wetbulb_C": 16.042800903320312
+  },
+  {
+    "county": "Siskiyou",
+    "year": 2020,
+    "wetbulb_C": 15.767091751098633
+  },
+  {
+    "county": "Solano",
+    "year": 2020,
+    "wetbulb_C": 18.505178451538086
+  },
+  {
+    "county": "Sonoma",
+    "year": 2020,
+    "wetbulb_C": 17.158416748046875
+  },
+  {
+    "county": "Trinity",
+    "year": 2020,
+    "wetbulb_C": 16.705190658569336
+  },
+  {
+    "county": "Tulare",
+    "year": 2020,
+    "wetbulb_C": 16.452852249145508
+  },
+  {
+    "county": "Ventura",
+    "year": 2020,
+    "wetbulb_C": 18.298290252685547
+  },
+  {
+    "county": "Alameda",
+    "year": 2024,
+    "wetbulb_C": 17.801624298095703
+  },
+  {
+    "county": "Amador",
+    "year": 2024,
+    "wetbulb_C": 16.284086227416992
+  },
+  {
+    "county": "Glenn",
+    "year": 2024,
+    "wetbulb_C": 17.602523803710938
+  },
+  {
+    "county": "Humboldt",
+    "year": 2024,
+    "wetbulb_C": 16.314407348632812
+  },
+  {
+    "county": "Inyo",
+    "year": 2024,
+    "wetbulb_C": 15.169397354125977
+  },
+  {
+    "county": "Kern",
+    "year": 2024,
+    "wetbulb_C": 17.108779907226562
+  },
+  {
+    "county": "Lassen",
+    "year": 2024,
+    "wetbulb_C": 13.784706115722656
+  },
+  {
+    "county": "Los Angeles",
+    "year": 2024,
+    "wetbulb_C": 17.610681533813477
+  },
+  {
+    "county": "Madera",
+    "year": 2024,
+    "wetbulb_C": 13.476104736328125
+  },
+  {
+    "county": "Mendocino",
+    "year": 2024,
+    "wetbulb_C": 17.0582275390625
+  },
+  {
+    "county": "Merced",
+    "year": 2024,
+    "wetbulb_C": 17.582046508789062
+  },
+  {
+    "county": "Modoc",
+    "year": 2024,
+    "wetbulb_C": 13.479007720947266
+  },
+  {
+    "county": "Mono",
+    "year": 2024,
+    "wetbulb_C": 12.632795333862305
+  },
+  {
+    "county": "Monterey",
+    "year": 2024,
+    "wetbulb_C": 17.38587760925293
+  },
+  {
+    "county": "Nevada",
+    "year": 2024,
+    "wetbulb_C": 14.957035064697266
+  },
+  {
+    "county": "Riverside",
+    "year": 2024,
+    "wetbulb_C": 18.87552261352539
+  },
+  {
+    "county": "San Benito",
+    "year": 2024,
+    "wetbulb_C": 18.099584579467773
+  },
+  {
+    "county": "San Bernardino",
+    "year": 2024,
+    "wetbulb_C": 17.774864196777344
+  },
+  {
+    "county": "San Luis Obispo",
+    "year": 2024,
+    "wetbulb_C": 18.296096801757812
+  },
+  {
+    "county": "Shasta",
+    "year": 2024,
+    "wetbulb_C": 15.870904922485352
+  },
+  {
+    "county": "Siskiyou",
+    "year": 2024,
+    "wetbulb_C": 15.656827926635742
+  },
+  {
+    "county": "Solano",
+    "year": 2024,
+    "wetbulb_C": 18.59418296813965
+  },
+  {
+    "county": "Sonoma",
+    "year": 2024,
+    "wetbulb_C": 17.099811553955078
+  },
+  {
+    "county": "Trinity",
+    "year": 2024,
+    "wetbulb_C": 16.345386505126953
+  },
+  {
+    "county": "Tulare",
+    "year": 2024,
+    "wetbulb_C": 16.17768669128418
+  },
+  {
+    "county": "Ventura",
+    "year": 2024,
+    "wetbulb_C": 18.627439498901367
+  },
+  {
+    "county": "Alameda",
+    "year": 2028,
+    "wetbulb_C": 18.718984603881836
+  },
+  {
+    "county": "Amador",
+    "year": 2028,
+    "wetbulb_C": 17.395721435546875
+  },
+  {
+    "county": "Glenn",
+    "year": 2028,
+    "wetbulb_C": 18.707382202148438
+  },
+  {
+    "county": "Humboldt",
+    "year": 2028,
+    "wetbulb_C": 16.735599517822266
+  },
+  {
+    "county": "Inyo",
+    "year": 2028,
+    "wetbulb_C": 17.529016494750977
+  },
+  {
+    "county": "Kern",
+    "year": 2028,
+    "wetbulb_C": 19.04509162902832
+  },
+  {
+    "county": "Lassen",
+    "year": 2028,
+    "wetbulb_C": 15.172746658325195
+  },
+  {
+    "county": "Los Angeles",
+    "year": 2028,
+    "wetbulb_C": 19.638273239135742
+  },
+  {
+    "county": "Madera",
+    "year": 2028,
+    "wetbulb_C": 15.015121459960938
+  },
+  {
+    "county": "Mendocino",
+    "year": 2028,
+    "wetbulb_C": 18.34191131591797
+  },
+  {
+    "county": "Merced",
+    "year": 2028,
+    "wetbulb_C": 18.738309860229492
+  },
+  {
+    "county": "Modoc",
+    "year": 2028,
+    "wetbulb_C": 14.876468658447266
+  },
+  {
+    "county": "Mono",
+    "year": 2028,
+    "wetbulb_C": 14.245174407958984
+  },
+  {
+    "county": "Monterey",
+    "year": 2028,
+    "wetbulb_C": 18.596683502197266
+  },
+  {
+    "county": "Nevada",
+    "year": 2028,
+    "wetbulb_C": 16.1462459564209
+  },
+  {
+    "county": "Riverside",
+    "year": 2028,
+    "wetbulb_C": 21.450197219848633
+  },
+  {
+    "county": "San Benito",
+    "year": 2028,
+    "wetbulb_C": 19.47100067138672
+  },
+  {
+    "county": "San Bernardino",
+    "year": 2028,
+    "wetbulb_C": 20.680810928344727
+  },
+  {
+    "county": "San Luis Obispo",
+    "year": 2028,
+    "wetbulb_C": 19.577728271484375
+  },
+  {
+    "county": "Shasta",
+    "year": 2028,
+    "wetbulb_C": 17.2080020904541
+  },
+  {
+    "county": "Siskiyou",
+    "year": 2028,
+    "wetbulb_C": 17.246952056884766
+  },
+  {
+    "county": "Solano",
+    "year": 2028,
+    "wetbulb_C": 19.381193161010742
+  },
+  {
+    "county": "Sonoma",
+    "year": 2028,
+    "wetbulb_C": 18.136537551879883
+  },
+  {
+    "county": "Trinity",
+    "year": 2028,
+    "wetbulb_C": 17.83089256286621
+  },
+  {
+    "county": "Tulare",
+    "year": 2028,
+    "wetbulb_C": 17.864370346069336
+  },
+  {
+    "county": "Ventura",
+    "year": 2028,
+    "wetbulb_C": 20.06529998779297
+  },
+  {
+    "county": "Alameda",
+    "year": 2032,
+    "wetbulb_C": 18.320024490356445
+  },
+  {
+    "county": "Amador",
+    "year": 2032,
+    "wetbulb_C": 16.49298095703125
+  },
+  {
+    "county": "Glenn",
+    "year": 2032,
+    "wetbulb_C": 18.208576202392578
+  },
+  {
+    "county": "Humboldt",
+    "year": 2032,
+    "wetbulb_C": 15.959049224853516
+  },
+  {
+    "county": "Inyo",
+    "year": 2032,
+    "wetbulb_C": 14.969858169555664
+  },
+  {
+    "county": "Kern",
+    "year": 2032,
+    "wetbulb_C": 17.760211944580078
+  },
+  {
+    "county": "Lassen",
+    "year": 2032,
+    "wetbulb_C": 13.995681762695312
+  },
+  {
+    "county": "Los Angeles",
+    "year": 2032,
+    "wetbulb_C": 18.34222984313965
+  },
+  {
+    "county": "Madera",
+    "year": 2032,
+    "wetbulb_C": 13.694921493530273
+  },
+  {
+    "county": "Mendocino",
+    "year": 2032,
+    "wetbulb_C": 17.35467529296875
+  },
+  {
+    "county": "Merced",
+    "year": 2032,
+    "wetbulb_C": 18.079774856567383
+  },
+  {
+    "county": "Modoc",
+    "year": 2032,
+    "wetbulb_C": 13.3714599609375
+  },
+  {
+    "county": "Mono",
+    "year": 2032,
+    "wetbulb_C": 12.45689582824707
+  },
+  {
+    "county": "Monterey",
+    "year": 2032,
+    "wetbulb_C": 17.858535766601562
+  },
+  {
+    "county": "Nevada",
+    "year": 2032,
+    "wetbulb_C": 15.03873062133789
+  },
+  {
+    "county": "Riverside",
+    "year": 2032,
+    "wetbulb_C": 20.065353393554688
+  },
+  {
+    "county": "San Benito",
+    "year": 2032,
+    "wetbulb_C": 18.845273971557617
+  },
+  {
+    "county": "San Bernardino",
+    "year": 2032,
+    "wetbulb_C": 18.305265426635742
+  },
+  {
+    "county": "San Luis Obispo",
+    "year": 2032,
+    "wetbulb_C": 19.076913833618164
+  },
+  {
+    "county": "Shasta",
+    "year": 2032,
+    "wetbulb_C": 16.116558074951172
+  },
+  {
+    "county": "Siskiyou",
+    "year": 2032,
+    "wetbulb_C": 15.710535049438477
+  },
+  {
+    "county": "Solano",
+    "year": 2032,
+    "wetbulb_C": 19.115013122558594
+  },
+  {
+    "county": "Sonoma",
+    "year": 2032,
+    "wetbulb_C": 17.541332244873047
+  },
+  {
+    "county": "Trinity",
+    "year": 2032,
+    "wetbulb_C": 16.426044464111328
+  },
+  {
+    "county": "Tulare",
+    "year": 2032,
+    "wetbulb_C": 16.677696228027344
+  },
+  {
+    "county": "Ventura",
+    "year": 2032,
+    "wetbulb_C": 19.388370513916016
+  },
+  {
+    "county": "Alameda",
+    "year": 2036,
+    "wetbulb_C": 18.751461029052734
+  },
+  {
+    "county": "Amador",
+    "year": 2036,
+    "wetbulb_C": 16.86703872680664
+  },
+  {
+    "county": "Glenn",
+    "year": 2036,
+    "wetbulb_C": 18.363344192504883
+  },
+  {
+    "county": "Humboldt",
+    "year": 2036,
+    "wetbulb_C": 16.37297821044922
+  },
+  {
+    "county": "Inyo",
+    "year": 2036,
+    "wetbulb_C": 18.106216430664062
+  },
+  {
+    "county": "Kern",
+    "year": 2036,
+    "wetbulb_C": 19.174232482910156
+  },
+  {
+    "county": "Lassen",
+    "year": 2036,
+    "wetbulb_C": 14.040925979614258
+  },
+  {
+    "county": "Los Angeles",
+    "year": 2036,
+    "wetbulb_C": 19.873395919799805
+  },
+  {
+    "county": "Madera",
+    "year": 2036,
+    "wetbulb_C": 15.11738395690918
+  },
+  {
+    "county": "Mendocino",
+    "year": 2036,
+    "wetbulb_C": 17.801952362060547
+  },
+  {
+    "county": "Merced",
+    "year": 2036,
+    "wetbulb_C": 18.638668060302734
+  },
+  {
+    "county": "Modoc",
+    "year": 2036,
+    "wetbulb_C": 13.573331832885742
+  },
+  {
+    "county": "Mono",
+    "year": 2036,
+    "wetbulb_C": 14.245723724365234
+  },
+  {
+    "county": "Monterey",
+    "year": 2036,
+    "wetbulb_C": 18.560070037841797
+  },
+  {
+    "county": "Nevada",
+    "year": 2036,
+    "wetbulb_C": 15.326940536499023
+  },
+  {
+    "county": "Riverside",
+    "year": 2036,
+    "wetbulb_C": 22.105993270874023
+  },
+  {
+    "county": "San Benito",
+    "year": 2036,
+    "wetbulb_C": 19.52053451538086
+  },
+  {
+    "county": "San Bernardino",
+    "year": 2036,
+    "wetbulb_C": 21.24140739440918
+  },
+  {
+    "county": "San Luis Obispo",
+    "year": 2036,
+    "wetbulb_C": 19.895286560058594
+  },
+  {
+    "county": "Shasta",
+    "year": 2036,
+    "wetbulb_C": 16.3209171295166
+  },
+  {
+    "county": "Siskiyou",
+    "year": 2036,
+    "wetbulb_C": 15.76932144165039
+  },
+  {
+    "county": "Solano",
+    "year": 2036,
+    "wetbulb_C": 19.430505752563477
+  },
+  {
+    "county": "Sonoma",
+    "year": 2036,
+    "wetbulb_C": 17.93760871887207
+  },
+  {
+    "county": "Trinity",
+    "year": 2036,
+    "wetbulb_C": 16.689990997314453
+  },
+  {
+    "county": "Tulare",
+    "year": 2036,
+    "wetbulb_C": 18.126310348510742
+  },
+  {
+    "county": "Ventura",
+    "year": 2036,
+    "wetbulb_C": 20.46006965637207
+  },
+  {
+    "county": "Alameda",
+    "year": 2040,
+    "wetbulb_C": 19.92806053161621
+  },
+  {
+    "county": "Amador",
+    "year": 2040,
+    "wetbulb_C": 18.800294876098633
+  },
+  {
+    "county": "Glenn",
+    "year": 2040,
+    "wetbulb_C": 19.50312042236328
+  },
+  {
+    "county": "Humboldt",
+    "year": 2040,
+    "wetbulb_C": 18.170743942260742
+  },
+  {
+    "county": "Inyo",
+    "year": 2040,
+    "wetbulb_C": 21.421871185302734
+  },
+  {
+    "county": "Kern",
+    "year": 2040,
+    "wetbulb_C": 20.801828384399414
+  },
+  {
+    "county": "Lassen",
+    "year": 2040,
+    "wetbulb_C": 15.557941436767578
+  },
+  {
+    "county": "Los Angeles",
+    "year": 2040,
+    "wetbulb_C": 21.794017791748047
+  },
+  {
+    "county": "Madera",
+    "year": 2040,
+    "wetbulb_C": 17.149005889892578
+  },
+  {
+    "county": "Mendocino",
+    "year": 2040,
+    "wetbulb_C": 19.182100296020508
+  },
+  {
+    "county": "Merced",
+    "year": 2040,
+    "wetbulb_C": 20.35491180419922
+  },
+  {
+    "county": "Modoc",
+    "year": 2040,
+    "wetbulb_C": 15.468067169189453
+  },
+  {
+    "county": "Mono",
+    "year": 2040,
+    "wetbulb_C": 16.601486206054688
+  },
+  {
+    "county": "Monterey",
+    "year": 2040,
+    "wetbulb_C": 19.431671142578125
+  },
+  {
+    "county": "Nevada",
+    "year": 2040,
+    "wetbulb_C": 16.845457077026367
+  },
+  {
+    "county": "Riverside",
+    "year": 2040,
+    "wetbulb_C": 24.381120681762695
+  },
+  {
+    "county": "San Benito",
+    "year": 2040,
+    "wetbulb_C": 20.75762176513672
+  },
+  {
+    "county": "San Bernardino",
+    "year": 2040,
+    "wetbulb_C": 23.962007522583008
+  },
+  {
+    "county": "San Luis Obispo",
+    "year": 2040,
+    "wetbulb_C": 20.800039291381836
+  },
+  {
+    "county": "Shasta",
+    "year": 2040,
+    "wetbulb_C": 17.79967498779297
+  },
+  {
+    "county": "Siskiyou",
+    "year": 2040,
+    "wetbulb_C": 17.944719314575195
+  },
+  {
+    "county": "Solano",
+    "year": 2040,
+    "wetbulb_C": 20.727502822875977
+  },
+  {
+    "county": "Sonoma",
+    "year": 2040,
+    "wetbulb_C": 19.35915756225586
+  },
+  {
+    "county": "Trinity",
+    "year": 2040,
+    "wetbulb_C": 18.469724655151367
+  },
+  {
+    "county": "Tulare",
+    "year": 2040,
+    "wetbulb_C": 19.959514617919922
+  },
+  {
+    "county": "Ventura",
+    "year": 2040,
+    "wetbulb_C": 21.50762367248535
+  },
+  {
+    "county": "Alameda",
+    "year": 2044,
+    "wetbulb_C": 18.9836368560791
+  },
+  {
+    "county": "Amador",
+    "year": 2044,
+    "wetbulb_C": 18.265180587768555
+  },
+  {
+    "county": "Glenn",
+    "year": 2044,
+    "wetbulb_C": 20.13591194152832
+  },
+  {
+    "county": "Humboldt",
+    "year": 2044,
+    "wetbulb_C": 17.43194580078125
+  },
+  {
+    "county": "Inyo",
+    "year": 2044,
+    "wetbulb_C": 18.220365524291992
+  },
+  {
+    "county": "Kern",
+    "year": 2044,
+    "wetbulb_C": 18.97638702392578
+  },
+  {
+    "county": "Lassen",
+    "year": 2044,
+    "wetbulb_C": 16.2019100189209
+  },
+  {
+    "county": "Los Angeles",
+    "year": 2044,
+    "wetbulb_C": 19.290433883666992
+  },
+  {
+    "county": "Madera",
+    "year": 2044,
+    "wetbulb_C": 15.916311264038086
+  },
+  {
+    "county": "Mendocino",
+    "year": 2044,
+    "wetbulb_C": 19.683378219604492
+  },
+  {
+    "county": "Merced",
+    "year": 2044,
+    "wetbulb_C": 19.412261962890625
+  },
+  {
+    "county": "Modoc",
+    "year": 2044,
+    "wetbulb_C": 16.034759521484375
+  },
+  {
+    "county": "Mono",
+    "year": 2044,
+    "wetbulb_C": 14.86454963684082
+  },
+  {
+    "county": "Monterey",
+    "year": 2044,
+    "wetbulb_C": 18.493032455444336
+  },
+  {
+    "county": "Nevada",
+    "year": 2044,
+    "wetbulb_C": 17.076969146728516
+  },
+  {
+    "county": "Riverside",
+    "year": 2044,
+    "wetbulb_C": 21.766462326049805
+  },
+  {
+    "county": "San Benito",
+    "year": 2044,
+    "wetbulb_C": 19.76464080810547
+  },
+  {
+    "county": "San Bernardino",
+    "year": 2044,
+    "wetbulb_C": 20.820518493652344
+  },
+  {
+    "county": "San Luis Obispo",
+    "year": 2044,
+    "wetbulb_C": 19.619422912597656
+  },
+  {
+    "county": "Shasta",
+    "year": 2044,
+    "wetbulb_C": 18.646514892578125
+  },
+  {
+    "county": "Siskiyou",
+    "year": 2044,
+    "wetbulb_C": 19.022804260253906
+  },
+  {
+    "county": "Solano",
+    "year": 2044,
+    "wetbulb_C": 20.505199432373047
+  },
+  {
+    "county": "Sonoma",
+    "year": 2044,
+    "wetbulb_C": 18.62379264831543
+  },
+  {
+    "county": "Trinity",
+    "year": 2044,
+    "wetbulb_C": 19.57250213623047
+  },
+  {
+    "county": "Tulare",
+    "year": 2044,
+    "wetbulb_C": 18.31247901916504
+  },
+  {
+    "county": "Ventura",
+    "year": 2044,
+    "wetbulb_C": 20.069561004638672
+  },
+  {
+    "county": "Alameda",
+    "year": 2048,
+    "wetbulb_C": 19.22894287109375
+  },
+  {
+    "county": "Amador",
+    "year": 2048,
+    "wetbulb_C": 17.844812393188477
+  },
+  {
+    "county": "Glenn",
+    "year": 2048,
+    "wetbulb_C": 19.16660499572754
+  },
+  {
+    "county": "Humboldt",
+    "year": 2048,
+    "wetbulb_C": 17.353845596313477
+  },
+  {
+    "county": "Inyo",
+    "year": 2048,
+    "wetbulb_C": 16.15471649169922
+  },
+  {
+    "county": "Kern",
+    "year": 2048,
+    "wetbulb_C": 18.35579490661621
+  },
+  {
+    "county": "Lassen",
+    "year": 2048,
+    "wetbulb_C": 15.336366653442383
+  },
+  {
+    "county": "Los Angeles",
+    "year": 2048,
+    "wetbulb_C": 18.307157516479492
+  },
+  {
+    "county": "Madera",
+    "year": 2048,
+    "wetbulb_C": 15.113502502441406
+  },
+  {
+    "county": "Mendocino",
+    "year": 2048,
+    "wetbulb_C": 18.78466033935547
+  },
+  {
+    "county": "Merced",
+    "year": 2048,
+    "wetbulb_C": 18.92984390258789
+  },
+  {
+    "county": "Modoc",
+    "year": 2048,
+    "wetbulb_C": 14.909555435180664
+  },
+  {
+    "county": "Mono",
+    "year": 2048,
+    "wetbulb_C": 14.461252212524414
+  },
+  {
+    "county": "Monterey",
+    "year": 2048,
+    "wetbulb_C": 18.823261260986328
+  },
+  {
+    "county": "Nevada",
+    "year": 2048,
+    "wetbulb_C": 16.56524658203125
+  },
+  {
+    "county": "Riverside",
+    "year": 2048,
+    "wetbulb_C": 19.922748565673828
+  },
+  {
+    "county": "San Benito",
+    "year": 2048,
+    "wetbulb_C": 19.408588409423828
+  },
+  {
+    "county": "San Bernardino",
+    "year": 2048,
+    "wetbulb_C": 18.67160415649414
+  },
+  {
+    "county": "San Luis Obispo",
+    "year": 2048,
+    "wetbulb_C": 19.581546783447266
+  },
+  {
+    "county": "Shasta",
+    "year": 2048,
+    "wetbulb_C": 17.422109603881836
+  },
+  {
+    "county": "Siskiyou",
+    "year": 2048,
+    "wetbulb_C": 17.337846755981445
+  },
+  {
+    "county": "Solano",
+    "year": 2048,
+    "wetbulb_C": 19.990428924560547
+  },
+  {
+    "county": "Sonoma",
+    "year": 2048,
+    "wetbulb_C": 18.832740783691406
+  },
+  {
+    "county": "Trinity",
+    "year": 2048,
+    "wetbulb_C": 18.095354080200195
+  },
+  {
+    "county": "Tulare",
+    "year": 2048,
+    "wetbulb_C": 17.443334579467773
+  },
+  {
+    "county": "Ventura",
+    "year": 2048,
+    "wetbulb_C": 19.234622955322266
+  },
+  {
+    "county": "Alameda",
+    "year": 2052,
+    "wetbulb_C": 18.632841110229492
+  },
+  {
+    "county": "Amador",
+    "year": 2052,
+    "wetbulb_C": 18.453060150146484
+  },
+  {
+    "county": "Glenn",
+    "year": 2052,
+    "wetbulb_C": 19.18665313720703
+  },
+  {
+    "county": "Humboldt",
+    "year": 2052,
+    "wetbulb_C": 16.652050018310547
+  },
+  {
+    "county": "Inyo",
+    "year": 2052,
+    "wetbulb_C": 18.266504287719727
+  },
+  {
+    "county": "Kern",
+    "year": 2052,
+    "wetbulb_C": 18.9512939453125
+  },
+  {
+    "county": "Lassen",
+    "year": 2052,
+    "wetbulb_C": 14.71772575378418
+  },
+  {
+    "county": "Los Angeles",
+    "year": 2052,
+    "wetbulb_C": 19.038312911987305
+  },
+  {
+    "county": "Madera",
+    "year": 2052,
+    "wetbulb_C": 15.738035202026367
+  },
+  {
+    "county": "Mendocino",
+    "year": 2052,
+    "wetbulb_C": 18.23712921142578
+  },
+  {
+    "county": "Merced",
+    "year": 2052,
+    "wetbulb_C": 19.40066146850586
+  },
+  {
+    "county": "Modoc",
+    "year": 2052,
+    "wetbulb_C": 14.241983413696289
+  },
+  {
+    "county": "Mono",
+    "year": 2052,
+    "wetbulb_C": 14.511503219604492
+  },
+  {
+    "county": "Monterey",
+    "year": 2052,
+    "wetbulb_C": 18.246753692626953
+  },
+  {
+    "county": "Nevada",
+    "year": 2052,
+    "wetbulb_C": 16.57467269897461
+  },
+  {
+    "county": "Riverside",
+    "year": 2052,
+    "wetbulb_C": 21.622461318969727
+  },
+  {
+    "county": "San Benito",
+    "year": 2052,
+    "wetbulb_C": 19.514972686767578
+  },
+  {
+    "county": "San Bernardino",
+    "year": 2052,
+    "wetbulb_C": 20.550270080566406
+  },
+  {
+    "county": "San Luis Obispo",
+    "year": 2052,
+    "wetbulb_C": 18.96234703063965
+  },
+  {
+    "county": "Shasta",
+    "year": 2052,
+    "wetbulb_C": 16.828794479370117
+  },
+  {
+    "county": "Siskiyou",
+    "year": 2052,
+    "wetbulb_C": 16.861637115478516
+  },
+  {
+    "county": "Solano",
+    "year": 2052,
+    "wetbulb_C": 20.02667236328125
+  },
+  {
+    "county": "Sonoma",
+    "year": 2052,
+    "wetbulb_C": 17.903364181518555
+  },
+  {
+    "county": "Trinity",
+    "year": 2052,
+    "wetbulb_C": 17.50482940673828
+  },
+  {
+    "county": "Tulare",
+    "year": 2052,
+    "wetbulb_C": 18.428537368774414
+  },
+  {
+    "county": "Ventura",
+    "year": 2052,
+    "wetbulb_C": 19.31090545654297
+  },
+  {
+    "county": "Alameda",
+    "year": 2056,
+    "wetbulb_C": 19.343917846679688
+  },
+  {
+    "county": "Amador",
+    "year": 2056,
+    "wetbulb_C": 18.41187858581543
+  },
+  {
+    "county": "Glenn",
+    "year": 2056,
+    "wetbulb_C": 20.1133975982666
+  },
+  {
+    "county": "Humboldt",
+    "year": 2056,
+    "wetbulb_C": 16.583633422851562
+  },
+  {
+    "county": "Inyo",
+    "year": 2056,
+    "wetbulb_C": 17.010173797607422
+  },
+  {
+    "county": "Kern",
+    "year": 2056,
+    "wetbulb_C": 18.734270095825195
+  },
+  {
+    "county": "Lassen",
+    "year": 2056,
+    "wetbulb_C": 15.848556518554688
+  },
+  {
+    "county": "Los Angeles",
+    "year": 2056,
+    "wetbulb_C": 19.388668060302734
+  },
+  {
+    "county": "Madera",
+    "year": 2056,
+    "wetbulb_C": 15.324163436889648
+  },
+  {
+    "county": "Mendocino",
+    "year": 2056,
+    "wetbulb_C": 19.140174865722656
+  },
+  {
+    "county": "Merced",
+    "year": 2056,
+    "wetbulb_C": 19.679332733154297
+  },
+  {
+    "county": "Modoc",
+    "year": 2056,
+    "wetbulb_C": 15.367143630981445
+  },
+  {
+    "county": "Mono",
+    "year": 2056,
+    "wetbulb_C": 14.25284194946289
+  },
+  {
+    "county": "Monterey",
+    "year": 2056,
+    "wetbulb_C": 19.128337860107422
+  },
+  {
+    "county": "Nevada",
+    "year": 2056,
+    "wetbulb_C": 16.966981887817383
+  },
+  {
+    "county": "Riverside",
+    "year": 2056,
+    "wetbulb_C": 22.212751388549805
+  },
+  {
+    "county": "San Benito",
+    "year": 2056,
+    "wetbulb_C": 19.94754409790039
+  },
+  {
+    "county": "San Bernardino",
+    "year": 2056,
+    "wetbulb_C": 20.792755126953125
+  },
+  {
+    "county": "San Luis Obispo",
+    "year": 2056,
+    "wetbulb_C": 19.924442291259766
+  },
+  {
+    "county": "Shasta",
+    "year": 2056,
+    "wetbulb_C": 18.133459091186523
+  },
+  {
+    "county": "Siskiyou",
+    "year": 2056,
+    "wetbulb_C": 17.434947967529297
+  },
+  {
+    "county": "Solano",
+    "year": 2056,
+    "wetbulb_C": 20.785627365112305
+  },
+  {
+    "county": "Sonoma",
+    "year": 2056,
+    "wetbulb_C": 18.556711196899414
+  },
+  {
+    "county": "Trinity",
+    "year": 2056,
+    "wetbulb_C": 18.453840255737305
+  },
+  {
+    "county": "Tulare",
+    "year": 2056,
+    "wetbulb_C": 17.946571350097656
+  },
+  {
+    "county": "Ventura",
+    "year": 2056,
+    "wetbulb_C": 20.13776969909668
+  },
+  {
+    "county": "Alameda",
+    "year": 2060,
+    "wetbulb_C": 19.357423782348633
+  },
+  {
+    "county": "Amador",
+    "year": 2060,
+    "wetbulb_C": 18.560230255126953
+  },
+  {
+    "county": "Glenn",
+    "year": 2060,
+    "wetbulb_C": 19.76772117614746
+  },
+  {
+    "county": "Humboldt",
+    "year": 2060,
+    "wetbulb_C": 17.49215316772461
+  },
+  {
+    "county": "Inyo",
+    "year": 2060,
+    "wetbulb_C": 17.989978790283203
+  },
+  {
+    "county": "Kern",
+    "year": 2060,
+    "wetbulb_C": 19.457185745239258
+  },
+  {
+    "county": "Lassen",
+    "year": 2060,
+    "wetbulb_C": 15.789091110229492
+  },
+  {
+    "county": "Los Angeles",
+    "year": 2060,
+    "wetbulb_C": 20.13497543334961
+  },
+  {
+    "county": "Madera",
+    "year": 2060,
+    "wetbulb_C": 16.34598159790039
+  },
+  {
+    "county": "Mendocino",
+    "year": 2060,
+    "wetbulb_C": 18.70173454284668
+  },
+  {
+    "county": "Merced",
+    "year": 2060,
+    "wetbulb_C": 19.914966583251953
+  },
+  {
+    "county": "Modoc",
+    "year": 2060,
+    "wetbulb_C": 15.204517364501953
+  },
+  {
+    "county": "Mono",
+    "year": 2060,
+    "wetbulb_C": 15.20794677734375
+  },
+  {
+    "county": "Monterey",
+    "year": 2060,
+    "wetbulb_C": 18.642925262451172
+  },
+  {
+    "county": "Nevada",
+    "year": 2060,
+    "wetbulb_C": 16.84737205505371
+  },
+  {
+    "county": "Riverside",
+    "year": 2060,
+    "wetbulb_C": 21.8232364654541
+  },
+  {
+    "county": "San Benito",
+    "year": 2060,
+    "wetbulb_C": 20.189762115478516
+  },
+  {
+    "county": "San Bernardino",
+    "year": 2060,
+    "wetbulb_C": 20.906452178955078
+  },
+  {
+    "county": "San Luis Obispo",
+    "year": 2060,
+    "wetbulb_C": 20.213281631469727
+  },
+  {
+    "county": "Shasta",
+    "year": 2060,
+    "wetbulb_C": 17.7833194732666
+  },
+  {
+    "county": "Siskiyou",
+    "year": 2060,
+    "wetbulb_C": 17.203771591186523
+  },
+  {
+    "county": "Solano",
+    "year": 2060,
+    "wetbulb_C": 20.511207580566406
+  },
+  {
+    "county": "Sonoma",
+    "year": 2060,
+    "wetbulb_C": 18.437549591064453
+  },
+  {
+    "county": "Trinity",
+    "year": 2060,
+    "wetbulb_C": 18.044137954711914
+  },
+  {
+    "county": "Tulare",
+    "year": 2060,
+    "wetbulb_C": 18.745450973510742
+  },
+  {
+    "county": "Ventura",
+    "year": 2060,
+    "wetbulb_C": 20.556570053100586
+  },
+  {
+    "county": "Alameda",
+    "year": 2064,
+    "wetbulb_C": 18.85441780090332
+  },
+  {
+    "county": "Amador",
+    "year": 2064,
+    "wetbulb_C": 17.84586524963379
+  },
+  {
+    "county": "Glenn",
+    "year": 2064,
+    "wetbulb_C": 18.96064567565918
+  },
+  {
+    "county": "Humboldt",
+    "year": 2064,
+    "wetbulb_C": 17.507429122924805
+  },
+  {
+    "county": "Inyo",
+    "year": 2064,
+    "wetbulb_C": 16.6489200592041
+  },
+  {
+    "county": "Kern",
+    "year": 2064,
+    "wetbulb_C": 18.28119659423828
+  },
+  {
+    "county": "Lassen",
+    "year": 2064,
+    "wetbulb_C": 15.193374633789062
+  },
+  {
+    "county": "Los Angeles",
+    "year": 2064,
+    "wetbulb_C": 18.307350158691406
+  },
+  {
+    "county": "Madera",
+    "year": 2064,
+    "wetbulb_C": 15.470447540283203
+  },
+  {
+    "county": "Mendocino",
+    "year": 2064,
+    "wetbulb_C": 18.66669464111328
+  },
+  {
+    "county": "Merced",
+    "year": 2064,
+    "wetbulb_C": 18.92931365966797
+  },
+  {
+    "county": "Modoc",
+    "year": 2064,
+    "wetbulb_C": 14.877250671386719
+  },
+  {
+    "county": "Mono",
+    "year": 2064,
+    "wetbulb_C": 14.436365127563477
+  },
+  {
+    "county": "Monterey",
+    "year": 2064,
+    "wetbulb_C": 18.47719383239746
+  },
+  {
+    "county": "Nevada",
+    "year": 2064,
+    "wetbulb_C": 16.416351318359375
+  },
+  {
+    "county": "Riverside",
+    "year": 2064,
+    "wetbulb_C": 20.305419921875
+  },
+  {
+    "county": "San Benito",
+    "year": 2064,
+    "wetbulb_C": 19.20094108581543
+  },
+  {
+    "county": "San Bernardino",
+    "year": 2064,
+    "wetbulb_C": 19.05086326599121
+  },
+  {
+    "county": "San Luis Obispo",
+    "year": 2064,
+    "wetbulb_C": 19.224197387695312
+  },
+  {
+    "county": "Shasta",
+    "year": 2064,
+    "wetbulb_C": 17.342620849609375
+  },
+  {
+    "county": "Siskiyou",
+    "year": 2064,
+    "wetbulb_C": 17.612163543701172
+  },
+  {
+    "county": "Solano",
+    "year": 2064,
+    "wetbulb_C": 19.706327438354492
+  },
+  {
+    "county": "Sonoma",
+    "year": 2064,
+    "wetbulb_C": 18.721906661987305
+  },
+  {
+    "county": "Trinity",
+    "year": 2064,
+    "wetbulb_C": 18.129838943481445
+  },
+  {
+    "county": "Tulare",
+    "year": 2064,
+    "wetbulb_C": 17.694622039794922
+  },
+  {
+    "county": "Ventura",
+    "year": 2064,
+    "wetbulb_C": 18.990966796875
+  },
+  {
+    "county": "Alameda",
+    "year": 2068,
+    "wetbulb_C": 18.549182891845703
+  },
+  {
+    "county": "Amador",
+    "year": 2068,
+    "wetbulb_C": 17.33087921142578
+  },
+  {
+    "county": "Glenn",
+    "year": 2068,
+    "wetbulb_C": 18.8659610748291
+  },
+  {
+    "county": "Humboldt",
+    "year": 2068,
+    "wetbulb_C": 17.617944717407227
+  },
+  {
+    "county": "Inyo",
+    "year": 2068,
+    "wetbulb_C": 16.32172393798828
+  },
+  {
+    "county": "Kern",
+    "year": 2068,
+    "wetbulb_C": 17.961713790893555
+  },
+  {
+    "county": "Lassen",
+    "year": 2068,
+    "wetbulb_C": 15.245790481567383
+  },
+  {
+    "county": "Los Angeles",
+    "year": 2068,
+    "wetbulb_C": 18.084184646606445
+  },
+  {
+    "county": "Madera",
+    "year": 2068,
+    "wetbulb_C": 14.844892501831055
+  },
+  {
+    "county": "Mendocino",
+    "year": 2068,
+    "wetbulb_C": 18.213790893554688
+  },
+  {
+    "county": "Merced",
+    "year": 2068,
+    "wetbulb_C": 18.45546531677246
+  },
+  {
+    "county": "Modoc",
+    "year": 2068,
+    "wetbulb_C": 15.325252532958984
+  },
+  {
+    "county": "Mono",
+    "year": 2068,
+    "wetbulb_C": 13.960750579833984
+  },
+  {
+    "county": "Monterey",
+    "year": 2068,
+    "wetbulb_C": 18.255460739135742
+  },
+  {
+    "county": "Nevada",
+    "year": 2068,
+    "wetbulb_C": 16.14462661743164
+  },
+  {
+    "county": "Riverside",
+    "year": 2068,
+    "wetbulb_C": 19.912498474121094
+  },
+  {
+    "county": "San Benito",
+    "year": 2068,
+    "wetbulb_C": 18.71086311340332
+  },
+  {
+    "county": "San Bernardino",
+    "year": 2068,
+    "wetbulb_C": 18.68419647216797
+  },
+  {
+    "county": "San Luis Obispo",
+    "year": 2068,
+    "wetbulb_C": 18.667144775390625
+  },
+  {
+    "county": "Shasta",
+    "year": 2068,
+    "wetbulb_C": 17.48609733581543
+  },
+  {
+    "county": "Siskiyou",
+    "year": 2068,
+    "wetbulb_C": 17.3201904296875
+  },
+  {
+    "county": "Solano",
+    "year": 2068,
+    "wetbulb_C": 19.43086814880371
+  },
+  {
+    "county": "Sonoma",
+    "year": 2068,
+    "wetbulb_C": 18.11778450012207
+  },
+  {
+    "county": "Trinity",
+    "year": 2068,
+    "wetbulb_C": 17.910715103149414
+  },
+  {
+    "county": "Tulare",
+    "year": 2068,
+    "wetbulb_C": 17.358081817626953
+  },
+  {
+    "county": "Ventura",
+    "year": 2068,
+    "wetbulb_C": 18.86740493774414
+  },
+  {
+    "county": "Alameda",
+    "year": 2072,
+    "wetbulb_C": 19.5419979095459
+  },
+  {
+    "county": "Amador",
+    "year": 2072,
+    "wetbulb_C": 17.944778442382812
+  },
+  {
+    "county": "Glenn",
+    "year": 2072,
+    "wetbulb_C": 19.65985870361328
+  },
+  {
+    "county": "Humboldt",
+    "year": 2072,
+    "wetbulb_C": 17.977216720581055
+  },
+  {
+    "county": "Inyo",
+    "year": 2072,
+    "wetbulb_C": 16.800134658813477
+  },
+  {
+    "county": "Kern",
+    "year": 2072,
+    "wetbulb_C": 18.8798770904541
+  },
+  {
+    "county": "Lassen",
+    "year": 2072,
+    "wetbulb_C": 15.459070205688477
+  },
+  {
+    "county": "Los Angeles",
+    "year": 2072,
+    "wetbulb_C": 18.90033531188965
+  },
+  {
+    "county": "Madera",
+    "year": 2072,
+    "wetbulb_C": 15.192983627319336
+  },
+  {
+    "county": "Mendocino",
+    "year": 2072,
+    "wetbulb_C": 19.28580093383789
+  },
+  {
+    "county": "Merced",
+    "year": 2072,
+    "wetbulb_C": 19.185714721679688
+  },
+  {
+    "county": "Modoc",
+    "year": 2072,
+    "wetbulb_C": 15.200037002563477
+  },
+  {
+    "county": "Mono",
+    "year": 2072,
+    "wetbulb_C": 14.389423370361328
+  },
+  {
+    "county": "Monterey",
+    "year": 2072,
+    "wetbulb_C": 19.55008888244629
+  },
+  {
+    "county": "Nevada",
+    "year": 2072,
+    "wetbulb_C": 16.619617462158203
+  },
+  {
+    "county": "Riverside",
+    "year": 2072,
+    "wetbulb_C": 21.089378356933594
+  },
+  {
+    "county": "San Benito",
+    "year": 2072,
+    "wetbulb_C": 19.747243881225586
+  },
+  {
+    "county": "San Bernardino",
+    "year": 2072,
+    "wetbulb_C": 20.046831130981445
+  },
+  {
+    "county": "San Luis Obispo",
+    "year": 2072,
+    "wetbulb_C": 20.234359741210938
+  },
+  {
+    "county": "Shasta",
+    "year": 2072,
+    "wetbulb_C": 17.853179931640625
+  },
+  {
+    "county": "Siskiyou",
+    "year": 2072,
+    "wetbulb_C": 17.652294158935547
+  },
+  {
+    "county": "Solano",
+    "year": 2072,
+    "wetbulb_C": 20.433956146240234
+  },
+  {
+    "county": "Sonoma",
+    "year": 2072,
+    "wetbulb_C": 19.241588592529297
+  },
+  {
+    "county": "Trinity",
+    "year": 2072,
+    "wetbulb_C": 18.581954956054688
+  },
+  {
+    "county": "Tulare",
+    "year": 2072,
+    "wetbulb_C": 17.661941528320312
+  },
+  {
+    "county": "Ventura",
+    "year": 2072,
+    "wetbulb_C": 20.10453987121582
+  },
+  {
+    "county": "Alameda",
+    "year": 2076,
+    "wetbulb_C": 20.535661697387695
+  },
+  {
+    "county": "Amador",
+    "year": 2076,
+    "wetbulb_C": 19.669761657714844
+  },
+  {
+    "county": "Glenn",
+    "year": 2076,
+    "wetbulb_C": 20.950464248657227
+  },
+  {
+    "county": "Humboldt",
+    "year": 2076,
+    "wetbulb_C": 19.136783599853516
+  },
+  {
+    "county": "Inyo",
+    "year": 2076,
+    "wetbulb_C": 17.868431091308594
+  },
+  {
+    "county": "Kern",
+    "year": 2076,
+    "wetbulb_C": 19.851329803466797
+  },
+  {
+    "county": "Lassen",
+    "year": 2076,
+    "wetbulb_C": 16.792097091674805
+  },
+  {
+    "county": "Los Angeles",
+    "year": 2076,
+    "wetbulb_C": 20.061384201049805
+  },
+  {
+    "county": "Madera",
+    "year": 2076,
+    "wetbulb_C": 17.138418197631836
+  },
+  {
+    "county": "Mendocino",
+    "year": 2076,
+    "wetbulb_C": 20.23773193359375
+  },
+  {
+    "county": "Merced",
+    "year": 2076,
+    "wetbulb_C": 20.674789428710938
+  },
+  {
+    "county": "Modoc",
+    "year": 2076,
+    "wetbulb_C": 16.236106872558594
+  },
+  {
+    "county": "Mono",
+    "year": 2076,
+    "wetbulb_C": 16.173858642578125
+  },
+  {
+    "county": "Monterey",
+    "year": 2076,
+    "wetbulb_C": 20.373165130615234
+  },
+  {
+    "county": "Nevada",
+    "year": 2076,
+    "wetbulb_C": 18.067537307739258
+  },
+  {
+    "county": "Riverside",
+    "year": 2076,
+    "wetbulb_C": 21.365833282470703
+  },
+  {
+    "county": "San Benito",
+    "year": 2076,
+    "wetbulb_C": 20.786842346191406
+  },
+  {
+    "county": "San Bernardino",
+    "year": 2076,
+    "wetbulb_C": 20.411455154418945
+  },
+  {
+    "county": "San Luis Obispo",
+    "year": 2076,
+    "wetbulb_C": 21.151752471923828
+  },
+  {
+    "county": "Shasta",
+    "year": 2076,
+    "wetbulb_C": 18.73348045349121
+  },
+  {
+    "county": "Siskiyou",
+    "year": 2076,
+    "wetbulb_C": 18.306917190551758
+  },
+  {
+    "county": "Solano",
+    "year": 2076,
+    "wetbulb_C": 21.68448829650879
+  },
+  {
+    "county": "Sonoma",
+    "year": 2076,
+    "wetbulb_C": 20.049489974975586
+  },
+  {
+    "county": "Trinity",
+    "year": 2076,
+    "wetbulb_C": 19.23922348022461
+  },
+  {
+    "county": "Tulare",
+    "year": 2076,
+    "wetbulb_C": 19.3686580657959
+  },
+  {
+    "county": "Ventura",
+    "year": 2076,
+    "wetbulb_C": 21.04747772216797
+  },
+  {
+    "county": "Alameda",
+    "year": 2080,
+    "wetbulb_C": 19.004114151000977
+  },
+  {
+    "county": "Amador",
+    "year": 2080,
+    "wetbulb_C": 17.789384841918945
+  },
+  {
+    "county": "Glenn",
+    "year": 2080,
+    "wetbulb_C": 18.871196746826172
+  },
+  {
+    "county": "Humboldt",
+    "year": 2080,
+    "wetbulb_C": 17.666715621948242
+  },
+  {
+    "county": "Inyo",
+    "year": 2080,
+    "wetbulb_C": 18.57097053527832
+  },
+  {
+    "county": "Kern",
+    "year": 2080,
+    "wetbulb_C": 19.18755531311035
+  },
+  {
+    "county": "Lassen",
+    "year": 2080,
+    "wetbulb_C": 15.239072799682617
+  },
+  {
+    "county": "Los Angeles",
+    "year": 2080,
+    "wetbulb_C": 19.591463088989258
+  },
+  {
+    "county": "Madera",
+    "year": 2080,
+    "wetbulb_C": 15.779657363891602
+  },
+  {
+    "county": "Mendocino",
+    "year": 2080,
+    "wetbulb_C": 18.700542449951172
+  },
+  {
+    "county": "Merced",
+    "year": 2080,
+    "wetbulb_C": 19.11087417602539
+  },
+  {
+    "county": "Modoc",
+    "year": 2080,
+    "wetbulb_C": 15.134902954101562
+  },
+  {
+    "county": "Mono",
+    "year": 2080,
+    "wetbulb_C": 14.962196350097656
+  },
+  {
+    "county": "Monterey",
+    "year": 2080,
+    "wetbulb_C": 18.7670955657959
+  },
+  {
+    "county": "Nevada",
+    "year": 2080,
+    "wetbulb_C": 16.270856857299805
+  },
+  {
+    "county": "Riverside",
+    "year": 2080,
+    "wetbulb_C": 21.426305770874023
+  },
+  {
+    "county": "San Benito",
+    "year": 2080,
+    "wetbulb_C": 19.609304428100586
+  },
+  {
+    "county": "San Bernardino",
+    "year": 2080,
+    "wetbulb_C": 20.872661590576172
+  },
+  {
+    "county": "San Luis Obispo",
+    "year": 2080,
+    "wetbulb_C": 19.767555236816406
+  },
+  {
+    "county": "Shasta",
+    "year": 2080,
+    "wetbulb_C": 17.341184616088867
+  },
+  {
+    "county": "Siskiyou",
+    "year": 2080,
+    "wetbulb_C": 17.631399154663086
+  },
+  {
+    "county": "Solano",
+    "year": 2080,
+    "wetbulb_C": 19.660247802734375
+  },
+  {
+    "county": "Sonoma",
+    "year": 2080,
+    "wetbulb_C": 18.571290969848633
+  },
+  {
+    "county": "Trinity",
+    "year": 2080,
+    "wetbulb_C": 18.155780792236328
+  },
+  {
+    "county": "Tulare",
+    "year": 2080,
+    "wetbulb_C": 18.328582763671875
+  },
+  {
+    "county": "Ventura",
+    "year": 2080,
+    "wetbulb_C": 20.106517791748047
+  },
+  {
+    "county": "Alameda",
+    "year": 2084,
+    "wetbulb_C": 19.92517852783203
+  },
+  {
+    "county": "Amador",
+    "year": 2084,
+    "wetbulb_C": 18.382854461669922
+  },
+  {
+    "county": "Glenn",
+    "year": 2084,
+    "wetbulb_C": 19.880590438842773
+  },
+  {
+    "county": "Humboldt",
+    "year": 2084,
+    "wetbulb_C": 18.895767211914062
+  },
+  {
+    "county": "Inyo",
+    "year": 2084,
+    "wetbulb_C": 16.701387405395508
+  },
+  {
+    "county": "Kern",
+    "year": 2084,
+    "wetbulb_C": 18.626745223999023
+  },
+  {
+    "county": "Lassen",
+    "year": 2084,
+    "wetbulb_C": 16.070573806762695
+  },
+  {
+    "county": "Los Angeles",
+    "year": 2084,
+    "wetbulb_C": 18.903602600097656
+  },
+  {
+    "county": "Madera",
+    "year": 2084,
+    "wetbulb_C": 15.753429412841797
+  },
+  {
+    "county": "Mendocino",
+    "year": 2084,
+    "wetbulb_C": 19.827871322631836
+  },
+  {
+    "county": "Merced",
+    "year": 2084,
+    "wetbulb_C": 19.344114303588867
+  },
+  {
+    "county": "Modoc",
+    "year": 2084,
+    "wetbulb_C": 16.388774871826172
+  },
+  {
+    "county": "Mono",
+    "year": 2084,
+    "wetbulb_C": 15.199054718017578
+  },
+  {
+    "county": "Monterey",
+    "year": 2084,
+    "wetbulb_C": 19.27847671508789
+  },
+  {
+    "county": "Nevada",
+    "year": 2084,
+    "wetbulb_C": 17.021053314208984
+  },
+  {
+    "county": "Riverside",
+    "year": 2084,
+    "wetbulb_C": 19.502220153808594
+  },
+  {
+    "county": "San Benito",
+    "year": 2084,
+    "wetbulb_C": 19.780818939208984
+  },
+  {
+    "county": "San Bernardino",
+    "year": 2084,
+    "wetbulb_C": 18.448217391967773
+  },
+  {
+    "county": "San Luis Obispo",
+    "year": 2084,
+    "wetbulb_C": 19.906082153320312
+  },
+  {
+    "county": "Shasta",
+    "year": 2084,
+    "wetbulb_C": 18.445234298706055
+  },
+  {
+    "county": "Siskiyou",
+    "year": 2084,
+    "wetbulb_C": 19.2285099029541
+  },
+  {
+    "county": "Solano",
+    "year": 2084,
+    "wetbulb_C": 20.71724510192871
+  },
+  {
+    "county": "Sonoma",
+    "year": 2084,
+    "wetbulb_C": 19.74468421936035
+  },
+  {
+    "county": "Trinity",
+    "year": 2084,
+    "wetbulb_C": 19.51882553100586
+  },
+  {
+    "county": "Tulare",
+    "year": 2084,
+    "wetbulb_C": 17.915239334106445
+  },
+  {
+    "county": "Ventura",
+    "year": 2084,
+    "wetbulb_C": 19.925600051879883
+  },
+  {
+    "county": "Alameda",
+    "year": 2088,
+    "wetbulb_C": 20.30543327331543
+  },
+  {
+    "county": "Amador",
+    "year": 2088,
+    "wetbulb_C": 20.270248413085938
+  },
+  {
+    "county": "Glenn",
+    "year": 2088,
+    "wetbulb_C": 21.2310791015625
+  },
+  {
+    "county": "Humboldt",
+    "year": 2088,
+    "wetbulb_C": 18.814353942871094
+  },
+  {
+    "county": "Inyo",
+    "year": 2088,
+    "wetbulb_C": 18.441102981567383
+  },
+  {
+    "county": "Kern",
+    "year": 2088,
+    "wetbulb_C": 20.26763153076172
+  },
+  {
+    "county": "Lassen",
+    "year": 2088,
+    "wetbulb_C": 17.368825912475586
+  },
+  {
+    "county": "Los Angeles",
+    "year": 2088,
+    "wetbulb_C": 20.009389877319336
+  },
+  {
+    "county": "Madera",
+    "year": 2088,
+    "wetbulb_C": 17.661338806152344
+  },
+  {
+    "county": "Mendocino",
+    "year": 2088,
+    "wetbulb_C": 20.285606384277344
+  },
+  {
+    "county": "Merced",
+    "year": 2088,
+    "wetbulb_C": 21.275564193725586
+  },
+  {
+    "county": "Modoc",
+    "year": 2088,
+    "wetbulb_C": 17.207353591918945
+  },
+  {
+    "county": "Mono",
+    "year": 2088,
+    "wetbulb_C": 16.695262908935547
+  },
+  {
+    "county": "Monterey",
+    "year": 2088,
+    "wetbulb_C": 19.7882137298584
+  },
+  {
+    "county": "Nevada",
+    "year": 2088,
+    "wetbulb_C": 18.660619735717773
+  },
+  {
+    "county": "Riverside",
+    "year": 2088,
+    "wetbulb_C": 21.225351333618164
+  },
+  {
+    "county": "San Benito",
+    "year": 2088,
+    "wetbulb_C": 21.19637680053711
+  },
+  {
+    "county": "San Bernardino",
+    "year": 2088,
+    "wetbulb_C": 19.353214263916016
+  },
+  {
+    "county": "San Luis Obispo",
+    "year": 2088,
+    "wetbulb_C": 20.551349639892578
+  },
+  {
+    "county": "Shasta",
+    "year": 2088,
+    "wetbulb_C": 19.533863067626953
+  },
+  {
+    "county": "Siskiyou",
+    "year": 2088,
+    "wetbulb_C": 19.157384872436523
+  },
+  {
+    "county": "Solano",
+    "year": 2088,
+    "wetbulb_C": 21.90265655517578
+  },
+  {
+    "county": "Sonoma",
+    "year": 2088,
+    "wetbulb_C": 19.671842575073242
+  },
+  {
+    "county": "Trinity",
+    "year": 2088,
+    "wetbulb_C": 19.846948623657227
+  },
+  {
+    "county": "Tulare",
+    "year": 2088,
+    "wetbulb_C": 19.92243766784668
+  },
+  {
+    "county": "Ventura",
+    "year": 2088,
+    "wetbulb_C": 20.709392547607422
+  },
+  {
+    "county": "Alameda",
+    "year": 2092,
+    "wetbulb_C": 20.610288619995117
+  },
+  {
+    "county": "Amador",
+    "year": 2092,
+    "wetbulb_C": 19.332902908325195
+  },
+  {
+    "county": "Glenn",
+    "year": 2092,
+    "wetbulb_C": 20.48761749267578
+  },
+  {
+    "county": "Humboldt",
+    "year": 2092,
+    "wetbulb_C": 18.582469940185547
+  },
+  {
+    "county": "Inyo",
+    "year": 2092,
+    "wetbulb_C": 19.236801147460938
+  },
+  {
+    "county": "Kern",
+    "year": 2092,
+    "wetbulb_C": 20.724206924438477
+  },
+  {
+    "county": "Lassen",
+    "year": 2092,
+    "wetbulb_C": 16.562406539916992
+  },
+  {
+    "county": "Los Angeles",
+    "year": 2092,
+    "wetbulb_C": 20.983980178833008
+  },
+  {
+    "county": "Madera",
+    "year": 2092,
+    "wetbulb_C": 16.914657592773438
+  },
+  {
+    "county": "Mendocino",
+    "year": 2092,
+    "wetbulb_C": 20.135902404785156
+  },
+  {
+    "county": "Merced",
+    "year": 2092,
+    "wetbulb_C": 20.810924530029297
+  },
+  {
+    "county": "Modoc",
+    "year": 2092,
+    "wetbulb_C": 16.296289443969727
+  },
+  {
+    "county": "Mono",
+    "year": 2092,
+    "wetbulb_C": 15.668943405151367
+  },
+  {
+    "county": "Monterey",
+    "year": 2092,
+    "wetbulb_C": 20.17947006225586
+  },
+  {
+    "county": "Nevada",
+    "year": 2092,
+    "wetbulb_C": 17.77569007873535
+  },
+  {
+    "county": "Riverside",
+    "year": 2092,
+    "wetbulb_C": 22.945556640625
+  },
+  {
+    "county": "San Benito",
+    "year": 2092,
+    "wetbulb_C": 21.404216766357422
+  },
+  {
+    "county": "San Bernardino",
+    "year": 2092,
+    "wetbulb_C": 22.03936195373535
+  },
+  {
+    "county": "San Luis Obispo",
+    "year": 2092,
+    "wetbulb_C": 21.42653465270996
+  },
+  {
+    "county": "Shasta",
+    "year": 2092,
+    "wetbulb_C": 18.85169792175293
+  },
+  {
+    "county": "Siskiyou",
+    "year": 2092,
+    "wetbulb_C": 18.94788360595703
+  },
+  {
+    "county": "Solano",
+    "year": 2092,
+    "wetbulb_C": 21.462129592895508
+  },
+  {
+    "county": "Sonoma",
+    "year": 2092,
+    "wetbulb_C": 19.959243774414062
+  },
+  {
+    "county": "Trinity",
+    "year": 2092,
+    "wetbulb_C": 19.68378448486328
+  },
+  {
+    "county": "Tulare",
+    "year": 2092,
+    "wetbulb_C": 19.73686408996582
+  },
+  {
+    "county": "Ventura",
+    "year": 2092,
+    "wetbulb_C": 21.66334342956543
+  },
+  {
+    "county": "Alameda",
+    "year": 2096,
+    "wetbulb_C": 20.35194969177246
+  },
+  {
+    "county": "Amador",
+    "year": 2096,
+    "wetbulb_C": 18.771282196044922
+  },
+  {
+    "county": "Glenn",
+    "year": 2096,
+    "wetbulb_C": 19.513830184936523
+  },
+  {
+    "county": "Humboldt",
+    "year": 2096,
+    "wetbulb_C": 19.584672927856445
+  },
+  {
+    "county": "Inyo",
+    "year": 2096,
+    "wetbulb_C": 18.073535919189453
+  },
+  {
+    "county": "Kern",
+    "year": 2096,
+    "wetbulb_C": 19.745813369750977
+  },
+  {
+    "county": "Lassen",
+    "year": 2096,
+    "wetbulb_C": 16.000051498413086
+  },
+  {
+    "county": "Los Angeles",
+    "year": 2096,
+    "wetbulb_C": 19.871234893798828
+  },
+  {
+    "county": "Madera",
+    "year": 2096,
+    "wetbulb_C": 16.215850830078125
+  },
+  {
+    "county": "Mendocino",
+    "year": 2096,
+    "wetbulb_C": 19.556190490722656
+  },
+  {
+    "county": "Merced",
+    "year": 2096,
+    "wetbulb_C": 20.13258171081543
+  },
+  {
+    "county": "Modoc",
+    "year": 2096,
+    "wetbulb_C": 15.976232528686523
+  },
+  {
+    "county": "Mono",
+    "year": 2096,
+    "wetbulb_C": 15.236034393310547
+  },
+  {
+    "county": "Monterey",
+    "year": 2096,
+    "wetbulb_C": 20.02326202392578
+  },
+  {
+    "county": "Nevada",
+    "year": 2096,
+    "wetbulb_C": 17.19589614868164
+  },
+  {
+    "county": "Riverside",
+    "year": 2096,
+    "wetbulb_C": 21.730052947998047
+  },
+  {
+    "county": "San Benito",
+    "year": 2096,
+    "wetbulb_C": 20.63306427001953
+  },
+  {
+    "county": "San Bernardino",
+    "year": 2096,
+    "wetbulb_C": 20.642715454101562
+  },
+  {
+    "county": "San Luis Obispo",
+    "year": 2096,
+    "wetbulb_C": 20.78351593017578
+  },
+  {
+    "county": "Shasta",
+    "year": 2096,
+    "wetbulb_C": 17.983409881591797
+  },
+  {
+    "county": "Siskiyou",
+    "year": 2096,
+    "wetbulb_C": 18.549060821533203
+  },
+  {
+    "county": "Solano",
+    "year": 2096,
+    "wetbulb_C": 20.76673698425293
+  },
+  {
+    "county": "Sonoma",
+    "year": 2096,
+    "wetbulb_C": 19.985313415527344
+  },
+  {
+    "county": "Trinity",
+    "year": 2096,
+    "wetbulb_C": 18.966257095336914
+  },
+  {
+    "county": "Tulare",
+    "year": 2096,
+    "wetbulb_C": 18.843482971191406
+  },
+  {
+    "county": "Ventura",
+    "year": 2096,
+    "wetbulb_C": 20.722564697265625
+  },
+  {
+    "county": "Alameda",
+    "year": 2100,
+    "wetbulb_C": 20.30625343322754
+  },
+  {
+    "county": "Amador",
+    "year": 2100,
+    "wetbulb_C": 19.06256103515625
+  },
+  {
+    "county": "Glenn",
+    "year": 2100,
+    "wetbulb_C": 20.795795440673828
+  },
+  {
+    "county": "Humboldt",
+    "year": 2100,
+    "wetbulb_C": 19.174667358398438
+  },
+  {
+    "county": "Inyo",
+    "year": 2100,
+    "wetbulb_C": 17.91819953918457
+  },
+  {
+    "county": "Kern",
+    "year": 2100,
+    "wetbulb_C": 20.00491714477539
+  },
+  {
+    "county": "Lassen",
+    "year": 2100,
+    "wetbulb_C": 17.187435150146484
+  },
+  {
+    "county": "Los Angeles",
+    "year": 2100,
+    "wetbulb_C": 19.90329933166504
+  },
+  {
+    "county": "Madera",
+    "year": 2100,
+    "wetbulb_C": 16.64339256286621
+  },
+  {
+    "county": "Mendocino",
+    "year": 2100,
+    "wetbulb_C": 20.549503326416016
+  },
+  {
+    "county": "Merced",
+    "year": 2100,
+    "wetbulb_C": 19.993818283081055
+  },
+  {
+    "county": "Modoc",
+    "year": 2100,
+    "wetbulb_C": 16.695606231689453
+  },
+  {
+    "county": "Mono",
+    "year": 2100,
+    "wetbulb_C": 15.848949432373047
+  },
+  {
+    "county": "Monterey",
+    "year": 2100,
+    "wetbulb_C": 20.01161766052246
+  },
+  {
+    "county": "Nevada",
+    "year": 2100,
+    "wetbulb_C": 18.005603790283203
+  },
+  {
+    "county": "Riverside",
+    "year": 2100,
+    "wetbulb_C": 22.004779815673828
+  },
+  {
+    "county": "San Benito",
+    "year": 2100,
+    "wetbulb_C": 20.65943145751953
+  },
+  {
+    "county": "San Bernardino",
+    "year": 2100,
+    "wetbulb_C": 20.955623626708984
+  },
+  {
+    "county": "San Luis Obispo",
+    "year": 2100,
+    "wetbulb_C": 20.87941551208496
+  },
+  {
+    "county": "Shasta",
+    "year": 2100,
+    "wetbulb_C": 19.508007049560547
+  },
+  {
+    "county": "Siskiyou",
+    "year": 2100,
+    "wetbulb_C": 19.500627517700195
+  },
+  {
+    "county": "Solano",
+    "year": 2100,
+    "wetbulb_C": 21.015872955322266
+  },
+  {
+    "county": "Sonoma",
+    "year": 2100,
+    "wetbulb_C": 19.796493530273438
+  },
+  {
+    "county": "Trinity",
+    "year": 2100,
+    "wetbulb_C": 20.26167869567871
+  },
+  {
+    "county": "Tulare",
+    "year": 2100,
+    "wetbulb_C": 18.911643981933594
+  },
+  {
+    "county": "Ventura",
+    "year": 2100,
+    "wetbulb_C": 20.9000244140625
+  }
+]
