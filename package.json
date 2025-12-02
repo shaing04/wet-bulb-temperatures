@@ -1,0 +1,14 @@
+{
+  "name": "a27f5a2387fd2c2a",
+  "main": "a27f5a2387fd2c2a@203.js",
+  "version": "203.0.0",
+  "homepage": "https://observablehq.com/d/a27f5a2387fd2c2a",
+  "author": {
+    "name": "DSC106",
+    "url": "https://observablehq.com/@dsc106-2"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4 - 5"
+  }
+}
