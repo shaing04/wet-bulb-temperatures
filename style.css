@@ -1,11 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap');
+
+
 body {
-  font-family: sans-serif;
+  font-family: 'EB Garamond', Georgia, serif;
   margin: 0;
-  padding: 3em;
+  padding: 2em 3em 10em;
+  background-color: #ffffff;
 }
 
-h1,
-h2 {
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, serif;
+}
+
+
+h1,h2 {
   text-align: center;
   margin: 1rem 0;
 }
@@ -14,15 +22,288 @@ p {
   margin: 1rem;
 }
 
+/* ----- header ----- */
+.nyt-header {
+  font-family: Georgia, serif;
+  padding: 10px 20px 0;
+  position: sticky;
+}
+
+.nyt-title-row {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.nyt-title {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: 'UnifrakturMaguntia', Georgia, serif; /* or your chosen blackletter */
+  white-space: nowrap;
+}
+
+.nyt-info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.nyt-date {
+  font-size: 14px;
+  color: #333;
+}
+
+.nyt-link a {
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.nyt-link a:hover {
+  text-decoration: underline;
+}
+
+ /* double line border */
+.nyt-rule {
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+  height: 2px;
+}
+
+/* ----- Title hero section ----- */
+
+/* Container styling*/
+.title-section {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  padding-top: 15vh;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.15s linear, transform 0.15s linear;
+  
+}
+
+/* Image styling */
+.hero-image {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 0 auto 30px;
+}
+
+/* Main Title — bold, Georgia, editorial style */
+.hero-title {
+  font-family: Georgia, serif;
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+  margin-top: 10px;
+  line-height: 1.2;
+}
+
+/* Subtitle — lighter, slightly spaced */
+.hero-subtitle {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  color: #585858;
+}
+
+/* Authors — smaller, refined serif similar to NYT body fonts */
+.hero-authors {
+  font-family: 'EB Garamond', serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 0px;
+  color: #585858;
+  letter-spacing: 0.3px;
+}
+
+/* Position the indicator at the bottom center of the hero */
+.scroll-indicator {
+  position: absolute;          /* make sure the hero has position: relative */
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  font-family: Georgia, serif;
+  letter-spacing: 0.3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  opacity: 1;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-label {
+  margin-bottom: 12px;
+  color: #000000;
+}
+
+/* Vertical line */
+.scroll-line {
+  position: relative;
+  width: 2px;
+  height: 80px;
+  background-color: #000000;
+  overflow: hidden;
+}
+
+/* Animated square/dot */
+.scroll-dot {
+  position: absolute;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: #ffffff;
+  transform: translate(-50%, -10px);
+  animation: scrollDot 1.2s infinite;
+}
+
+/* Dot animation down the line */
+@keyframes scrollDot {
+  0% {
+    transform: translate(-50%, -10px);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(-50%, 70px);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Hidden state after scroll */
+.scroll-indicator.hidden {
+  opacity: 0;
+  transform: translate(-50%, 10px);
+  pointer-events: none;
+}
+
+/* ----- Wet Bulb Intro ----- */
+.intro-scrolly-section {
+  padding: 100px 0;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  /* position: sticky; */
+}
+
+.intro-scrolly-title {
+  font-family: Georgia, serif;
+  font-size: 40px;
+  margin-bottom: 80px;
+}
+
+/* Tall container so we have room to scroll through all cards */
+.scrolly-wetbulb {
+  position: relative;
+  height: 200vh; /* adjust depending on how slow/long you want it */
+}
+
+.thermo-wrapper {
+  position: sticky;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);   /* center in viewport */
+  width: 100px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 0;                /* behind cards */
+  pointer-events: none;
+  opacity: 0;          /* start hidden */
+  transition: opacity 0.2s ease-out;
+}
+
+.thermo-column {
+  position: relative;
+  width: 40px;
+  height: 350px;
+  border-radius: 999px;
+  /* background: #f0f0f0; */
+  box-shadow: inset 0 0 3px rgba(0,0,0,0.15);
+  overflow: hidden;
+}
+
+/* Fill that we scale from bottom */
+.thermo-fill {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #d22, #f85013);
+  transform-origin: bottom;
+  transform: scaleY(0);      /* start “empty” */
+  transition: transform 0.25s ease-out;
+}
+
+.thermo-bulb {
+  margin-top: -40px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #d22;
+  box-shadow: 0 0 6px rgba(0,0,0,0.25);
+}
+
+/* Cards that move through the viewport */
+.text-box {
+  position: fixed;             /* follow the viewport */
+  left: 50%;
+  top: 50vh;                  /* start off-screen at bottom */
+  transform: translateX(-50%);
+  max-width: 650px;
+  padding: 32px 40px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  font-family: "EB Garamond", serif;
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;        /* no weird hover / selection while moving */
+  z-index: 1;
+}
+
+
+/* ----- California Scrollytelling ----- */
+/* .california {
+
+} */
+.california #ca-description {
+  padding: 0 3em;
+  max-width: 60vw;
+  margin: 0 auto;
+}
+
 .scrolly-container {
   display: flex;
   flex-direction: row;
   gap: 2rem;
-  margin-top: 5rem;
-  margin-bottom: 10rem;
-  margin-left: 5rem;
-  margin-right: 5rem;
-  padding: 2rem;
+  margin: 0 5rem 10rem; /*top, right/left , bottom*/
+  padding: 0 2rem 2rem;
   position: relative;
   z-index: 1;
   /* border-top: 1px solid #ddd;
@@ -33,6 +314,8 @@ p {
   position: relative;
 }
 
+
+/* ----- US Scrolly ----- */
 #scrolly-us {
   position: relative;
 }
@@ -192,6 +475,22 @@ p {
   opacity: 0;
   pointer-events: none;
 }
+
+/* ----------------- */
+/* GLOBE SECTION */
+/* ----------------- */
+#globe-section {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 80%;
+  gap: 2rem;
+}
+
+#globe-container {
+  border: 1px solid #f6f4f4;
+  margin: 1em 0;
+}
+
 
 /* ----------------- */
 /* EMISSIONS SECTION */
