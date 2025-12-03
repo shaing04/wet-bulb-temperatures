@@ -15,6 +15,125 @@ const colors = [
   '#000000',
 ];
 
+// Page styling and functionality //////////////////////
+// Auto-fill today's date like NYT
+const today = new Date();
+const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+document.getElementById('today').textContent = today.toLocaleDateString('en-US', options);
+
+// hero section fade out
+const hero = document.querySelector('.title-section');
+
+  function updateHeroFade() {
+    if (!hero) return;
+
+    // How far to scroll before the hero is fully gone
+    const fadeDistance = window.innerHeight * 0.7; // tweak (0.5–1.0) to taste
+    const y = window.scrollY;
+
+    // 0 at top, 1 when we've scrolled fadeDistance
+    const progress = Math.min(Math.max(y / fadeDistance, 0), 1);
+
+    // Fade out and move slightly up
+    hero.style.opacity = 1 - progress;
+    hero.style.transform = `translateY(${progress * -40}px)`; // -40px up at full fade
+
+    // Optional: disable interactions once it's basically gone
+    hero.style.pointerEvents = progress >= 0.98 ? 'none' : 'auto';
+  }
+
+  window.addEventListener('scroll', updateHeroFade);
+  window.addEventListener('resize', updateHeroFade);
+  updateHeroFade(); // initial
+
+// hides scroll indicator after user scrolls
+const indicator = document.getElementById('scroll-indicator');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 50) {   // hide after they start scrolling
+    indicator.classList.add('hidden');
+  } else {
+    indicator.classList.remove('hidden');
+  }
+});
+
+// Intro Scrolly //////////////////////////////////////
+function initWetbulbLayeredScrolling() {
+    const scrollContainer = document.getElementById('scrolly-wetbulb');
+    const textBoxes = document.querySelectorAll('#scrolly-wetbulb .text-box');
+    const thermoWrapper = document.getElementById('thermo-wrapper');
+    const thermoFill = document.getElementById('thermo-fill');
+
+    if (!scrollContainer || !textBoxes.length || !thermoWrapper || !thermoFill) return;
+
+    function updateTextBoxPositions() {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const containerTop = scrollContainer.offsetTop;
+      const containerHeight = scrollContainer.offsetHeight;
+
+      // active scroll window for this section
+      const startScroll = containerTop + window.innerHeight * 0.05;
+      const endScroll   = containerTop + containerHeight * 0.8;
+
+      if (scrollTop < startScroll || scrollTop > endScroll) {
+        // Completely outside the section: hide cards + thermometer
+        textBoxes.forEach(box => {
+          box.style.display = 'none';
+          box.style.opacity = 0;
+          box.style.top = '100vh';
+        });
+        thermoWrapper.style.opacity = 0;
+        thermoFill.style.transform = 'scaleY(0)';
+        return;
+      } else {
+        textBoxes.forEach(box => (box.style.display = 'block'));
+        thermoWrapper.style.opacity = 1;   // show thermometer only inside
+      }
+
+      // 0–1 progress through this window
+      const rawProgress = (scrollTop - startScroll) / (endScroll - startScroll);
+      const progress = Math.max(0, Math.min(1, rawProgress));
+
+      // Thermometer fill based on overall progress
+      const thermoLevel = 0.1 + progress * 0.9;   // 10% → 100%
+      thermoFill.style.transform = `scaleY(${thermoLevel})`;
+
+      // Card motion (unchanged logic, but using this progress)
+      const count = textBoxes.length;
+      const step  = 1 / count;
+
+      textBoxes.forEach((box, index) => {
+        const startProgress = index * step;
+        const endProgress   = startProgress + step * 1.1; // slight overlap
+
+        if (progress >= startProgress && progress <= endProgress) {
+          const boxProgress = (progress - startProgress) / (endProgress - startProgress);
+
+          const START_VH  = 75;
+          const TRAVEL_VH = 100;
+          const topPosition = START_VH - boxProgress * TRAVEL_VH;
+
+          box.style.top = `${topPosition}vh`;
+          box.style.opacity = (boxProgress < 0.1 || boxProgress > 0.9) ? 0.4 : 1;
+        } else if (progress > endProgress) {
+          box.style.top = '-20vh';
+          box.style.opacity = 0;
+        } else {
+          box.style.top = '100vh';
+          box.style.opacity = 0;
+        }
+      });
+    }
+
+    window.addEventListener('scroll', updateTextBoxPositions);
+    window.addEventListener('resize', updateTextBoxPositions);
+    updateTextBoxPositions();
+  }
+
+  document.addEventListener('DOMContentLoaded', initWetbulbLayeredScrolling);
+
+
+
 // California /////////////////////////////////////////
 
 const svgCA = d3.select('#map-ca');
