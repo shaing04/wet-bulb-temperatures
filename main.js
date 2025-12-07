@@ -1,8 +1,8 @@
 import * as d3 from 'https://cdn.jsdelivr.net/npm/d3@7/+esm';
 import scrollama from 'https://cdn.jsdelivr.net/npm/scrollama@3.2.0/+esm';
 
-import define from "./globe.js";
-import {Runtime, Inspector} from "./runtime.js";
+import define from './globe.js';
+import { Inspector, Runtime } from './runtime.js';
 
 const bins = [10, 14, 18, 22, 26, 30, 32];
 const colors = [
@@ -18,39 +18,48 @@ const colors = [
 // Page styling and functionality //////////////////////
 // Auto-fill today's date like NYT
 const today = new Date();
-const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-document.getElementById('today').textContent = today.toLocaleDateString('en-US', options);
+const options = {
+  weekday: 'long',
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+};
+document.getElementById('today').textContent = today.toLocaleDateString(
+  'en-US',
+  options,
+);
 
 // hero section fade out
 const hero = document.querySelector('.title-section');
 
-  function updateHeroFade() {
-    if (!hero) return;
+function updateHeroFade() {
+  if (!hero) return;
 
-    // How far to scroll before the hero is fully gone
-    const fadeDistance = window.innerHeight * 0.7; // tweak (0.5–1.0) to taste
-    const y = window.scrollY;
+  // How far to scroll before the hero is fully gone
+  const fadeDistance = window.innerHeight * 0.7; // tweak (0.5–1.0) to taste
+  const y = window.scrollY;
 
-    // 0 at top, 1 when we've scrolled fadeDistance
-    const progress = Math.min(Math.max(y / fadeDistance, 0), 1);
+  // 0 at top, 1 when we've scrolled fadeDistance
+  const progress = Math.min(Math.max(y / fadeDistance, 0), 1);
 
-    // Fade out and move slightly up
-    hero.style.opacity = 1 - progress;
-    hero.style.transform = `translateY(${progress * -40}px)`; // -40px up at full fade
+  // Fade out and move slightly up
+  hero.style.opacity = 1 - progress;
+  hero.style.transform = `translateY(${progress * -40}px)`; // -40px up at full fade
 
-    // Optional: disable interactions once it's basically gone
-    hero.style.pointerEvents = progress >= 0.98 ? 'none' : 'auto';
-  }
+  // Optional: disable interactions once it's basically gone
+  hero.style.pointerEvents = progress >= 0.98 ? 'none' : 'auto';
+}
 
-  window.addEventListener('scroll', updateHeroFade);
-  window.addEventListener('resize', updateHeroFade);
-  updateHeroFade(); // initial
+window.addEventListener('scroll', updateHeroFade);
+window.addEventListener('resize', updateHeroFade);
+updateHeroFade(); // initial
 
 // hides scroll indicator after user scrolls
 const indicator = document.getElementById('scroll-indicator');
 
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 50) {   // hide after they start scrolling
+  if (window.scrollY > 50) {
+    // hide after they start scrolling
     indicator.classList.add('hidden');
   } else {
     indicator.classList.remove('hidden');
@@ -59,228 +68,235 @@ window.addEventListener('scroll', () => {
 
 // Intro Scrolly //////////////////////////////////////
 function initWetbulbLayeredScrolling() {
-    const scrollContainer = document.getElementById('scrolly-wetbulb');
-    const textBoxes = document.querySelectorAll('#scrolly-wetbulb .text-box');
-    const thermoWrapper = document.getElementById('thermo-wrapper');
-    const thermoFill = document.getElementById('thermo-fill');
+  const scrollContainer = document.getElementById('scrolly-wetbulb');
+  const textBoxes = document.querySelectorAll('#scrolly-wetbulb .text-box');
+  const thermoWrapper = document.getElementById('thermo-wrapper');
+  const thermoFill = document.getElementById('thermo-fill');
 
-    if (!scrollContainer || !textBoxes.length || !thermoWrapper || !thermoFill) return;
+  if (!scrollContainer || !textBoxes.length || !thermoWrapper || !thermoFill)
+    return;
 
-    function updateTextBoxPositions() {
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      const containerTop = scrollContainer.offsetTop;
-      const containerHeight = scrollContainer.offsetHeight;
+  function updateTextBoxPositions() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const containerTop = scrollContainer.offsetTop;
+    const containerHeight = scrollContainer.offsetHeight;
 
-      // active scroll window for this section
-      const startScroll = containerTop + window.innerHeight * 0.05;
-      const endScroll   = containerTop + containerHeight * 0.8;
+    // active scroll window for this section
+    const startScroll = containerTop + window.innerHeight * 0.05;
+    const endScroll = containerTop + containerHeight * 0.8;
 
-      if (scrollTop < startScroll || scrollTop > endScroll) {
-        // Completely outside the section: hide cards + thermometer
-        textBoxes.forEach(box => {
-          box.style.display = 'none';
-          box.style.opacity = 0;
-          box.style.top = '100vh';
-        });
-        thermoWrapper.style.opacity = 0;
-        thermoFill.style.transform = 'scaleY(0)';
-        return;
-      } else {
-        textBoxes.forEach(box => (box.style.display = 'block'));
-        thermoWrapper.style.opacity = 1;   // show thermometer only inside
-      }
-
-      // 0–1 progress through this window
-      const rawProgress = (scrollTop - startScroll) / (endScroll - startScroll);
-      const progress = Math.max(0, Math.min(1, rawProgress));
-
-      // Thermometer fill based on overall progress
-      const thermoLevel = 0.1 + progress * 0.9;   // 10% → 100%
-      thermoFill.style.transform = `scaleY(${thermoLevel})`;
-
-      // Card motion (unchanged logic, but using this progress)
-      const count = textBoxes.length;
-      const step  = 1 / count;
-
-      textBoxes.forEach((box, index) => {
-        const startProgress = index * step;
-        const endProgress   = startProgress + step * 1.1; // slight overlap
-
-        if (progress >= startProgress && progress <= endProgress) {
-          const boxProgress = (progress - startProgress) / (endProgress - startProgress);
-
-          const START_VH  = 75;
-          const TRAVEL_VH = 100;
-          const topPosition = START_VH - boxProgress * TRAVEL_VH;
-
-          box.style.top = `${topPosition}vh`;
-          box.style.opacity = (boxProgress < 0.1 || boxProgress > 0.9) ? 0.4 : 1;
-        } else if (progress > endProgress) {
-          box.style.top = '-20vh';
-          box.style.opacity = 0;
-        } else {
-          box.style.top = '100vh';
-          box.style.opacity = 0;
-        }
+    if (scrollTop < startScroll || scrollTop > endScroll) {
+      // Completely outside the section: hide cards + thermometer
+      textBoxes.forEach((box) => {
+        box.style.display = 'none';
+        box.style.opacity = 0;
+        box.style.top = '100vh';
       });
+      thermoWrapper.style.opacity = 0;
+      thermoFill.style.transform = 'scaleY(0)';
+      return;
+    } else {
+      textBoxes.forEach((box) => (box.style.display = 'block'));
+      thermoWrapper.style.opacity = 1; // show thermometer only inside
     }
 
-    window.addEventListener('scroll', updateTextBoxPositions);
-    window.addEventListener('resize', updateTextBoxPositions);
-    updateTextBoxPositions();
+    // 0–1 progress through this window
+    const rawProgress = (scrollTop - startScroll) / (endScroll - startScroll);
+    const progress = Math.max(0, Math.min(1, rawProgress));
+
+    // Thermometer fill based on overall progress
+    const thermoLevel = 0.1 + progress * 0.9; // 10% → 100%
+    thermoFill.style.transform = `scaleY(${thermoLevel})`;
+
+    // Card motion (unchanged logic, but using this progress)
+    const count = textBoxes.length;
+    const step = 1 / count;
+
+    textBoxes.forEach((box, index) => {
+      const startProgress = index * step;
+      const endProgress = startProgress + step * 1.1; // slight overlap
+
+      if (progress >= startProgress && progress <= endProgress) {
+        const boxProgress =
+          (progress - startProgress) / (endProgress - startProgress);
+
+        const START_VH = 75;
+        const TRAVEL_VH = 100;
+        const topPosition = START_VH - boxProgress * TRAVEL_VH;
+
+        box.style.top = `${topPosition}vh`;
+        box.style.opacity = boxProgress < 0.1 || boxProgress > 0.9 ? 0.4 : 1;
+      } else if (progress > endProgress) {
+        box.style.top = '-20vh';
+        box.style.opacity = 0;
+      } else {
+        box.style.top = '100vh';
+        box.style.opacity = 0;
+      }
+    });
   }
 
-  document.addEventListener('DOMContentLoaded', initWetbulbLayeredScrolling);
+  window.addEventListener('scroll', updateTextBoxPositions);
+  window.addEventListener('resize', updateTextBoxPositions);
+  updateTextBoxPositions();
+}
 
-
+document.addEventListener('DOMContentLoaded', initWetbulbLayeredScrolling);
 
 // California /////////////////////////////////////////
+const hasCA = document.querySelector('#map-ca') !== null;
+if (hasCA) {
+  // everything from: const svgCA = d3.select('#map-ca');
+  // through the end of initIfReady()
 
-const svgCA = d3.select('#map-ca');
-const width = +svgCA.attr('width');
-const height = +svgCA.attr('height');
+  const svgCA = d3.select('#map-ca');
+  const width = +svgCA.attr('width');
+  const height = +svgCA.attr('height');
 
-let caCounties, caData;
+  let caCounties, caData;
 
-// Load counties first
-d3.json('data/california-counties.geojson').then((counties) => {
-  caCounties = counties;
-  initIfReady();
-});
+  // Load counties first
+  d3.json('data/california-counties.geojson').then((counties) => {
+    caCounties = counties;
+    initIfReady();
+  });
 
-d3.json('data/wetbulb_max_ca.json').then((data) => {
-  caData = data;
-  initIfReady();
-});
+  d3.json('data/wetbulb_max_ca.json').then((data) => {
+    caData = data;
+    initIfReady();
+  });
 
-// Only initialize after both datasets are loaded
-function initIfReady() {
-  if (!caCounties || !caData) return;
+  // Only initialize after both datasets are loaded
+  function initIfReady() {
+    if (!caCounties || !caData) return;
 
-  const dataByYear = d3.group(caData, (d) => d.year);
+    const dataByYear = d3.group(caData, (d) => d.year);
 
-  // All years in the dataset
-  const allYears = Array.from(dataByYear.keys()).sort((a, b) => a - b); // includes 2016
-  const stepYears = allYears.filter((y) => y !== 2016); // exclude 2016 from scroll steps
+    // All years in the dataset
+    const allYears = Array.from(dataByYear.keys()).sort((a, b) => a - b); // includes 2016
+    const stepYears = allYears.filter((y) => y !== 2016); // exclude 2016 from scroll steps
 
-  // Custom text for scroll steps
-  const yearText = {
-    2020: 'The highest Wet-Bulb Temperature was in Riverside County, at only 18.74 °C. With the lowest in Mono County at 12.83 °C. We start with Mono, Madera, Lassen, and Modoc counties at the 10-14 °C range.',
-    2028: 'In only 8 years, Riverside County hit 42.45 °C, a 2.71 degree Celcius increase in Wet-Bulb Temperature. The lowest remains to be Mono County at 14.24 °C with only a 1.24 degree Celcius increase.',
-    2036: 'In just another 8 years, Riverside County hits 22.11 °C, a 3.36 degree Celcius increase. ',
-    2040: 'By 2040, both Riverside and San Bernandino County increases by at least 5 °C since 2020, getting closer towards dangerous Wet-Bulb Temperature levels.',
-    2060: '2 decades later, and although the Wet-Bulb Temperatures are not as high as they used to be, they are still higher than they were in 2020 by at least 1.27 °C.',
-    2072: 'By 2072, California continues to darken as we head towards 2100. Mono, Madera, Lassen, and Modoc Counties that had the lowest Wet-Bulb Temperatures in 2020 have risen to the 14-18 degree Celcius range.',
-    2100: 'In 2100, although not as high in 2036, the overall Wet-Bulb Temperature has increased over time, with a minimum increase of 2.11 °C in Inyo County.',
-  };
+    // Custom text for scroll steps
+    const yearText = {
+      2020: 'The highest Wet-Bulb Temperature was in Riverside County, at only 18.74 °C. With the lowest in Mono County at 12.83 °C. We start with Mono, Madera, Lassen, and Modoc counties at the 10-14 °C range.',
+      2028: 'In only 8 years, Riverside County hit 42.45 °C, a 2.71 degree Celcius increase in Wet-Bulb Temperature. The lowest remains to be Mono County at 14.24 °C with only a 1.24 degree Celcius increase.',
+      2036: 'In just another 8 years, Riverside County hits 22.11 °C, a 3.36 degree Celcius increase. ',
+      2040: 'By 2040, both Riverside and San Bernandino County increases by at least 5 °C since 2020, getting closer towards dangerous Wet-Bulb Temperature levels.',
+      2060: '2 decades later, and although the Wet-Bulb Temperatures are not as high as they used to be, they are still higher than they were in 2020 by at least 1.27 °C.',
+      2072: 'By 2072, California continues to darken as we head towards 2100. Mono, Madera, Lassen, and Modoc Counties that had the lowest Wet-Bulb Temperatures in 2020 have risen to the 14-18 degree Celcius range.',
+      2100: 'In 2100, although not as high in 2036, the overall Wet-Bulb Temperature has increased over time, with a minimum increase of 2.11 °C in Inyo County.',
+    };
 
-  // Scroll text container
-  const textContainer = d3.select('#text');
+    // Scroll text container
+    const textContainer = d3.select('#text');
 
-  textContainer
-    .append('div')
-    .attr('class', 'step spacer')
-    .style('height', '200px'); // adjust as needed
-
-  stepYears.forEach((year) => {
     textContainer
       .append('div')
-      .attr('class', 'step')
-      .attr('data-year', year)
-      .html(`<strong>Year ${year}</strong><br/>${yearText[year] || ''}`)
-      .style('margin-bottom', '200px');
-  });
+      .attr('class', 'step spacer')
+      .style('height', '200px'); // adjust as needed
 
-  // Map projection and path
-  const projection = d3.geoMercator().fitSize([width, height], caCounties);
-  const path = d3.geoPath().projection(projection);
-
-  const colorScale = d3
-    .scaleOrdinal()
-    .domain(d3.range(bins.length))
-    .range(colors);
-
-  const tooltipCA = d3.select('#tooltip');
-
-  function drawLegend() {
-    const legend = d3.select('#ca-legend');
-    const binLabels = bins.map((b, i) =>
-      i === 0 ? `< ${b}` : `${bins[i - 1]} – ${b}`,
-    );
-    binLabels.push(`≥ ${bins[bins.length - 1]}`);
-
-    const items = legend
-      .selectAll('.legend-item')
-      .data(binLabels)
-      .join('div')
-      .attr('class', 'legend-item');
-
-    items
-      .selectAll('.legend-color')
-      .data((d, i) => [i])
-      .join('div')
-      .attr('class', 'legend-color')
-      .style('background-color', (i) => colors[i] || colors[colors.length - 1]);
-
-    items
-      .selectAll('.legend-label')
-      .data((d) => [d])
-      .join('span')
-      .attr('class', 'legend-label')
-      .text((d) => d);
-  }
-
-  drawLegend();
-  let currentMouse = null;
-
-  // Track mouse position over the map
-  svgCA.on('mousemove', (event) => {
-    currentMouse = [event.pageX, event.pageY];
-  });
-
-  function drawCA(year) {
-    const yearData = dataByYear.get(year);
-    if (!yearData) return;
-
-    const countyTemps = {};
-    yearData.forEach((d) => (countyTemps[d.county] = d.wetbulb_C));
-
-    caCounties.features.forEach((f) => {
-      const value = countyTemps[f.properties.name] ?? null;
-      let binIndex = bins.findIndex((b) => value < b);
-      if (binIndex === -1) binIndex = bins.length - 1;
-      f.properties.bin = binIndex;
-      f.properties.value = value;
-      f.properties.year = year;
+    stepYears.forEach((year) => {
+      textContainer
+        .append('div')
+        .attr('class', 'step')
+        .attr('data-year', year)
+        .html(`<strong>Year ${year}</strong><br/>${yearText[year] || ''}`)
+        .style('margin-bottom', '200px');
     });
 
-    const paths = svgCA
-      .selectAll('path')
-      .data(caCounties.features, (d) => d.properties.name);
+    // Map projection and path
+    const projection = d3.geoMercator().fitSize([width, height], caCounties);
+    const path = d3.geoPath().projection(projection);
 
-    paths
-      .enter()
-      .append('path')
-      .merge(paths)
-      .attr('d', path)
-      .attr('stroke', '#999')
-      .attr('fill', (d) => colorScale(d.properties.bin))
-      .on('mouseover', (event, d) => {
-        // Get 2020 value for this county
-        const year2020Data = dataByYear.get(2020) || [];
-        const county2020 = year2020Data.find(
-          (c) => c.county === d.properties.name,
+    const colorScale = d3
+      .scaleOrdinal()
+      .domain(d3.range(bins.length))
+      .range(colors);
+
+    const tooltipCA = d3.select('#tooltip');
+
+    function drawLegend() {
+      const legend = d3.select('#ca-legend');
+      const binLabels = bins.map((b, i) =>
+        i === 0 ? `< ${b}` : `${bins[i - 1]} – ${b}`,
+      );
+      binLabels.push(`≥ ${bins[bins.length - 1]}`);
+
+      const items = legend
+        .selectAll('.legend-item')
+        .data(binLabels)
+        .join('div')
+        .attr('class', 'legend-item');
+
+      items
+        .selectAll('.legend-color')
+        .data((d, i) => [i])
+        .join('div')
+        .attr('class', 'legend-color')
+        .style(
+          'background-color',
+          (i) => colors[i] || colors[colors.length - 1],
         );
-        const value2020 = county2020 ? county2020.wetbulb_C : null;
 
-        const currentValue = d.properties.value;
+      items
+        .selectAll('.legend-label')
+        .data((d) => [d])
+        .join('span')
+        .attr('class', 'legend-label')
+        .text((d) => d);
+    }
 
-        const diff =
-          value2020 !== null && currentValue !== null
-            ? (currentValue - value2020).toFixed(2)
-            : 'N/A';
+    drawLegend();
+    let currentMouse = null;
 
-        tooltipCA.style('opacity', 1).html(`
+    // Track mouse position over the map
+    svgCA.on('mousemove', (event) => {
+      currentMouse = [event.pageX, event.pageY];
+    });
+
+    function drawCA(year) {
+      const yearData = dataByYear.get(year);
+      if (!yearData) return;
+
+      const countyTemps = {};
+      yearData.forEach((d) => (countyTemps[d.county] = d.wetbulb_C));
+
+      caCounties.features.forEach((f) => {
+        const value = countyTemps[f.properties.name] ?? null;
+        let binIndex = bins.findIndex((b) => value < b);
+        if (binIndex === -1) binIndex = bins.length - 1;
+        f.properties.bin = binIndex;
+        f.properties.value = value;
+        f.properties.year = year;
+      });
+
+      const paths = svgCA
+        .selectAll('path')
+        .data(caCounties.features, (d) => d.properties.name);
+
+      paths
+        .enter()
+        .append('path')
+        .merge(paths)
+        .attr('d', path)
+        .attr('stroke', '#999')
+        .attr('fill', (d) => colorScale(d.properties.bin))
+        .on('mouseover', (event, d) => {
+          // Get 2020 value for this county
+          const year2020Data = dataByYear.get(2020) || [];
+          const county2020 = year2020Data.find(
+            (c) => c.county === d.properties.name,
+          );
+          const value2020 = county2020 ? county2020.wetbulb_C : null;
+
+          const currentValue = d.properties.value;
+
+          const diff =
+            value2020 !== null && currentValue !== null
+              ? (currentValue - value2020).toFixed(2)
+              : 'N/A';
+
+          tooltipCA.style('opacity', 1).html(`
       <strong>${d.properties.name}</strong><br/>
       Year: ${d.properties.year}<br/>
       Wet-Bulb Temp: ${
@@ -289,50 +305,51 @@ function initIfReady() {
       2020 Temp: ${value2020 !== null ? value2020.toFixed(2) : 'N/A'}°C<br/>
       Difference: ${diff}°C
     `);
+        })
+        .on('mousemove', (event, d) => {
+          tooltipCA
+            .style('left', event.pageX + 15 + 'px')
+            .style('top', event.pageY + 15 + 'px');
+        })
+        .on('mouseout', () => tooltipCA.style('opacity', 0));
+
+      paths.exit().remove();
+    }
+
+    function updateStats(year) {
+      const yearData = dataByYear.get(year);
+      if (!yearData) return;
+      const avgTemp = d3.mean(yearData, (d) => d.wetbulb_C).toFixed(1);
+      d3.select('#scrolly-ca p').text(
+        `In ${year}, California's average Wet-Bulb Temperature is ${avgTemp}°C.`,
+      );
+    }
+
+    drawCA(allYears[0]);
+    updateStats(allYears[0]);
+
+    const yearTitle = d3.select('#year-title');
+    yearTitle.text(`California Wet Bulb Temperature In: `);
+
+    const scroller = scrollama();
+
+    scroller
+      .setup({
+        container: '#scrolly-ca',
+        step: '#text .step',
+        offset: 0.5,
       })
-      .on('mousemove', (event, d) => {
-        tooltipCA
-          .style('left', event.pageX + 15 + 'px')
-          .style('top', event.pageY + 15 + 'px');
-      })
-      .on('mouseout', () => tooltipCA.style('opacity', 0));
+      .onStepEnter((response) => {
+        const year = +d3.select(response.element).attr('data-year');
+        drawCA(year);
+        updateStats(year);
+        if (year) {
+          yearTitle.text(`California Wet Bulb Temperature In: ${year}`);
+        }
+      });
 
-    paths.exit().remove();
+    window.addEventListener('resize', scroller.resize);
   }
-
-  function updateStats(year) {
-    const yearData = dataByYear.get(year);
-    if (!yearData) return;
-    const avgTemp = d3.mean(yearData, (d) => d.wetbulb_C).toFixed(1);
-    d3.select('#scrolly-ca p').text(
-      `In ${year}, California's average Wet-Bulb Temperature is ${avgTemp}°C.`,
-    );
-  }
-
-  drawCA(allYears[0]);
-  updateStats(allYears[0]);
-
-  const yearTitle = d3.select('#year-title');
-  yearTitle.text(`California Wet Bulb Temperature In: `);
-
-  const scroller = scrollama();
-
-  scroller
-    .setup({
-      container: '#scrolly-ca',
-      step: '#text .step',
-      offset: 0.5,
-    })
-    .onStepEnter((response) => {
-      const year = +d3.select(response.element).attr('data-year');
-      drawCA(year);
-      updateStats(year);
-      if (year) {
-        yearTitle.text(`California Wet Bulb Temperature In: ${year}`);
-      }
-    });
-
-  window.addEventListener('resize', scroller.resize);
 }
 
 ////// US ///////
@@ -509,33 +526,31 @@ function drawUS(year) {
 }
 
 document.addEventListener('scroll', () => {
-  const caBottom = document
-    .querySelector('#scrolly-ca')
-    .getBoundingClientRect().bottom;
+  // Safely check for California elements (they might not exist)
+  const scrollyCA = document.querySelector('#scrolly-ca');
+  const caBottom = scrollyCA ? scrollyCA.getBoundingClientRect().bottom : 0;
 
   const transitionTop = document
     .querySelector('.transition-section')
-    .getBoundingClientRect().top;
-
+    ?.getBoundingClientRect().top;
   const usTop = document
     .querySelector('#scrolly-us')
-    .getBoundingClientRect().top;
-
+    ?.getBoundingClientRect().top;
   const caMap = document.querySelector('#map-column');
   const usMap = document.querySelector('#map-us-column');
 
-  // Fade out California map once user scrolls past it
-  if (caBottom < window.innerHeight * 0.6) {
-    caMap.classList.add('sticky-hidden');
-  } else {
+  // Fade out California map once user scrolls past it (if it exists)
+  if (scrollyCA && caBottom < window.innerHeight * 0.6) {
+    if (caMap) caMap.classList.add('sticky-hidden');
+  } else if (caMap) {
     caMap.classList.remove('sticky-hidden');
   }
 
   // Fade in US map when transition section is mostly scrolled past
-  if (transitionTop < window.innerHeight * 0.5) {
-    usMap.classList.remove('sticky-hidden');
-  } else {
-    usMap.classList.add('sticky-hidden');
+  if (transitionTop !== undefined && transitionTop < window.innerHeight * 0.5) {
+    if (usMap) usMap.classList.remove('sticky-hidden');
+  } else if (usTop !== undefined && usTop > window.innerHeight * 0.2) {
+    if (usMap) usMap.classList.add('sticky-hidden');
   }
 });
 
@@ -543,9 +558,8 @@ document.addEventListener('scroll', () => {
 
 const runtime = new Runtime();
 
-runtime.module(define, name =>
-  name === "map"
-    ? new Inspector(document.querySelector("#globe-container"))
-    : null
+runtime.module(define, (name) =>
+  name === 'map'
+    ? new Inspector(document.querySelector('#globe-container'))
+    : null,
 );
-
