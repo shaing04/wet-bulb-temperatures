@@ -373,34 +373,123 @@ function initUSIfReady() {
   if (!usStates || !usData) return;
 
   usDataByYear = d3.group(usData, (d) => d.year);
-
   const allYears = Array.from(usDataByYear.keys()).sort((a, b) => a - b);
+
+  // Group years by decade and select representative years
+  const yearGroups = {
+    '2010s': [2016],
+    '2020s': [2020, 2028],
+    '2030s': [2032, 2036],
+    '2040s': [2040, 2044],
+    '2050s': [2056],
+    '2060s': [2060, 2064],
+    '2070s': [2072],
+    '2080s': [2080, 2084],
+    '2090s': [2092],
+    '2100s': [2100],
+  };
+
+  // Flatten to array of years to display
+  const stepYears = Object.values(yearGroups)
+    .flat()
+    .filter((y) => allYears.includes(y));
 
   const textContainer = d3.select('#text-us');
   textContainer.selectAll('.step').remove();
 
+  // Decade-based text that can span multiple years
+  const decadeText = {
+    '2010s':
+      'This decade establishes our climate baseline, with clear regional patterns: the hottest states concentrated in the South, while northern and mountainous regions remain significantly cooler.',
+    '2020s':
+      'Early signs of climate change emerge, with noticeable warming beginning across the country. Southern states show the first significant increases, while traditionally cooler regions start their gradual ascent.',
+    '2030s':
+      'Accelerating warming trends become evident nationwide. More states transition into higher temperature categories as heat begins affecting broader regions beyond the traditional hot zones.',
+    '2040s':
+      'A critical turning point where parts of the United States first reach dangerously high temperature thresholds that persist year-round, marking a shift toward more extreme heat patterns.',
+    '2050s':
+      'Mid-century brings permanent changes to temperature patterns, with several southern states remaining consistently in high temperature ranges that were previously exceptional.',
+    '2060s':
+      'Historically moderate regions experience temperature levels once characteristic only of southern states, while traditionally cool areas show continued, accelerated warming.',
+    '2070s':
+      'Multiple states regularly experience dangerously high temperatures, with warming affecting virtually every region as extreme heat becomes more common across the country.',
+    '2080s':
+      'The last remaining cooler regions begin disappearing, with nearly all states experiencing temperature levels that would have been considered extreme in previous decades.',
+    '2090s':
+      'End-of-century patterns solidify, with large portions of the country experiencing temperature ranges that pose significant health risks and represent dramatic departures from historical norms.',
+    '2100s':
+      'The century closes with temperature patterns fundamentally transformed, bringing much of the nation perilously close to thresholds considered dangerous for human survival.',
+  };
+
+  // Your existing year-specific text (updated with some new entries)
   const usYearText = {
     2016: 'In 2016, the hottest states were Texas and Florida at 25.49°C and 26.48°C, while Alaska was the coolest at 11.97°C.',
+    2020: 'By 2020, we see early warming trends with Alaska increasing by 1.2°C from 2016 levels.',
     2028: 'By 2028, Alaska, the coolest state thus far has increased by 1.59°C, at 13.56°C. Texas and Florida, the previously hottest states so far have also increased, even if by less than 1°C.',
     2032: '4 years later, the Midwest and Southeast regions of the US show a noticeable rise in Wet-Bulb temperatures, especially Texas, Louisiana, Florida, and South Carolina.',
+    2036: 'In the mid-2030s, temperature increases accelerate across most states, with more regions entering higher temperature brackets.',
     2040: 'In just another 8 years, the entire US sees an increase in Wet-Bulb Temperatures, as parts of the West Coast and Northern Midwest jump up to at least 22°C.',
     2044: 'This is the first year that any part of the US reaches a Wet-Bulb Temperature of at least 26°C and stays at that range.',
+    2056: 'This is the start of where states such as Texas, Louisiana, and Florida hit the 26-30°C threshold and do not come back down, showing the rising temperatures as it spreads through the Southern US.',
+    2060: 'By the 2060s, temperature patterns have shifted significantly, with previously moderate regions now experiencing heat levels comparable to historical southern states.',
     2064: "Here we see Alaska's Wet-Bulb Temperature hit 14.18°C, a 2.32°C increase from 2016. As the state that was historically the coolest, this is it's turning point where it continues to climb.",
-    2072: '10 states hit the range of 26-30°C, and even Alaska, the coolest state historically has increase by 2.52°C since 2016, at 14.49°C.',
+    2072: '10 states hit the range of 26-30°C, and even Alaska, the coolest state historically has increased by 2.52°C since 2016, at 14.49°C.',
+    2084: 'Alaska and Nevada remain to be the final 2 states of the United States that see a projected wet-bulb temperature of below 18°C.',
     2092: 'By 2092, 9 states are in the 26-30°C range, with 24 states in the 22-26°C range, a stark difference from the Wet-Bulb Temperatures in 2016.',
     2100: 'Once we hit the end of the century, 8 states in the US reach at least or almost to 28°C, only 2°C away from the dangerous Wet-Bulb Temperature of 30°C.',
   };
 
-  allYears.forEach((year) => {
-    textContainer
-      .append('div')
-      .attr('class', 'step')
-      .attr('data-year', year)
-      .html(`<strong>Year ${year}</strong><br/>${usYearText[year] || ''}`)
-      .style('margin-bottom', '200px');
+  // Track previous decade to add headers
+  let prevDecade = null;
+
+  // Create steps for each decade with representative years
+  Object.entries(yearGroups).forEach(([decade, years]) => {
+    if (years.length > 0) {
+      // Check if this is a new decade to add header
+      if (decade !== prevDecade) {
+        textContainer
+          .append('div')
+          .attr('class', 'decade-header')
+          .html(
+            `<h3 style="margin-bottom: 1rem; color: #333; font-family: Georgia, serif;">The ${decade}</h3>`,
+          )
+          .style('margin-bottom', '30px')
+          .style('font-size', '1.5em');
+        prevDecade = decade;
+      }
+
+      // Create a step for each year in this decade
+      years.forEach((year) => {
+        textContainer
+          .append('div')
+          .attr('class', 'step')
+          .attr('data-year', year)
+          .attr('data-decade', decade)
+          .html(
+            `
+            <div style="margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid #eee;">
+              <strong style="font-size: 1.2em;">${year}</strong>
+              <div style="font-size: 0.9em; color: #666; margin-top: 0.2rem;">Part of the ${decade}</div>
+            </div>
+            <div style="font-style: italic; color: #444; margin-bottom: 1rem;">
+              ${decadeText[decade] || ''}
+            </div>
+            <div>
+              ${usYearText[year] || ''}
+            </div>
+          `,
+          )
+          .style('margin-bottom', '200px')
+          .style('padding', '1.5rem')
+          .style('background', 'rgba(255, 255, 255, 0.95)')
+          .style('border-radius', '8px')
+          .style('box-shadow', '0 2px 10px rgba(0, 0, 0, 0.08)')
+          .style('border-left', '4px solid #d22');
+      });
+    }
   });
 
-  drawUS(allYears[0]);
+  drawUS(stepYears[0]);
 
   const scrollerUS = scrollama();
   scrollerUS
@@ -415,6 +504,10 @@ function initUSIfReady() {
       d3.select('#us-year-title').text(
         `United States Wet Bulb Temperature In: ${year}`,
       );
+
+      // Optional: Highlight current decade
+      const decade = d3.select(response.element).attr('data-decade');
+      console.log(`Now showing: ${decade}, Year ${year}`);
     });
 
   window.addEventListener('resize', scrollerUS.resize);
@@ -475,7 +568,7 @@ function drawUS(year) {
     f.properties.year = year;
   });
 
-  const projection = d3.geoAlbersUsa();
+  const projection = d3.geoAlbersUsa().translate([300, 200]).scale(700);
   const path = d3.geoPath().projection(projection);
 
   const paths = svgUS
@@ -487,12 +580,19 @@ function drawUS(year) {
     .append('path')
     .merge(paths)
     .attr('d', path)
-    .attr('stroke', '#999')
+    .attr('stroke', '#ffffff') // White borders for contrast
+    .attr('stroke-width', 0.8)
     .attr('fill', (d) => {
       const binIndex = bins.findIndex((b) => d.properties.value < b);
       return colors[binIndex === -1 ? bins.length - 1 : binIndex];
     })
     .on('mouseover', (event, d) => {
+      // Bring hovered state to front and highlight it
+      const hoveredPath = d3.select(event.currentTarget);
+      hoveredPath.raise(); // Move to top of rendering order
+
+      hoveredPath.attr('stroke', '#000000').attr('stroke-width', 2);
+
       // Get 2020 value
       const year2016Data = usDataByYear.get(2016) || [];
       const state2016 = year2016Data.find((s) => s.state === d.properties.NAME);
@@ -520,7 +620,13 @@ function drawUS(year) {
         .style('left', event.pageX + 15 + 'px')
         .style('top', event.pageY + 15 + 'px');
     })
-    .on('mouseout', () => tooltipUS.style('opacity', 0));
+    .on('mouseout', (event, d) => {
+      // Reset to normal border
+      d3.select(event.currentTarget)
+        .attr('stroke', '#ffffff')
+        .attr('stroke-width', 0.8);
+      tooltipUS.style('opacity', 0);
+    });
 
   paths.exit().remove();
 }

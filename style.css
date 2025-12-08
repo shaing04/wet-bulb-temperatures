@@ -17,7 +17,8 @@ h6 {
 }
 
 h1,
-h2 {
+h2,
+h5 {
   text-align: center;
   margin: 1rem 0;
 }
@@ -281,7 +282,7 @@ p {
   border-radius: 8px;
   border: 1px solid #eee;
   font-family: 'EB Garamond', serif;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1.6;
   text-align: center;
   opacity: 0;
@@ -290,14 +291,8 @@ p {
   z-index: 1;
 }
 
-/* ----- California Scrollytelling ----- */
-/* .california {
-
-} */
-.california #ca-description {
-  padding: 0 3em;
-  max-width: 60vw;
-  margin: 0 auto;
+.transition-section p {
+  font-size: 24px;
 }
 
 .scrolly-container {
@@ -310,10 +305,6 @@ p {
   z-index: 1;
   /* border-top: 1px solid #ddd;
   /*border-bottom: 1px solid #ddd; */
-}
-
-#scrolly-ca {
-  position: relative;
 }
 
 /* ----- US Scrolly ----- */
@@ -358,26 +349,10 @@ p {
 }
 
 /* Legend styling */
-#ca-legend {
-  position: absolute;
-  top: 500px; /* distance from the top of the map */
-  left: 10px; /* distance from the left of the map */
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.8
-  ); /* semi-transparent background for readability */
-  padding: 6px 8px;
-  border-radius: 4px;
-  font-size: 0.9rem;
-  z-index: 10; /* above the map */
-}
-
 #us-legend {
   position: absolute;
-  top: 300px; /* distance from the top of the map */
-  left: -1px; /* distance from the left of the map */
+  top: 200px; /* distance from the top of the map */
+  left: -100px; /* distance from the left of the map */
   background-color: rgba(
     255,
     255,
@@ -388,6 +363,7 @@ p {
   border-radius: 4px;
   font-size: 0.9rem;
   z-index: 10; /* above the map */
+  background-color: #cdd1d7;
 }
 
 .legend-item {
