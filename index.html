@@ -8,8 +8,13 @@
 
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+
+  <!-- your code -->
+  <script type="module" src="better_globe.js"></script>
   <script type="module" src="main.js"></script>
+
   <script type="module" src="script.js"></script> <!-- Emissions JS -->
+
 </head>
 
 <body>
@@ -110,120 +115,146 @@
 
   <!-- CO2 Emissions -->
   <section id="emissions">
-    <h2>Section Title</h2>
     <div class="layout">
       <!-- visualization -->
       <div class="vis-column">
+        <h2>CO₂ Emissions (Tons)</h2>
         <svg id="map"></svg>
 
         <div id="status"></div>
-        <div id="legend"></div>
-        <div id="top-list"></div>
       </div>
 
       <!-- text column -->
       <div class="text-column">
-        <p>
-          Scroll down the text on the right. The map on the left will update
-          to show different years and different ways of looking at the "worst
-          offenders" in global CO₂ emissions.
-        </p>
-
         <!-- Each section below is one scrollama step for the CO₂ map. -->
-        <section class="emissions_step" data-year="1850" data-metric="total">
-          <h2>1850</h2>
-          <p>
-            <!-- narrative text, temp breaks -->
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-          </p>
-        </section>
-
-        <section class="emissions_step" data-year="1900" data-metric="total">
-          <h2>1900</h2>
-          <p>
-            <!-- narrative text, temp breaks -->
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-          </p>
-        </section>
-
         <section class="emissions_step" data-year="1950" data-metric="total">
           <h2>1950</h2>
           <p>
             <!-- narrative text, temp breaks -->
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
           </p>
         </section>
 
         <section class="emissions_step" data-year="1973" data-metric="total">
           <h2>1973</h2>
           <p>
-            <!-- narrative text, temp breaks -->
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
           </p>
         </section>
 
         <section class="emissions_step" data-year="1980" data-metric="total">
           <h2>1980</h2>
           <p>
-            <!-- narrative text, temp breaks -->
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
           </p>
         </section>
 
         <section class="emissions_step" data-year="2000" data-metric="total">
           <h2>2000</h2>
           <p>
-            <!-- narrative text, temp breaks -->
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
           </p>
         </section>
 
         <section class="emissions_step" data-year="2019" data-metric="total">
           <h2>2019</h2>
           <p>
-            <!-- narrative text, temp breaks -->
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
           </p>
         </section>
 
         <section class="emissions_step" data-year="2020" data-metric="total">
           <h2>2020</h2>
           <p>
-            <!-- narrative text, temp breaks -->
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
           </p>
         </section>
 
         <section class="emissions_step" data-year="2021" data-metric="total">
           <h2>2021</h2>
           <p>
-            <!-- narrative text, temp breaks -->
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
           </p>
         </section>
 
         <section class="emissions_step" data-year="2021" data-metric="perCapita">
           <h2>2021 Per-Capita</h2>
           <p>
-            <!-- narrative text, temp breaks -->
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
           </p>
         </section>
       </div>
     </div>
   </section>
 
-  <div id="globe-section">
+
+
+  <section id="globe-section">
     <h2>Where Heat Becomes Dangerous</h2>
     <p>
-      Use the globe to explore how wet-bulb temperatures rise across countries from year to year 
+      Use the globe to explore how wet-bulb temperatures rise across countries from year to year
       and see which regions approach levels that the human body can no longer survive.
     </p>
 
-    <div id="globe-container"></div>
+    <div id="globe-container">
+    <div class="globe-wrapper" id="wetbulb-globe-wrapper"></div>
+    <div class="globe-controls">
+      <span>Year:</span>
+      <span id="wetbulb-year-label"></span>
+      <input id="wetbulb-year-slider" type="range" />
+    </div>
+  </div>
+  </section>
+
+  <div id="action-section" class="action-container"></div>
+
+  <p class="action-end-note">
+    By taking action at the individual level, we can collectively build a healthier, cooler planet.
+  </p>
+
+
+
+  <div class="write-up">
+
+      <button id="write-up-toggle" class="write-up-toggle">
+        Show Project Writeup Portion ▾
+      </button>
+
+
+      <div id="write-up-content" class="write-up-content">
+        <h2>Write Up:</h2>
+        <p>
+          <strong>1. What have you done so far?</strong><br />So far, we have
+          implemented visualizations for California, the United States, and the
+          globe. Each of these visualizations includes interactive features,
+          though they vary in complexity. For California and the US, users can
+          interact through scrollytelling updates and tooltips that display
+          Wet-Bulb temperature data when hovering over a county or state. The
+          globe visualization is fully interactive, allowing users to click, drag,
+          zoom, and explore temperature data worldwide. We have primarily focused
+          on scrollytelling as the main mechanism for guiding users through the
+          story of our data. The goal has been to create a narrative that is both
+          informative and engaging, with interactions that enhance understanding.
+          Currently, transitions between visualizations are basic, such as simple
+          fade-ins and fade-outs. We are planning to refine these to make the
+          experience more seamless and intuitive.
+        </p>
+        <p>
+          <strong
+            >2. What will be the most challenging part of your project and design
+            and why?</strong
+          ><br />The most challenging part of our project to design is likely the
+          overall website itself. We have ideas in mind for the layout, ordering
+          of visualizations, and how users will navigate the page, but turning
+          this vision into a cohesive design is difficult. Creating a balance
+          between aesthetics, branding, and clarity of information is particularly
+          challenging because we want the page to be both engaging and easy to
+          understand. Currently, transitions are simple, and the page feels bare
+          besides the visualizations. We hope to implement smoother transitions,
+          such as zooming out from California to the US, and then out to the
+          globe, to make navigation more fluid. Choosing the right color schemes
+          and visual encodings is also difficult because it must accurately
+          represent the data without overwhelming the user. Additionally, making
+          the website responsive and functional across devices adds another layer
+          of complexity. Overall, designing a cohesive, visually appealing, and
+          informative experience will likely require the most effort.
+        </p>
+
   </div>
 
-  
+
 
   <!-- <div class="write-up">
     <h2>Write Up:</h2>
@@ -263,4 +294,5 @@
     </p>
   </div> -->
 </body>
+
 </html>

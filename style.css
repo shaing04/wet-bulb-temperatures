@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap');
 
+:root {
+  --offwhite: #f8f8f4;
+  --darkgrey: #1c1c1c;
+}
 body {
   font-family: 'EB Garamond', Georgia, serif;
   margin: 0;
   padding: 2em 3em 10em;
-  background-color: #ffffff;
+  background-color:var(--offwhite);
 }
 
 h1,
@@ -31,26 +35,24 @@ p {
 .nyt-header {
   font-family: Georgia, serif;
   padding: 10px 20px 0;
-  position: sticky;
+
 }
 
 .nyt-title-row {
   text-align: center;
-  margin-bottom: 5px;
 }
 
 .nyt-title {
   font-size: 32px;
   font-weight: bold;
-  font-family: 'UnifrakturMaguntia', Georgia, serif; /* or your chosen blackletter */
+  font-family: 'UnifrakturMaguntia', Georgia, serif;
   white-space: nowrap;
 }
 
 .nyt-info-row {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
 
 .nyt-date {
@@ -82,15 +84,14 @@ p {
 .title-section {
   text-align: center;
   max-width: 800px;
-  margin: -15px auto;
+  margin: 0px auto;
   padding: 40px 20px;
-  height: 70vh;
+  height: 75vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   position: relative;
-  padding-top: 15vh;
   opacity: 1;
   transform: translateY(0);
   transition: opacity 0.15s linear, transform 0.15s linear;
@@ -160,7 +161,7 @@ p {
 .scroll-line {
   position: relative;
   width: 2px;
-  height: 80px;
+  height: 50px;
   background-color: #000000;
   overflow: hidden;
 }
@@ -182,13 +183,16 @@ p {
     transform: translate(-50%, -10px);
     opacity: 0;
   }
+
   20% {
     opacity: 1;
   }
+
   80% {
     transform: translate(-50%, 70px);
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
@@ -219,15 +223,15 @@ p {
 /* Tall container so we have room to scroll through all cards */
 .scrolly-wetbulb {
   position: relative;
-  height: 200vh; /* adjust depending on how slow/long you want it */
+  height: 250vh;
 }
 
 .thermo-wrapper {
   position: sticky;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%); /* center in viewport */
-  width: 100px;
+  transform: translate(-50%, -60%); /* center in viewport */
+  width: 200px;
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -240,10 +244,9 @@ p {
 
 .thermo-column {
   position: relative;
-  width: 40px;
-  height: 350px;
+  width: 70px;
+  height: 450px;
   border-radius: 999px;
-  /* background: #f0f0f0; */
   box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.15);
   overflow: hidden;
 }
@@ -262,9 +265,9 @@ p {
 }
 
 .thermo-bulb {
-  margin-top: -40px;
-  width: 80px;
-  height: 80px;
+  margin-top: -50px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   background: #d22;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
@@ -279,8 +282,10 @@ p {
   max-width: 650px;
   padding: 32px 40px;
   background: #ffffff;
-  border-radius: 8px;
+  /* border-radius: 8px; */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
   border: 1px solid #eee;
+  border-left: 4px solid #d22;
   font-family: 'EB Garamond', serif;
   font-size: 24px;
   line-height: 1.6;
@@ -291,6 +296,16 @@ p {
   z-index: 1;
 }
 
+.transition-section {
+  background: #ffffff;
+  /* border-radius: 8px; */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eee;
+  border-left: 4px solid var(--darkgrey);
+  border-right: 4px solid var(--darkgrey);
+  padding: 4rem 2rem;
+  align-items: center;
+}
 .transition-section p {
   font-size: 24px;
 }
@@ -299,12 +314,15 @@ p {
   display: flex;
   flex-direction: row;
   gap: 2rem;
-  margin: 0 5rem 10rem; /*top, right/left , bottom*/
-  padding: 0 2rem 2rem;
+  margin: 0 5rem 10rem;
+  /* margin: 0 auto; */
+  /*top, right/left , bottom*/
+  padding: 0 0 2rem 2rem;
   position: relative;
   z-index: 1;
   /* border-top: 1px solid #ddd;
   /*border-bottom: 1px solid #ddd; */
+  /* border: 1px solid slateblue */
 }
 
 /* ----- US Scrolly ----- */
@@ -315,7 +333,8 @@ p {
 /* Map column stays sticky on the left */
 #map-column,
 #map-us-column {
-  flex: 0 0 600px; /* fixed width */
+  flex: 0 0 600px;
+  /* fixed width */
   position: sticky;
   top: 2rem;
   height: 600px;
@@ -324,7 +343,8 @@ p {
 /* Text column scrolls */
 #text-column,
 #text-us-column {
-  flex: 1; /* take remaining horizontal space */
+  flex: 1;
+  /* take remaining horizontal space */
 }
 
 #text-us-column {
@@ -333,12 +353,15 @@ p {
 
 #year-title {
   position: sticky;
-  top: 0; /* sticks to top of viewport */
+  top: 0;
+  /* sticks to top of viewport */
   background-color: white;
   padding: 5px 0;
   font-size: 1.8em;
-  margin-bottom: 10px; /* space between title and map */
-  z-index: 10; /* above map */
+  margin-bottom: 10px;
+  /* space between title and map */
+  z-index: 10;
+  /* above map */
 }
 
 /* Steps styling */
@@ -349,6 +372,24 @@ p {
 }
 
 /* Legend styling */
+#ca-legend {
+  position: absolute;
+  top: 500px;
+  /* distance from the top of the map */
+  left: 10px;
+  /* distance from the left of the map */
+  background-color: rgba(255,
+      255,
+      255,
+      0.8);
+  /* semi-transparent background for readability */
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  z-index: 10;
+  /* above the map */
+}
+
 #us-legend {
   position: absolute;
   top: 200px; /* distance from the top of the map */
@@ -386,6 +427,7 @@ p {
   .scrolly-container {
     flex-direction: column;
   }
+
   #map-column {
     position: relative;
     width: 100%;
@@ -453,145 +495,357 @@ p {
   pointer-events: none;
 }
 
+
+
+/* dropdown writeup */
+.write-up-toggle {
+  display: block;                 
+  padding: 0.9rem 1.4rem;         
+  margin: 1rem auto 0.7rem auto;  
+  border-radius: 6px;             
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+  cursor: pointer;
+  font-size: 1rem;     
+  font-weight: 500;
+}
+
+.write-up-toggle:hover {
+  background: #eaeaea;
+}
+
+.write-up-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+.write-up-content.open {
+  max-height: 1000px; 
+}
+
+#write-up {
+  margin-bottom: 15rem;   
+}
+
+
+
+/* action section  */
+.action-container {
+  max-width: 1200px;
+  margin: 4rem auto 4rem;
+  padding: 2.5rem 2.5rem 3.25rem;
+  border-radius: 0px;
+  background: #f8f8f4; /* off-white paper */
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  font-family: "Georgia", "Times New Roman", serif;
+}
+
+/* panels mimic separate articles inside the same page */
+.action-panel {
+  padding: 2rem 1.75rem;
+  margin-bottom: 3rem;
+  border-top: 2px solid #222; /* thick headline separator */
+  border-bottom: 1px solid #aaa;
+}
+
+/* **Remove old pastel backgrounds** */
+.action-panel-causes,
+.action-panel-impacts,
+.action-panel-solutions {
+  background: transparent;
+}
+
+/* section titles feel like newspaper headlines */
+.action-heading {
+  text-align: center;
+  font-size: 2.15rem;
+  margin: 0 0 1.75rem 0;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-transform: none;
+  color: #111;
+}
+
+/* list of cards inside a panel */
+.action-card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
+}
+
+/* card = like inset article blurbs */
+.action-card {
+  display: flex;
+  align-items: flex-start;
+  padding: 1.25rem 1.75rem;
+  border-radius: 0;
+  background: #faf9f6;           /* faded paper slab */
+  border: 1px solid #c8c8c2;     /* print line border */
+  box-shadow: 2px 3px 0px #00000015; 
+  transition: background 0.15s ease;
+}
+
+.action-card:hover {
+  background: #f1f0ea;
+}
+
+/* emoji looks like spot illustration */
+.action-card-icon {
+  font-size: 1.75rem;
+  margin-right: 1.15rem;
+}
+
+/* card text looks printed — serif */
+.action-card-body h3 {
+  margin: 0 0 0.35rem 0;
+  font-size: 1.35rem;
+  font-weight: bold;
+  color: #222;
+  font-family: "Georgia", "Times New Roman", serif;
+}
+
+.action-card-body p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: #333;
+}
+
+/* optional muted subtext */
+.action-card-stat {
+  margin-top: 0.25rem;
+  font-size: 0.92rem;
+  opacity: 0.75;
+  font-style: italic;
+}
+
+/* mobile tweaks */
+@media (max-width: 700px) {
+  .action-container {
+    padding: 1.5rem 1.25rem 2.5rem;
+  }
+
+  .action-card {
+    padding: 1rem 1.25rem;
+  }
+}
+.action-end-note {
+  text-align: center;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #2b2b2b;
+  margin: 3rem 0 4rem;
+  line-height: 1.35;
+}
+
+
+
+
 /* ----------------- */
 /* GLOBE SECTION */
 /* ----------------- */
 #globe-section {
-  text-align: center;
+  color: white;
+  background-color: var(--darkgrey);
+  width: 80%;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
   margin: 0 auto;
-  max-width: 80%;
-  gap: 2rem;
+  text-align: center;
+  /* margin-top: 8rem; */
 }
 
 #globe-container {
-  border: 1px solid #f6f4f4;
-  margin: 1em 0;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  padding: 0 1rem;
 }
+
+#wetbulb-globe-wrapper {
+  height: 500px;
+  max-height: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.globe-wrapper canvas,
+.globe-wrapper svg {
+  position: absolute;
+  inset:0;
+  width: 100%;
+  height: 100%;
+  /* display: block; */
+}
+
+.globe-controls {
+  margin-top: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.globe-controls input[type="range"] {
+  flex: 1;
+}
+
+.globe-tooltip {
+  position: absolute;
+  pointer-events: none;
+  background: #f9fafb;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  padding: 6px 8px;
+  font-size: 12px;
+  color: #111327;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  transition: opacity 0.1s ease-out;
+  z-index: 9999;
+}
+
+#wetbulb-year-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 5px;
+  outline: none;
+
+  /* Base (unfilled) track */
+  background: linear-gradient(
+      to right,
+      #9b1b0d var(--percent),  /* filled portion (blue) */
+      #32363a var(--percent)   /* unfilled portion (gray) */
+  );
+}
+
+/* Chrome / Edge / Safari track */
+#wetbulb-year-slider::-webkit-slider-runnable-track {
+  height: 6px;
+  border-radius: 5px;
+  background: transparent; /* we draw track via main element */
+}
+
+/* Thumb */
+#wetbulb-year-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 16px;
+  width: 16px;
+  background: #9b1b0d;      /* thumb color */
+  border-radius: 50%;
+  border: 2px solid rgb(71, 6, 6);
+  cursor: pointer;
+  margin-top: -5px;
+  transition: background 0.15s ease;
+}
+
+/* #wetbulb-year-slider::-webkit-slider-thumb:hover {
+  background: #1d4ed8;
+}
+
+#wetbulb-year-slider::-webkit-slider-thumb:active {
+  background: #1e40af;
+} */
 
 /* ----------------- */
 /* EMISSIONS SECTION */
 /* ----------------- */
 
+/* The whole emissions section */
 #emissions {
-  margin-top: 4rem;
-  margin-bottom: 6rem;
+  position: relative;
+  margin: 100px auto;
+  width: 85%;
+  /* border: 1px solid salmon ; */
 }
 
-/* layout, two columns */
+/* Two-column scrollytelling layout */
 #emissions .layout {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  column-gap: 2rem;
-  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  position: relative;
+  min-height: 100vh; /* important */
+  
 }
 
-/* left col. map */
+/* Left column: */
 #emissions .vis-column {
   position: sticky;
-  top: 1rem;
-  align-self: flex-start;
-  height: 95vh;
-  padding: 1rem;
-  border-radius: 6px;
-  background: #f7f7f7;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-  box-sizing: border-box;
+  top: 80px;
+  height: fit-content;
+  flex: 1 1 50%;
+  /* border: 1px solid salmon ; */
 }
 
-#emissions #map {
-  width: 100%;
-  height: 70vh;
-  display: block;
-}
-
-#emissions #status {
-  margin-top: 0.5rem;
-  font-size: 0.85rem;
-  font-weight: 600;
-}
-
-#emissions #legend {
-  margin-top: 0.5rem;
-  font-size: 0.75rem;
-}
-
-#emissions #top-list {
-  margin-top: 0.75rem;
-  font-size: 0.75rem;
-}
-
-#emissions #top-list h3 {
-  margin: 0 0 0.25rem 0;
-  font-size: 0.8rem;
-}
-
-#emissions #top-list ol {
-  margin: 0;
-  padding-left: 1.25rem;
-}
-
-/* tooltip */
-#emissions_tooltip {
-  position: absolute;
-  pointer-events: none;
-  background: white;
-  color: #111;
-  border-radius: 4px;
-  padding: 6px 8px;
-  font-size: 0.7rem;
-  border: 1px solid #ccc;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  z-index: 20;
-}
-
-/* country styles */
-#emissions .country {
-  stroke: #999;
-  stroke-width: 0.3px;
-}
-
-#emissions .country.no-data {
-  fill: #f0f0f0;
-}
-
-#emissions .country.hovered {
-  stroke: #111;
-  stroke-width: 1px;
-}
-
-#emissions .country.top-offender {
-  stroke: #ff9800;
-  stroke-width: 1.4px;
-}
-
-/* right col. text */
+/* Right column */
 #emissions .text-column {
-  padding: 1.5rem 1.5rem 4rem 1.5rem;
-  max-width: 650px;
+  flex: 1 1 50%;
+  padding-bottom: 50vh;
 }
 
-#emissions .text-column h1 {
-  margin-top: 0;
-}
-
-/* scroll steps */
+/* Each scrollama step */
 #emissions .emissions_step {
-  margin: 3rem 0;
+  min-height: 60vh;
+  margin: 0 0 60vh;
+  padding: 0;
+  opacity: 0.4;
+  transition: opacity 0.2s ease;
 }
 
 #emissions .emissions_step.is-active {
-  font-weight: 600;
+  opacity: 1;
 }
 
-/* responsive layout */
-@media (max-width: 900px) {
-  #emissions .layout {
-    grid-template-columns: 1fr;
-  }
+/* --- Bar chart styling --- */
+#map .bar {
+  cursor: pointer;
+  shape-rendering: crispEdges;
+  transition: opacity 0.15s ease, width 0.6s ease, y 0.6s ease;
+}
 
-  #emissions .vis-column {
-    position: static;
-    height: auto;
-    margin-bottom: 2rem;
-  }
+#map .bar:hover {
+  opacity: 0.85;
+}
+
+/* --- Axis styling --- */
+#map .x-axis text,
+#map .y-axis text {
+  font-family: 'EB Garamond', serif;
+  fill: #444;
+  font-size: 13px;
+}
+
+#map .x-axis path,
+#map .x-axis line,
+#map .y-axis path,
+#map .y-axis line {
+  stroke: #aaa;
+}
+
+/* --- Tooltip for emissions bar chart --- */
+#emissions_tooltip {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  border-radius: 6px;
+  pointer-events: none;
+  font-family: 'EB Garamond', serif;
+  font-size: 14px;
+  color: #333;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  z-index: 2000;
+}
+
+/* --- Legend text styling --- */
+#legend svg text {
+  font-family: 'EB Garamond', serif;
+  font-size: 11px;
+  fill: #555;
 }

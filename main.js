@@ -1,9 +1,6 @@
 import * as d3 from 'https://cdn.jsdelivr.net/npm/d3@7/+esm';
 import scrollama from 'https://cdn.jsdelivr.net/npm/scrollama@3.2.0/+esm';
 
-import define from './globe.js';
-import { Inspector, Runtime } from './runtime.js';
-
 const bins = [10, 14, 18, 22, 26, 30, 32];
 const colors = [
   '#FDFDFD',
@@ -662,10 +659,190 @@ document.addEventListener('scroll', () => {
 
 // Globe /////////////////////////////////////////
 
-const runtime = new Runtime();
+// const runtime = new Runtime();
 
-runtime.module(define, (name) =>
-  name === 'map'
-    ? new Inspector(document.querySelector('#globe-container'))
-    : null,
-);
+// runtime.module(define, name =>
+//   name === "map"
+//     ? new Inspector(document.querySelector("#globe-container"))
+//     : null
+// );
+
+
+
+
+// writeup dropdown /////////////////////////////////////////
+
+const writeupContent = d3.select('#write-up-content');
+const writeupToggle = d3.select('#write-up-toggle');
+
+if (!writeupContent.empty() && !writeupToggle.empty()) {
+  // Make sure it starts collapsed
+  writeupContent.classed('open', false);
+
+  writeupToggle.on('click', () => {
+    const isOpen = writeupContent.classed('open');
+
+    // Toggle the "open" class
+    writeupContent.classed('open', !isOpen);
+
+    // Update button text/icon
+    writeupToggle.text(
+      isOpen ? 'Show Project Writeup Portion ▾' : 'Hide Project Writeup Portion ▴'
+    );
+  });
+}
+
+// action section cards /////////////////////////////////////////
+const actionRoot = d3.select('#action-section');
+
+if (!actionRoot.empty()) {
+  const panels = [
+    {
+      id: 'causes',
+      bgClass: 'action-panel-causes',
+      title: 'A Closer Look at Carbon Emissions: What Exactly Causes It?',
+      cards: [
+        {
+          icon: '🚗',
+          title: 'Transportation',
+          text:
+            'Cars, trucks, highways, air travel, marine shipping, and rail burn gas and diesel. This releases CO2 in the process and makes transportation the largest chunk of U.S. greenhouse gas emissions.',
+        },
+        {
+          icon: '🏠',
+          title: 'Residential & Commercial',
+          text:
+            'Homes, offices, and buildings use energy for things like heating, cooling, lighting, appliances, cooking, etc. This produces CO2 emissions in the process.',
+        },
+        {
+          icon: '💡',
+          title: 'Electricity',
+          text:
+            'Producing electricity in itself produces CO2 by way of burning fuels like coal, natural gas, and oil things like homes, businesses, and industry.',
+        },
+        {
+          icon: '🏭',
+          title: 'Industry',
+          text:
+            'Factories use fossil fuels to power equipment and manufacturing, emitting CO₂ from chemical processes (like cement, steel, plastics, and fertilizer production).',
+        },
+        
+      ]
+    },
+    {
+      id: 'impacts',
+      bgClass: 'action-panel-impacts',
+      title: 'Looking at the Numbers: How This Affects Our Environment',
+      cards: [
+        {
+          icon: '🌡️',
+          title: 'Hotter Planet',
+          text:
+            'Human driven CO₂ and other greenhouse gases have warmed the Earth by about 1.1°C (around 2°F) compared with the late 1800s. That increase results in hotter heat waves, heavier downpours, and more prominent droughts worldwide.',
+          stat: '≈1.1°C (2°F) global warming'
+        },
+        {
+          icon: '🌊',
+          title: 'Rising Seas',
+          text:
+            'Oceans are warming and land ice is melting, which resulted in global sea level rising since 1880. This makes coastal flooding more frequent and threaten cities in places like Southeast Asia and the U.S.',
+          stat: '+8–9 inches of sea-level rise'
+        },
+        {
+          icon: '🥵',
+          title: 'More Dangerous Heat in the U.S.',
+          text:
+            'In major U.S. cities, the number of heat waves each year has risen from about two per summer in the 1960s to around six per summer in the 2010s. Hotter and longer heat waves increase risks of heat illness and drives us closer to inhumane living conditions.',
+          stat: '3x more heat waves'
+        },
+        {
+          icon: '🔥',
+          title: 'Wildfires and Stressed Forests',
+          text:
+            'Warmer, drier conditions help fuel larger wildfires and stress forests. Since the 80s, the area burned by wildfires in the U.S. has grown. U.S. forest area has declined by 10% in the early 2000s–2010s as drought, fire, and other stressors amplify.',
+          stat: '200% Increase in Area Burned from Wildfires, 10% Decrease in Forest area'
+        }
+      ]
+    },
+    {
+      id: 'solutions',
+      bgClass: 'action-panel-solutions',
+      title: 'So, what can we do?',
+      cards: [
+        {
+          icon: '🚶‍♀️',
+          title: 'Shift How We Get Around',
+          text:
+            'Transportation emissions can be cut down by walking, using transit, or carpooling to your destination. Simply changing a daily 3 mile solo drive to walking/biking/transit can save up to 300lbs of CO2 a year',
+          stat: '300 lbs of CO2 saved yearly'
+        },
+        {
+          icon: '💡',
+          title: 'Use Energy Smarter',
+          text:
+            'Energy such as heating and cooling are huge contributors of household emissions. Changing the thermostat by just 2-3°F can reduce home energy use by 10-15%',
+          stat: 'Up to 15% less energy consumption'
+        },
+        {
+          icon: '🥗',
+          title: 'Be Wary of Food',
+          text:
+            'Increasing plant based portion of diet and reducing food waste will shrink emissions from farms and landfills.',
+          stat: '13,000,000 tons of CO2 can be saved if food waste is cut by 25% per household.'
+        },
+        {
+          icon: '📣',
+          title: 'Take Action',
+          text:
+            'Individual choices are crucial, but collective effort is what truly matters. Support policies that accelerate renewable energy, electrified transit, and climate-resilient communities. Broad campaign/policy shifts can reduce U.S. emissions by billions of tons over the coming decades.'
+        }
+      ]
+    }
+  ];
+
+  panels.forEach((panelData) => {
+    const panel = actionRoot
+      .append('section')
+      .attr('class', `action-panel ${panelData.bgClass}`)
+      .attr('id', `panel-${panelData.id}`);
+
+    panel
+      .append('h2')
+      .attr('class', 'action-heading')
+      .text(panelData.title);
+
+    const cardList = panel.append('div').attr('class', 'action-card-list');
+
+    const cards = cardList
+      .selectAll('.action-card')
+      .data(panelData.cards)
+      .enter()
+      .append('article')
+      .attr('class', 'action-card');
+
+    cards
+      .append('div')
+      .attr('class', 'action-card-icon')
+      .text((d) => d.icon);
+
+    const body = cards
+      .append('div')
+      .attr('class', 'action-card-body');
+
+    body
+      .append('h3')
+      .text((d) => d.title);
+
+    body
+      .append('p')
+      .text((d) => d.text);
+
+    body
+      .filter((d) => d.stat)
+      .append('p')
+      .attr('class', 'action-card-stat')
+      .text((d) => d.stat);
+  });
+}
+
+// New Globe /////////////////////////////////////////
