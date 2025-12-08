@@ -1,72 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Annual Average Wet-Bulb Temperatures</title>
 
-    <link rel="stylesheet" href="style.css" />
-    <script type="module" src="main.js"></script>
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Annual Average Wet-Bulb Temperatures</title>
 
-  <body>
-    <div id="tooltip"></div>
-    <div id="tooltip-us"></div>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
 
-    <h1>Annual Average Wet-Bulb Temperatures</h1>
+  <!-- your code -->
+  <script type="module" src="better_globe.js"></script>
+  <script type="module" src="main.js"></script>
 
-    <!-- California -->
-    <h2>California Wet-Bulb Temperatures</h2>
-    <p>
-      In 2025, California has an average Wet-Bulb Temperature of: XXX, but as
-      time goes on, we can more and more of California turn darker as the
-      average Wet-Bulb Temperature for the state increases over time. Currently,
-      California is on track to hit XXX by the year 2050, and XXX by 2100, which
-      may not seem like a lot but when we take into account that a dangerous
-      level of Wet-Bulb Temperature is 30 degrees Celcius, where it simply gets
-      too hot that the human body is unable to sweat enough to cool down,
-      increasing risk of heat stroke, and other heat related afflictions.
-    </p>
+  <script type="module" src="script.js"></script> <!-- Emissions JS -->
 
-    <div id="scrolly-ca" class="scrolly-container">
-      <div id="map-column" class="sticky-fade">
-        <h6 id="year-title">
-          California Wet Bulb Temperature In:
-          <span
-            id="year-subtitle-ca"
-            style="font-size: 0.7em; display: block; margin-top: 4px"
-          ></span>
-        </h6>
+</head>
 
-        <svg id="map-ca" width="600" height="600"></svg>
-        <div id="ca-legend"></div>
-      </div>
+<body>
+  <div id="tooltip"></div>
+  <div id="tooltip-us"></div>
+  <div id="emissions_tooltip" class="tooltip"></div>
 
-      <div id="text-column">
-        <div id="text"></div>
+  <header class="nyt-header">
+    <div class="nyt-title-row">
+      <div class="nyt-title">The Climate Agency</div>
+    </div>
+    <div class="nyt-info-row">
+      <div class="nyt-date" id="today"></div>
+
+      <div class="nyt-link">
+        <a href="https://github.com/shaing04/wet-bulb-temperatures" target="_blank">GitHub</a>
       </div>
     </div>
+    <div class="nyt-rule"></div>
+  </header>
 
+  <hero class="title-section">
+    <img src="assets/heat_wave.jpg" alt="text here" class="hero-image">
+    <!-- credit: https://depositphotos.com/photos/bangladesh-heat-wave.html?filter=all&qview=714674152 -->
+
+    <h1 class="hero-title">The Heat You Can't Outrun</h1>
+    <h2 class="hero-subtitle">Why Rising Heat Is Becoming Impossible to Survive</h2>
+    <h4 class="hero-authors">Susana Haing, Janice Rincon, Bryan Nguyen, Michael Kroyan</h4>
+
+    <div class="scroll-indicator" id="scroll-indicator">
+      <span class="scroll-label">SCROLL</span>
+      <div class="scroll-line">
+        <div class="scroll-dot"></div>
+      </div>
+    </div>
+  </hero>
+
+  <!-- intro -->
+  <section id="scrolly-wetbulb" class="scrolly-wetbulb">
+    <!-- Thermometer (behind cards) -->
+    <div class="thermo-wrapper" id="thermo-wrapper">
+      <div class="thermo-column">
+        <div class="thermo-fill" id="thermo-fill"></div>
+      </div>
+      <div class="thermo-bulb"></div>
+    </div>
+
+
+    <div class="text-box">
+      Wet-bulb temperature is one of the simplest (and most important) metrics for
+      understanding how heat affects the human body. Unlike the temperature you
+      hear on the news, wet-bulb temperature captures both heat and humidity at
+      the same time.
+    </div>
+
+    <div class="text-box">
+      That matters because evaporation is the body’s main cooling mechanism. When
+      we sweat, the moisture on our skin pulls heat away as it evaporates. But
+      when the air is already saturated with humidity, sweat stops evaporating.
+      The body can no longer cool itself, even in shade or with hydration.
+    </div>
+
+    <div class="text-box">
+      Scientists warn that a sustained wet-bulb temperature of 35°C (95°F) is the
+      upper limit of human survivability. Danger begins far earlier: at 28–31°C,
+      people can suffer heat stroke, confusion, or cardiovascular strain.
+    </div>
+  </section>
+
+    <!-- transition fade -->
     <div class="transition-section">
-      <h2>Zooming Out to the United States</h2>
+      <h2>How does it affect us?</h2>
       <p>
-        We've seen how wet-bulb temperatures evolve across California. Now let's
-        zoom out and explore how the entire country changes through time.
+        Let's see how wet-bulb temperatures will evolve across the United States.
       </p>
     </div>
     <hr class="section-divider" />
+  </section>
 
-    <!-- United States -->
+  <!-- United States -->
+  <section class="united-states">
     <div id="scrolly-us" class="scrolly-container">
       <div id="map-us-column" class="sticky-fade sticky-hidden">
         <h2 id="us-year-title">
           US Wet Bulb Temperature In:
-          <span
-            id="year-subtitle-us"
-            style="font-size: 0.7em; display: block; margin-top: 4px"
-          ></span>
+          <span id="year-subtitle-us" style="font-size: 0.7em; display: block; margin-top: 4px"></span>
         </h2>
-        <svg id="map-us" width="900" height="550"></svg>
+        <h5>Tip: Hover over to see more details!</h5>
+        <svg id="map-us" width="600" height="550"></svg>
         <div id="us-legend"></div>
       </div>
 
@@ -74,30 +111,102 @@
         <div id="text-us"></div>
       </div>
     </div>
+  </section>
 
-    <p>extra text description</p>
+  <!-- CO2 Emissions -->
+  <section id="emissions">
+    <div class="layout">
+      <!-- visualization -->
+      <div class="vis-column">
+        <h2>CO₂ Emissions (Tons)</h2>
+        <svg id="map"></svg>
 
-    <div id="globe-section">
-      <h2>Globally, these wet bulb temperatures etc.</h2>
-      <p>
-        Select a country and scroll through the years to see which countries
-        will experience dangerous Wet Bulb Temperatures
-      </p>
+        <div id="status"></div>
+      </div>
 
-      <div id="globe-container"></div>
+      <!-- text column -->
+      <div class="text-column">
+        <!-- Each section below is one scrollama step for the CO₂ map. -->
+        <section class="emissions_step" data-year="1950" data-metric="total">
+          <h2>1950</h2>
+          <p>
+            <!-- narrative text, temp breaks -->
+          </p>
+        </section>
+
+        <section class="emissions_step" data-year="1973" data-metric="total">
+          <h2>1973</h2>
+          <p>
+          </p>
+        </section>
+
+        <section class="emissions_step" data-year="1980" data-metric="total">
+          <h2>1980</h2>
+          <p>
+          </p>
+        </section>
+
+        <section class="emissions_step" data-year="2000" data-metric="total">
+          <h2>2000</h2>
+          <p>
+          </p>
+        </section>
+
+        <section class="emissions_step" data-year="2019" data-metric="total">
+          <h2>2019</h2>
+          <p>
+          </p>
+        </section>
+
+        <section class="emissions_step" data-year="2020" data-metric="total">
+          <h2>2020</h2>
+          <p>
+          </p>
+        </section>
+
+        <section class="emissions_step" data-year="2021" data-metric="total">
+          <h2>2021</h2>
+          <p>
+          </p>
+        </section>
+
+        <section class="emissions_step" data-year="2021" data-metric="perCapita">
+          <h2>2021 Per-Capita</h2>
+          <p>
+          </p>
+        </section>
+      </div>
     </div>
+  </section>
 
 
 
-    <div id="action-section" class="action-container"></div>
-
-    <p class="action-end-note">
-      By taking action at the individual level, we can collectively build a healthier, cooler planet.
+  <section id="globe-section">
+    <h2>Where Heat Becomes Dangerous</h2>
+    <p>
+      Use the globe to explore how wet-bulb temperatures rise across countries from year to year
+      and see which regions approach levels that the human body can no longer survive.
     </p>
 
+    <div id="globe-container">
+    <div class="globe-wrapper" id="wetbulb-globe-wrapper"></div>
+    <div class="globe-controls">
+      <span>Year:</span>
+      <span id="wetbulb-year-label"></span>
+      <input id="wetbulb-year-slider" type="range" />
+    </div>
+  </div>
+  </section>
+
+  <div id="action-section" class="action-container"></div>
+
+  <p class="action-end-note">
+    By taking action at the individual level, we can collectively build a healthier, cooler planet.
+  </p>
 
 
-    <div class="write-up">
+
+  <div class="write-up">
 
       <button id="write-up-toggle" class="write-up-toggle">
         Show Project Writeup Portion ▾
@@ -143,8 +252,47 @@
           informative experience will likely require the most effort.
         </p>
 
-      </div>
+  </div>
 
-    </div>
-  </body>
+
+
+  <!-- <div class="write-up">
+    <h2>Write Up:</h2>
+    <p>
+      <strong>1. What have you done so far?</strong><br />So far, we have
+      implemented visualizations for California, the United States, and the
+      globe. Each of these visualizations includes interactive features,
+      though they vary in complexity. For California and the US, users can
+      interact through scrollytelling updates and tooltips that display
+      Wet-Bulb temperature data when hovering over a county or state. The
+      globe visualization is fully interactive, allowing users to click, drag,
+      zoom, and explore temperature data worldwide. We have primarily focused
+      on scrollytelling as the main mechanism for guiding users through the
+      story of our data. The goal has been to create a narrative that is both
+      informative and engaging, with interactions that enhance understanding.
+      Currently, transitions between visualizations are basic, such as simple
+      fade-ins and fade-outs. We are planning to refine these to make the
+      experience more seamless and intuitive.
+    </p>
+    <p>
+      <strong>2. What will be the most challenging part of your project and design
+        and why?</strong><br />The most challenging part of our project to design is likely the
+      overall website itself. We have ideas in mind for the layout, ordering
+      of visualizations, and how users will navigate the page, but turning
+      this vision into a cohesive design is difficult. Creating a balance
+      between aesthetics, branding, and clarity of information is particularly
+      challenging because we want the page to be both engaging and easy to
+      understand. Currently, transitions are simple, and the page feels bare
+      besides the visualizations. We hope to implement smoother transitions,
+      such as zooming out from California to the US, and then out to the
+      globe, to make navigation more fluid. Choosing the right color schemes
+      and visual encodings is also difficult because it must accurately
+      represent the data without overwhelming the user. Additionally, making
+      the website responsive and functional across devices adds another layer
+      of complexity. Overall, designing a cohesive, visually appealing, and
+      informative experience will likely require the most effort.
+    </p>
+  </div> -->
+</body>
+
 </html>
