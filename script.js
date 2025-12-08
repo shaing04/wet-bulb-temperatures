@@ -13,17 +13,7 @@ const mapHeight = 520;
 // DOM elements
 const svg = d3.select("#map").attr("viewBox", `0 0 ${mapWidth} ${mapHeight}`);
 const tooltip = d3.select("#emissions_tooltip");
-const legendContainer = d3.select("#legend");
-const topListContainer = d3.select("#top-list");
 const statusEl = d3.select("#status");
-
-// projection
-const projection = d3
-  .geoNaturalEarth1()
-  .scale(mapWidth / 1.5 / Math.PI)
-  .translate([mapWidth / 2, mapHeight / 2.1]);
-
-const geoPath = d3.geoPath(projection);
 
 // state
 let currentMetric = "total"; // "total" or "perCapita"
@@ -32,7 +22,6 @@ let currentYear = 1850;
 let colorScales = {};
 let emissionsByKey;
 let rowsByYear;
-let countryPaths;
 let scroller;
 
 // formatting
@@ -45,9 +34,106 @@ function formatValue(metric, value) {
   return `${formatPerCapita(value)} t/person`;
 }
 
-// load data
+/* ============================================================
+   BAR CHART
+   ============================================================ */
+
+// Clear old content
+svg.selectAll("*").remove();
+
+// Bar chart layout
+const barMargin = { top: 20, right: 40, bottom: 40, left: 180 };
+const barWidth = mapWidth - barMargin.left - barMargin.right;
+const barHeight = 520 - barMargin.top - barMargin.bottom;
+
+// Container for bars
+const barG = svg
+  .append("g")
+  .attr("transform", `translate(${barMargin.left},${barMargin.top})`);
+
+// Scales
+const xScale = d3.scaleLinear().range([0, barWidth]);
+const yScale = d3.scaleBand().range([0, barHeight]).padding(0.15);
+
+// Axes
+const xAxisGroup = barG
+  .append("g")
+  .attr("class", "x-axis")
+  .attr("transform", `translate(0,0)`);
+
+const yAxisGroup = barG.append("g").attr("class", "y-axis");
+
+// Tooltip handlers
+function barMouseOver(e, d) {
+  tooltip
+    .style("opacity", 1)
+    .html(
+      `<strong>${d.country}</strong><br>
+       ${formatValue(currentMetric, d[currentMetric])}`
+    );
+}
+
+function barMouseMove(e) {
+  tooltip
+    .style("left", e.pageX + 15 + "px")
+    .style("top", e.pageY + "px");
+}
+
+function barMouseOut() {
+  tooltip.style("opacity", 0);
+}
+
+// MAIN BAR CHART DRAWER
+function updateBarChart() {
+  const rows = rowsByYear.get(currentYear) || [];
+
+  const EXCLUDE = new Set([
+    "Global",
+    "International Transport",
+  ]);
+
+  const sorted = [...rows]
+      .filter(d => !EXCLUDE.has(d.country))
+      .filter((d) => d[currentMetric] > 0)
+      .sort((a, b) => b[currentMetric] - a[currentMetric])
+      .slice(0, 15);
+
+  xScale.domain([0, d3.max(sorted, (d) => d[currentMetric]) || 1]);
+  yScale.domain(sorted.map((d) => d.country));
+
+  const bars = barG.selectAll("rect.bar").data(sorted, (d) => d.iso3);
+
+  bars.exit().remove();
+
+  bars
+    .enter()
+    .append("rect")
+    .attr("class", "bar")
+    .attr("y", (d) => yScale(d.country))
+    .attr("height", yScale.bandwidth())
+    .attr("x", 0)
+    .attr("width", 0)
+    .on("mouseover", barMouseOver)
+    .on("mousemove", barMouseMove)
+    .on("mouseout", barMouseOut)
+    .merge(bars)
+    .transition()
+    .duration(600)
+    .attr("y", (d) => yScale(d.country))
+    .attr("height", yScale.bandwidth())
+    .attr("width", (d) => xScale(d[currentMetric]))
+    .attr("fill", (d) => colorScales[currentMetric](d[currentMetric]));
+
+  xAxisGroup.transition().duration(600).call(d3.axisTop(xScale).ticks(5));
+  yAxisGroup.transition().duration(600).call(d3.axisLeft(yScale));
+}
+
+/* ============================================================
+   DATA LOAD
+   ============================================================ */
+
 Promise.all([
-  d3.json(worldGeoJSONUrl),
+  d3.json(worldGeoJSONUrl), // still loaded but unused now
   d3.csv(csvFile, (d) => {
     const total = +d["Total"];
     const perCapita = +d["Per Capita"];
@@ -68,23 +154,20 @@ Promise.all([
     alert("Error loading CO₂ data. Check the console for details.");
   });
 
-// init
+/* ============================================================
+   INIT
+   ============================================================ */
+
 function init([worldData, rows]) {
-  // filter to valid range and valid ISO
   rows = rows.filter(
     (d) => d.iso3 && d.year >= minYear && d.year <= maxYear
   );
 
-  // map ISO to row
   emissionsByKey = new Map();
-  rows.forEach((d) => {
-    emissionsByKey.set(`${d.iso3}-${d.year}`, d);
-  });
+  rows.forEach((d) => emissionsByKey.set(`${d.iso3}-${d.year}`, d));
 
-  // group by year
   rowsByYear = d3.group(rows, (d) => d.year);
 
-  // color domains
   const totals = rows.map((d) => d.total).filter((v) => v > 0);
   const perCaps = rows.map((d) => d.perCapita).filter((v) => v > 0);
 
@@ -93,29 +176,26 @@ function init([worldData, rows]) {
   const perCapMin = d3.min(perCaps);
   const perCapMax = d3.max(perCaps);
 
+  const heatBlackInterpolator = d3.interpolateRgbBasis([
+    "#ffffff",  // white
+    "#fdf1d5",  // pale cream
+    "#f7cfa2",  // light tan
+    "#ea7d4a",  // orange
+    "#c43826",  // strong red
+    "#6d0f0d",  // deep red / brown
+    "#000000"   // black
+  ]);
+
   colorScales = {
     total: d3
-      .scaleSequentialLog(d3.interpolateYlOrRd)
+      .scaleSequentialLog(heatBlackInterpolator)
       .domain([totalMin, totalMax]),
     perCapita: d3
-      .scaleSequentialLog(d3.interpolateBlues)
+      .scaleSequentialLog(heatBlackInterpolator)
       .domain([perCapMin, perCapMax]),
   };
 
-  // draw countries
-  countryPaths = svg
-    .append("g")
-    .attr("class", "countries")
-    .selectAll("path")
-    .data(worldData.features)
-    .join("path")
-    .attr("class", "country")
-    .attr("d", geoPath)
-    .on("mouseover", handleMouseOver)
-    .on("mousemove", handleMouseMove)
-    .on("mouseout", handleMouseOut);
-
-  // first step as initial state
+  // FIRST SCROLL STEP
   const firstStep = document.querySelector("#emissions .emissions_step");
   if (firstStep) {
     if (firstStep.dataset.year) currentYear = +firstStep.dataset.year;
@@ -123,49 +203,16 @@ function init([worldData, rows]) {
   }
 
   updateAll();
-
-  // initiate scrollama
   setupScrollama();
 }
 
-// updaters
+/* ============================================================
+   UPDATERS
+   ============================================================ */
+
 function updateAll() {
-  updateMapColors();
-  updateLegend();
-  updateTopList();
   updateStatusText();
-}
-
-function getEmissionValue(iso3, year, metric) {
-  const row = emissionsByKey.get(`${iso3}-${year}`);
-  if (!row) return null;
-  return row[metric];
-}
-
-function getCountryFill(iso3, year, metric) {
-  const value = getEmissionValue(iso3, year, metric);
-  if (value == null || !isFinite(value) || value <= 0) {
-    return "#f0f0f0";
-  }
-  return colorScales[metric](value);
-}
-
-function updateMapColors() {
-  countryPaths
-    .classed("no-data", (d) => {
-      const v = getEmissionValue(d.id, currentYear, currentMetric);
-      return v == null || !isFinite(v) || v <= 0;
-    })
-    .transition()
-    .duration(600)
-    .attr("fill", (d) => getCountryFill(d.id, currentYear, currentMetric));
-
-  // Highlight top 10
-  const topIsoSet = new Set(
-    getTopRows(currentMetric, currentYear).map((d) => d.iso3)
-  );
-
-  countryPaths.classed("top-offender", (d) => topIsoSet.has(d.id));
+  updateBarChart();
 }
 
 function updateStatusText() {
@@ -177,146 +224,10 @@ function updateStatusText() {
   statusEl.text(`${metricText} · Year: ${currentYear}`);
 }
 
-// legend
-function updateLegend() {
-  const metric = currentMetric;
-  const scale = colorScales[metric];
-  const [min, max] = scale.domain();
+/* ============================================================
+   SCROLLAMA
+   ============================================================ */
 
-  const legendWidth = 260;
-  const legendHeight = 40;
-  const steps = 7;
-
-  const values = d3.range(steps).map((i) => {
-    const ratio = i / (steps - 1);
-    return min * Math.pow(max / min, ratio);
-  });
-
-  legendContainer.selectAll("*").remove();
-
-  const legendSvg = legendContainer
-    .append("svg")
-    .attr("width", legendWidth)
-    .attr("height", legendHeight);
-
-  const barHeight = 10;
-  const barWidth = (legendWidth - 40) / (steps - 1);
-
-  legendSvg
-    .selectAll("rect")
-    .data(values)
-    .join("rect")
-    .attr("x", (_, i) => 30 + i * barWidth - barWidth / 2)
-    .attr("y", 6)
-    .attr("width", barWidth)
-    .attr("height", barHeight)
-    .attr("fill", (d) => scale(d))
-    .attr("stroke", "#eee")
-    .attr("stroke-width", 0.3);
-
-  const tickValues = [
-    values[0],
-    values[Math.floor(values.length / 2)],
-    values[values.length - 1],
-  ];
-  const tickFormat = metric === "total" ? formatTotal : formatPerCapita;
-
-  legendSvg
-    .selectAll("line.tick")
-    .data(tickValues)
-    .join("line")
-    .attr("class", "tick")
-    .attr("x1", (d) => {
-      const logRatio = Math.log(d / min) / Math.log(max / min);
-      return 30 + logRatio * (legendWidth - 40);
-    })
-    .attr("x2", (d) => {
-      const logRatio = Math.log(d / min) / Math.log(max / min);
-      return 30 + logRatio * (legendWidth - 40);
-    })
-    .attr("y1", 6 + barHeight)
-    .attr("y2", 6 + barHeight + 4)
-    .attr("stroke", "#555")
-    .attr("stroke-width", 0.8);
-
-  legendSvg
-    .selectAll("text.tick-label")
-    .data(tickValues)
-    .join("text")
-    .attr("class", "tick-label")
-    .attr("x", (d) => {
-      const logRatio = Math.log(d / min) / Math.log(max / min);
-      return 30 + logRatio * (legendWidth - 40);
-    })
-    .attr("y", 6 + barHeight + 14)
-    .attr("text-anchor", (d, i) =>
-      i === 0 ? "start" : i === 2 ? "end" : "middle"
-    )
-    .attr("fill", "#555")
-    .attr("font-size", 10)
-    .text((d) => tickFormat(d));
-}
-
-// top emitters
-function getTopRows(metric, year, limit = 10) {
-  const yearRows = rowsByYear.get(year) || [];
-  return yearRows
-    .filter((d) => d[metric] && d[metric] > 0)
-    .sort((a, b) => d3.descending(a[metric], b[metric]))
-    .slice(0, limit);
-}
-
-function updateTopList() {
-  const metric = currentMetric;
-  const rows = getTopRows(metric, currentYear, 10);
-
-  topListContainer.selectAll("*").remove();
-
-  topListContainer
-    .append("h3")
-    .text(
-      metric === "total"
-        ? `Top 10 emitters in ${currentYear} (total)`
-        : `Top 10 emitters in ${currentYear} (per-capita)`
-    );
-
-  const list = topListContainer.append("ol");
-
-  rows.forEach((d) => {
-    list.append("li").text(`${d.country}: ${formatValue(metric, d[metric])}`);
-  });
-}
-
-// tooltip handlers
-function handleMouseOver(event, d) {
-  d3.select(this).classed("hovered", true).raise();
-
-  const total = getEmissionValue(d.id, currentYear, "total");
-  const perCap = getEmissionValue(d.id, currentYear, "perCapita");
-
-  tooltip
-    .style("opacity", 1)
-    .html(
-      `<strong>${d.properties.name || d.id}</strong><br/>
-       Year: ${currentYear}<br/>
-       Total: ${formatValue("total", total)}<br/>
-       Per-capita: ${formatValue("perCapita", perCap)}`
-    );
-
-  handleMouseMove(event);
-}
-
-function handleMouseMove(event) {
-  const [pageX, pageY] = [event.pageX, event.pageY];
-  tooltip.style("left", pageX + 10 + "px").style("top", pageY + 10 + "px");
-}
-
-function handleMouseOut() {
-  d3.select(this).classed("hovered", false);
-  tooltip.style("opacity", 0);
-}
-
-// scrollama setup
 function setupScrollama() {
   scroller = scrollama();
 
