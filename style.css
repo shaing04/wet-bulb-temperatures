@@ -849,3 +849,95 @@ p {
   font-size: 11px;
   fill: #555;
 }
+
+/* ===============================
+   WET-BULB BAR CHART STYLES
+   =============================== */
+
+#wetbulb_bar_chart {
+  width: 100%;
+  height: 520px;
+}
+
+.wb-bar {
+  transition: fill 0.3s ease, width 0.3s ease;
+}
+
+#wetbulb_bar_tooltip {
+  position: absolute;
+  pointer-events: none;
+  background: white;
+  padding: 6px 10px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+  opacity: 0;
+  transition: opacity 0.2s;
+  font-size: 13px;
+  line-height: 1.3;
+  z-index: 9999;
+}
+
+
+.wb-axis text {
+  font-size: 14px;
+}
+
+/* WET-BULB OVERRIDES */
+#wetbulb_bar_chart rect.wb-bar {
+  stroke: none;
+}
+
+#wetbulb_bar_chart text {
+  font-family: 'EB Garamond', serif !important;
+  fill: #000 !important;
+}
+
+#wetbulb_bar_chart .domain,
+#wetbulb_bar_chart .tick line {
+  stroke: #444;
+}
+
+#wetbulb_bar_chart rect.wb-bar {
+  rx: 0;
+  shape-rendering: crispEdges;
+}
+
+/* Emissions cards use SAME style as US cards */
+.emissions_step.card {
+  width: 100%;
+}
+
+/* Optional: tighten spacing between emissions chart & right cards */
+#emissions .text-column-right {
+  padding-top: 20px;
+}
+
+/* Black-bar cards */
+.transition-section .transition-text {
+  max-width: 680px;
+  margin: 16px auto 0;
+  font-family: 'EB Garamond', serif;
+  font-size: 22px;
+  line-height: 1.55;
+}
+
+/* scroll cards */
+.us-card {
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 28px 32px;
+  border: 1px solid #ddd;
+  margin: 24px 0 40px;
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+}
+
+.us-card-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background: #c62828;
+}
+
