@@ -31,7 +31,7 @@ const grid_files = {
 const world_json = "data/world.json";
 
 // Colors
-const sea_color = "#333333ff";
+const sea_color = "#F2F2F2ff";
 const atmosphere_inner = "rgba(103, 103, 103, 0.17)";
 const atmosphere_outer = "rgba(136, 170, 221, 0.02)";
 
