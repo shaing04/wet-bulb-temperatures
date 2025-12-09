@@ -792,7 +792,7 @@ p {
 /* Each scrollama step */
 #emissions .emissions_step {
   min-height: 60vh;
-  margin: 0 0 60vh;
+  margin: 0 0 30vh;
   padding: 0;
   opacity: 0.4;
   transition: opacity 0.2s ease;
@@ -927,7 +927,7 @@ p {
   border-radius: 6px;
   padding: 28px 32px;
   border: 1px solid #ddd;
-  margin: 24px 0 40px;
+  margin: 16px 0 40px;
   position: relative;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12);
 }
