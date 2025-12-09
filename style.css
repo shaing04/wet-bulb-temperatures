@@ -407,7 +407,7 @@ p {
   border-radius: 4px;
   font-size: 0.9rem;
   z-index: 10; /* above the map */
-  background-color: #dadada;
+  background-color: #cdd1d7;
 }
 
 .legend-item {
