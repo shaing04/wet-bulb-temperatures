@@ -640,6 +640,15 @@ p {
   margin: 3rem 0 4rem;
   line-height: 1.35;
 }
+.action-paragraph {
+  text-align: center;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #2b2b2b;
+  margin: 3rem 0 4rem;
+  line-height: 1.35;
+}
 
 
 
