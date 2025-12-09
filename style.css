@@ -495,6 +495,155 @@ p {
   pointer-events: none;
 }
 
+
+
+/* dropdown writeup */
+.write-up-toggle {
+  display: block;                 
+  padding: 0.9rem 1.4rem;         
+  margin: 1rem auto 0.7rem auto;  
+  border-radius: 6px;             
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+  cursor: pointer;
+  font-size: 1rem;     
+  font-weight: 500;
+}
+
+.write-up-toggle:hover {
+  background: #eaeaea;
+}
+
+.write-up-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+.write-up-content.open {
+  max-height: 1000px; 
+}
+
+#write-up {
+  margin-bottom: 15rem;   
+}
+
+
+
+/* action section  */
+.action-container {
+  max-width: 1200px;
+  margin: 4rem auto 4rem;
+  padding: 2.5rem 2.5rem 3.25rem;
+  border-radius: 0px;
+  background: #f8f8f4; /* off-white paper */
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  font-family: "Georgia", "Times New Roman", serif;
+}
+
+/* panels mimic separate articles inside the same page */
+.action-panel {
+  padding: 2rem 1.75rem;
+  margin-bottom: 3rem;
+  border-top: 2px solid #222; /* thick headline separator */
+  border-bottom: 1px solid #aaa;
+}
+
+/* **Remove old pastel backgrounds** */
+.action-panel-causes,
+.action-panel-impacts,
+.action-panel-solutions {
+  background: transparent;
+}
+
+/* section titles feel like newspaper headlines */
+.action-heading {
+  text-align: center;
+  font-size: 2.15rem;
+  margin: 0 0 1.75rem 0;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-transform: none;
+  color: #111;
+}
+
+/* list of cards inside a panel */
+.action-card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
+}
+
+/* card = like inset article blurbs */
+.action-card {
+  display: flex;
+  align-items: flex-start;
+  padding: 1.25rem 1.75rem;
+  border-radius: 0;
+  background: #faf9f6;           /* faded paper slab */
+  border: 1px solid #c8c8c2;     /* print line border */
+  box-shadow: 2px 3px 0px #00000015; 
+  transition: background 0.15s ease;
+}
+
+.action-card:hover {
+  background: #f1f0ea;
+}
+
+/* emoji looks like spot illustration */
+.action-card-icon {
+  font-size: 1.75rem;
+  margin-right: 1.15rem;
+}
+
+/* card text looks printed — serif */
+.action-card-body h3 {
+  margin: 0 0 0.35rem 0;
+  font-size: 1.35rem;
+  font-weight: bold;
+  color: #222;
+  font-family: "Georgia", "Times New Roman", serif;
+}
+
+.action-card-body p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: #333;
+}
+
+/* optional muted subtext */
+.action-card-stat {
+  margin-top: 0.25rem;
+  font-size: 0.92rem;
+  opacity: 0.75;
+  font-style: italic;
+}
+
+/* mobile tweaks */
+@media (max-width: 700px) {
+  .action-container {
+    padding: 1.5rem 1.25rem 2.5rem;
+  }
+
+  .action-card {
+    padding: 1rem 1.25rem;
+  }
+}
+.action-end-note {
+  text-align: center;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #2b2b2b;
+  margin: 3rem 0 4rem;
+  line-height: 1.35;
+}
+
+
+
+
 /* ----------------- */
 /* GLOBE SECTION */
 /* ----------------- */
@@ -643,7 +792,7 @@ p {
 /* Each scrollama step */
 #emissions .emissions_step {
   min-height: 60vh;
-  margin: 0 0 60vh;
+  margin: 0 0 30vh;
   padding: 0;
   opacity: 0.4;
   transition: opacity 0.2s ease;
@@ -700,3 +849,95 @@ p {
   font-size: 11px;
   fill: #555;
 }
+
+/* ===============================
+   WET-BULB BAR CHART STYLES
+   =============================== */
+
+#wetbulb_bar_chart {
+  width: 100%;
+  height: 520px;
+}
+
+.wb-bar {
+  transition: fill 0.3s ease, width 0.3s ease;
+}
+
+#wetbulb_bar_tooltip {
+  position: absolute;
+  pointer-events: none;
+  background: white;
+  padding: 6px 10px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+  opacity: 0;
+  transition: opacity 0.2s;
+  font-size: 13px;
+  line-height: 1.3;
+  z-index: 9999;
+}
+
+
+.wb-axis text {
+  font-size: 14px;
+}
+
+/* WET-BULB OVERRIDES */
+#wetbulb_bar_chart rect.wb-bar {
+  stroke: none;
+}
+
+#wetbulb_bar_chart text {
+  font-family: 'EB Garamond', serif !important;
+  fill: #000 !important;
+}
+
+#wetbulb_bar_chart .domain,
+#wetbulb_bar_chart .tick line {
+  stroke: #444;
+}
+
+#wetbulb_bar_chart rect.wb-bar {
+  rx: 0;
+  shape-rendering: crispEdges;
+}
+
+/* Emissions cards use SAME style as US cards */
+.emissions_step.card {
+  width: 100%;
+}
+
+/* Optional: tighten spacing between emissions chart & right cards */
+#emissions .text-column-right {
+  padding-top: 20px;
+}
+
+/* Black-bar cards */
+.transition-section .transition-text {
+  max-width: 680px;
+  margin: 16px auto 0;
+  font-family: 'EB Garamond', serif;
+  font-size: 22px;
+  line-height: 1.55;
+}
+
+/* scroll cards */
+.us-card {
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 28px 32px;
+  border: 1px solid #ddd;
+  margin: 16px 0 40px;
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+}
+
+.us-card-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background: #c62828;
+}
+
