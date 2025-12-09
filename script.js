@@ -34,18 +34,6 @@ function formatValue(metric, value) {
   return `${formatPerCapita(value)} t/person`;
 }
 
-// Harmonize names between CO2 dataset and wet-bulb dataset
-const WB_NAME_FIX = {
-  "USA": "United States",
-  "Republic of the Congo": "Congo",
-  "Democratic Republic of the Congo": "Democratic Republic of Congo"
-  // Add more if needed
-};
-
-function normalizeWBName(name) {
-  return WB_NAME_FIX[name] || name;
-}
-
 /* ============================================================
    BAR CHART
    ============================================================ */
@@ -141,142 +129,7 @@ function updateBarChart() {
 }
 
 /* ============================================================
-   WET-BULB CHART
-   ============================================================ */
-
-let wbColor;
-
-const wbSvg = d3.select("#wetbulb_bar_chart")
-  .attr("viewBox", `0 0 ${mapWidth} 520`);
-
-const wbMargin = { top: 5, right: 40, bottom: 40, left: 180 };
-const wbWidth = mapWidth - wbMargin.left - wbMargin.right;
-const wbHeight = 350 - wbMargin.top - wbMargin.bottom;
-
-const wbG = wbSvg.append("g")
-  .attr("transform", `translate(${wbMargin.left}, ${wbMargin.top})`);
-
-const wbX = d3.scaleLinear().range([0, wbWidth]);
-const wbY = d3.scaleBand().range([0, wbHeight]).padding(0.15);
-
-const wbXAxis = wbG.append("g").attr("class", "wb-axis wb-x-axis");
-const wbYAxis = wbG.append("g").attr("class", "wb-axis wb-y-axis");
-
-const wbTooltip = d3.select("#wetbulb_bar_tooltip");
-
-function wbMouseOver(e, d) {
-  wbTooltip
-    .style("opacity", 1)
-    .html(`<strong>${d.country}</strong><br>${d.value.toFixed(2)}°C`);
-
-  d3.select(this)
-    .attr("stroke", "#222")
-    .attr("stroke-width", 1.2)
-    .attr("fill", d3.color(wbColor(d.value)).darker(0.7));
-}
-
-function wbMouseMove(e) {
-  wbTooltip
-    .style("left", (e.pageX + 15) + "px")
-    .style("top", (e.pageY - 10) + "px");
-}
-
-function wbMouseOut(e, d) {
-  wbTooltip.style("opacity", 0);
-
-  d3.select(this)
-    .attr("stroke", "none")
-    .attr("fill", wbColor(d.value));
-}
-
-function updateWetbulbBarChart(emissionsYear) {
-
-  // Compute +50-year target
-  const wetbulbYear = emissionsYear + 50;
-
-  if (!wetbulbData[wetbulbYear]) {
-    console.warn("Missing wet-bulb data for year", wetbulbYear);
-    return;
-  }
-
-  // Convert from object → array
-  let rows = Object.entries(wetbulbData[wetbulbYear]).map(([country, value]) => ({
-    country: normalizeWBName(country),
-    value
-  }));
-
-  // Sort & keep top 10
-  rows = rows
-    .filter(d => isFinite(d.value))
-    .sort((a, b) => b.value - a.value)
-    .slice(0, 10);
-
-  wbX.domain([0, d3.max(rows, d => d.value)]);
-  wbY.domain(rows.map(d => d.country));
-
-  const minWB = d3.min(rows, d => d.value);
-  const maxWB = d3.max(rows, d => d.value);
-  const midWB = 28;   // threshold stays the same
-
-  wbColor = d3.scaleDiverging()
-    .domain([minWB, midWB, maxWB])
-    .interpolator(t => {
-      const u = (t + 1) / 2;
-      return d3.interpolateRgbBasis([
-        "#3b73b8",   // blue (low)
-        "#cccccc",   // neutral
-        "#b33a3a"    // red (high)
-      ])(u);
-    });
-
-  const bars = wbG.selectAll("rect.wb-bar").data(rows, d => d.country);
-
-  bars.exit().remove();
-
-  bars.enter()
-    .append("rect")
-    .attr("class", "wb-bar")
-    .attr("x", 0)
-    .attr("y", d => wbY(d.country))
-    .attr("height", wbY.bandwidth())
-    .attr("width", 0)
-    .on("mouseover", wbMouseOver)
-    .on("mousemove", wbMouseMove)
-    .on("mouseout", wbMouseOut)
-    .merge(bars)
-    .transition()
-    .duration(600)
-    .attr("width", d => wbX(d.value))
-    .attr("y", d => wbY(d.country))
-    .attr("height", wbY.bandwidth())
-    .attr("fill", d => wbColor(d.value));
-
-  wbXAxis.transition().duration(600)
-    .call(d3.axisTop(wbX).ticks(5));
-
-  wbYAxis.transition().duration(600)
-    .call(d3.axisLeft(wbY));
-}
-
-/* ============================================================
-   WET-BULB DATA LOADING
-   ============================================================ */
-
-const wetbulbFile = "data/wetbulb_max_countries.json";
-
-let wetbulbData = {};
-let wbYears = [];
-let wbYearSet = new Set();
-
-d3.json(wetbulbFile).then(data => {
-  wetbulbData = data;
-  wbYears = Object.keys(data).map(d => +d);
-  wbYears.forEach(y => wbYearSet.add(y));
-  updateWetbulbBarChart(currentYear);
-});
-
-/* ============================================================
-   EMISSIONS DATA LOAD
+   DATA LOAD
    ============================================================ */
 
 Promise.all([
@@ -360,7 +213,6 @@ function init([worldData, rows]) {
 function updateAll() {
   updateStatusText();
   updateBarChart();
-  updateWetbulbBarChart(currentYear);
 }
 
 function updateStatusText() {

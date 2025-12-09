@@ -31,9 +31,9 @@ const grid_files = {
 const world_json = "data/world.json";
 
 // Colors
-const sea_color = "#333333ff";
-const atmosphere_inner = "rgba(103, 103, 103, 0.17)";
-const atmosphere_outer = "rgba(136, 170, 221, 0.02)";
+const sea_color = "#eeeeeeff";
+const atmosphere_inner = "rgba(103, 103, 103, 0)";
+const atmosphere_outer = "rgba(125, 154, 199, 0.03)";
 
 // Country wet-bulb threshold scale (for fill + heat colors)
 const twbColor = d3
@@ -47,7 +47,7 @@ const twbColor = d3
         "#BF3B23",  // 26–28
         "#801B0A",  // 28–30
         "#4A0707",  // 30–31
-        "white000"   // ≥31
+        "#000000"   // ≥31
     ]);
 
 // ------------------------------
@@ -232,7 +232,7 @@ function drawCountriesLayer() {
         .attr("cy", height / 2)
         .attr("r", projection.scale())
         .attr("fill", "none")
-        .attr("stroke", "white")
+        .attr("stroke", "#000")
         .attr("stroke-width", 0.3);
 
     // shadow filter
@@ -262,7 +262,7 @@ function drawCountriesLayer() {
         .append("path")
         .attr("d", geoPath)
         .attr("fill", "transparent")
-        .attr("stroke", "white")
+        .attr("stroke", "black")
         .attr("stroke-width", 0.3)
         .style("opacity", 0.95);
 
@@ -296,7 +296,7 @@ function attachCountryEvents() {
             if (selectedCountry !== d.properties.name) {
                 d3.select(event.currentTarget)
                     .attr("stroke-width", 2)
-                    .attr("stroke", "white")
+                    .attr("stroke", "#000")
                     .attr("filter", "url(#country-shadow)");
             }
 
@@ -320,7 +320,7 @@ function attachCountryEvents() {
             hoverPause = false;
             d3.select(event.currentTarget)
                 .attr("stroke-width", 0.3)
-                .attr("stroke", "white")
+                .attr("stroke", "black")
                 .attr("filter", null);
             tooltipDiv.style.opacity = 0;
         })
@@ -353,7 +353,7 @@ function attachCountryEvents() {
             // Highlight the newly selected country
             d3.select(event.currentTarget)
                 .attr("stroke-width", 2.5)
-                .attr("stroke", "white")
+                .attr("stroke", "#000")
                 .attr("filter", "url(#country-shadow)");
         });
 }

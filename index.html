@@ -134,139 +134,71 @@
         <h2>CO₂ Emissions (Tons)</h2>
         <svg id="map"></svg>
 
-        <!-- wet-bulb visualization -->
-        <h2 style="margin-top: 40px;">Max Wet-Bulb Temperature (in 50 years)</h2>
-        <svg id="wetbulb_bar_chart"></svg>
+        <div id="status"></div>
       </div>
 
       <!-- text column -->
       <div class="text-column">
         <!-- Each section below is one scrollama step for the CO₂ map. -->
-
-        <!-- 1975 -->
-        <div class="emissions_step" data-year="1975" data-metric="total">
-          <h3>1975</h3>
-          <div class="us-card">
-            <div class="us-card-line"></div>
-            <p>
-              In 1975, the global landscape of emissions looked very different.
-              The United States and Western Europe remained among the highest emitters,
-              even as the ongoing oil crisis slowed industrial growth. Despite this,
-              the regions facing the hottest wet-bulb temperatures in the future are
-              not the top emitters. Instead, countries like Bangladesh, India, and
-              parts of Southeast Asia lead future extreme-temperature risk. These areas
-              emitted relatively little in 1975, yet were projected to face the most
-              dangerous heat-humidity levels. The imbalance between responsibility and
-              vulnerability is already clear at this early point in the timeline.
-            </p>
-          </div>
-        </div>
-
-        <!-- 1980 -->
-        <div class="emissions_step" data-year="1980" data-metric="total">
-          <h3>1980</h3>
-          <div class="us-card">
-            <div class="us-card-line"></div>
-            <p>
-              By 1980, the oil crisis had ended, and global energy demand accelerated
-              again. Fossil fuel use rebounded quickly, especially in rapidly
-              industrializing economies. Yet the pattern remains: the nations emitting
-              the most, such as the U.S., USSR, and Western Europe, are not the ones
-              projected to experience the highest wet-bulb extremes in 2030. Instead,
-              much hotter future temperatures will strike tropical, densely populated
-              regions like India, Myanmar, and coastal West Africa. The gap between
-              northern emitters and equatorial heat exposure continues to widen.
-            </p>
-          </div>
-        </div>
-
-        <!-- 1990 -->
-        <div class="emissions_step" data-year="1990" data-metric="total">
-          <h3>1990</h3>
-          <div class="us-card">
-            <div class="us-card-line"></div>
-            <p>
-              In 1990, emissions surged alongside globalization and expanding
-              manufacturing. China’s rise was beginning, while the U.S. remained the
-              single largest emitter. Yet future wet-bulb extremes in 2040 still
-              cluster around South Asia, the Middle East, and equatorial Africa.
-              Countries like Pakistan and the UAE, which were smaller emitters at the
-              time, are projected to face some of the world's highest heat-humidity
-              stress. Emissions and exposure continue to diverge.
-            </p>
-          </div>
-        </div>
-
-        <!-- 2005 -->
-       <div class="emissions_step" data-year="2005" data-metric="total">
-        <h3>2005</h3>
-        <div class="us-card">
-          <div class="us-card-line"></div>
+        <section class="emissions_step" data-year="1950" data-metric="total">
+          <h2>1950</h2>
           <p>
-            By 2005, China had overtaken the U.S. as the world’s largest emitter.
-            Energy use was skyrocketing across Asia, while global transportation and
-            industrial expansion drove emissions to record levels. Still, the hottest
-            projected wet-bulb temperatures in 2055 remain concentrated in tropical
-            climates. Heat-saturated regions are already close to physiological limits.
-            High-emitting nations with cooler climates continue to shape the warming
-            experienced elsewhere.
+            <!-- narrative text, temp breaks -->
           </p>
-        </div>
-      </div>
+        </section>
 
-        <!-- 2010 -->
-        <div class="emissions_step" data-year="2010" data-metric="total">
-          <h3>2010</h3>
-          <div class="us-card">
-            <div class="us-card-line"></div>
-            <p>
-              In 2010, global emissions kept rising even as renewables began scaling.
-              China, the U.S., and the EU dominated fossil fuel output. But the
-              highest wet-bulb temperatures expected in 2060 concentrate in regions
-              like South Asia and the Persian Gulf, areas already under severe heat
-              strain. These regions contribute less carbon per capita, but face the
-              harshest weather and temperature patterns.
-            </p>
-          </div>
-        </div>
+        <section class="emissions_step" data-year="1973" data-metric="total">
+          <h2>1973</h2>
+          <p>
+          </p>
+        </section>
 
-        <!-- 2020 -->
-        <div class="emissions_step" data-year="2020" data-metric="total">
-          <h3>2020</h3>
-          <div class="us-card">
-            <div class="us-card-line"></div>
-            <p>
-              By 2020, brief dips in emissions caused by the pandemic gave way to a
-              rapid rebound. Global totals remain near all-time highs. Meanwhile, the
-              regions projected to have the most dangerous wet-bulb levels in 2070 are
-              densely populated and vulnerable. Even today, Pakistan, India,
-              Bangladesh, and the Gulf states see heat-humidity extremes more severe
-              than high-emitting northern nations. The mismatch between who drives warming
-              and who suffers from it remains clear.
-            </p>
-          </div>
-        </div>
+        <section class="emissions_step" data-year="1980" data-metric="total">
+          <h2>1980</h2>
+          <p>
+          </p>
+        </section>
+
+        <section class="emissions_step" data-year="2000" data-metric="total">
+          <h2>2000</h2>
+          <p>
+          </p>
+        </section>
+
+        <section class="emissions_step" data-year="2019" data-metric="total">
+          <h2>2019</h2>
+          <p>
+          </p>
+        </section>
+
+        <section class="emissions_step" data-year="2020" data-metric="total">
+          <h2>2020</h2>
+          <p>
+          </p>
+        </section>
+
+        <section class="emissions_step" data-year="2021" data-metric="total">
+          <h2>2021</h2>
+          <p>
+          </p>
+        </section>
+
+        <section class="emissions_step" data-year="2021" data-metric="perCapita">
+          <h2>2021 Per-Capita</h2>
+          <p>
+          </p>
+        </section>
       </div>
     </div>
   </section>
 
-  <!-- <section class="transition-section">
-    <hr class="line-left">
-    <h2>How the World Warms</h2>
-    <hr class="line-right">
-    <p class="transition-text">
-      Explore the 3D globe to see where future wet-bulb temperatures rise fastest—
-      and which regions face the greatest climate risk.
-    </p>
-  </section> -->
+
 
   <section id="globe-section">
-    <hr class="line-left">
-    <h2>How the World Warms</h2>
-    <hr class="line-right">
+    <h2>Where Heat Becomes Dangerous</h2>
     <p>
-      Explore the 3D globe to see where future wet-bulb temperatures rise fastest—
-      and which regions face the greatest climate risk.
+      Use the globe to explore how wet-bulb temperatures rise across countries from year to year
+      and see which regions approach levels that the human body can no longer survive.
     </p>
 
     <div id="globe-container">
@@ -281,20 +213,15 @@
 
   <div id="action-section" class="action-container"></div>
 
-  <section class="transition-section">
-    <hr class="line-left">
-    <h2>In conclusion,</h2>
-    <hr class="line-right">
-    <p class="transition-text">
-      our visualizations reveal an intriguing disparity: the countries driving the most carbon emissions are not always the ones projected to be facing the most extreme, life-threatening wet-bulb temperatures.
-      Major emitters like the U.S. and China dominate the CO₂ bar chart, but our globe shows places like Southeast Asia, parts of Africa, the Middle East, and coastal regions around the world bearing some of the harshest heat stress.
-      Places that contribute far less to global emissions are pushed closest to the limits of human survivability, while many of the biggest polluters are better resourced to adapt.
-      By putting these two views side by side, our project highlights a core injustice of the climate crisis: those who warm the planet the most are not necessarily those who suffer or most severely from the heat.
-    </p>
-  </section>
+  <p class="action-paragraph">
+    In the end, our visualizations reveal an intriguing disparity: the countries driving the most carbon emissions are not always the ones projected to be facing the most extreme, life-threatening wet-bulb temperatures. 
+    Major emitters like the U.S. and China dominate the CO₂ bar chart, but our globe shows places like Southeast Asia, parts of Africa, the Middle East, and coastal regions around the world bearing some of the harshest heat stress. 
+    Places that contribute far less to global emissions are pushed closest to the limits of human survivability, while many of the biggest polluters are better resourced to adapt. 
+    By putting these two views side by side, our project highlights a core injustice of the climate crisis: those who warm the planet the most are not necessarily those who suffer or most severely from the heat. 
+  </p>
 
   <p class="action-end-note">
-    By taking action at the individual level, we can collectively build a more equitable, cooler planet.
+    By taking action at the individual level, we can collectively build a healthier, cooler planet.
   </p>
 
 
