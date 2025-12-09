@@ -404,7 +404,7 @@ p {
   border-radius: 4px;
   font-size: 0.9rem;
   z-index: 10; /* above the map */
-  background-color: #dadada;
+  background-color: #cdd1d7;
 }
 
 .legend-item {
@@ -703,42 +703,6 @@ p {
 
 .globe-tooltip {
   position: absolute;
-  background: rgba(255, 255, 255, 0.95);
-  border: 1px solid #ddd;
-  padding: 8px 12px;
-  border-radius: 6px;
-  pointer-events: none;
-  font-family: 'EB Garamond', serif;
-  font-size: 14px;
-  color: #333;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  z-index: 2000;
-  opacity: 0;
-}
-
-/* --- Legend text styling --- */
-#legend svg text {
-  font-family: 'EB Garamond', serif;
-  font-size: 11px;
-  fill: #555;
-}
-
-/* ===============================
-   WET-BULB BAR CHART STYLES
-   =============================== */
-
-#wetbulb_bar_chart {
-  width: 100%;
-  height: auto;
-  /* border: 1px solid red; */
-}
-
-.wb-bar {
-  transition: fill 0.3s ease, width 0.3s ease;
-}
-
-#wetbulb_bar_tooltip {
-  position: absolute;
   pointer-events: none;
   background: #f9fafb;
   border: 1px solid #d1d5db;
@@ -894,4 +858,3 @@ p {
   font-size: 11px;
   fill: #555;
 }
-
