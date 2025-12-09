@@ -479,7 +479,7 @@ function initUSIfReady() {
           .style('margin-bottom', '200px')
           .style('padding', '1.5rem')
           .style('background', 'rgba(255, 255, 255, 0.95)')
-          // .style('border-radius', '8px')
+          .style('border-radius', '8px')
           .style('box-shadow', '0 2px 10px rgba(0, 0, 0, 0.08)')
           .style('border-left', '4px solid #d22');
       });
