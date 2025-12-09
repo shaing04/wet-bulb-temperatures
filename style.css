@@ -3,6 +3,7 @@
 :root {
   --offwhite: #f8f8f4;
   --darkgrey: #1c1c1c;
+  --redaccent: #d22;
 }
 body {
   font-family: 'EB Garamond', Georgia, serif;
@@ -285,7 +286,7 @@ p {
   /* border-radius: 8px; */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
   border: 1px solid #eee;
-  border-left: 4px solid #d22;
+  border-left: 4px solid var(--redaccent);
   font-family: 'EB Garamond', serif;
   font-size: 24px;
   line-height: 1.6;
@@ -306,6 +307,8 @@ p {
   padding: 4rem 2rem;
   align-items: center;
 }
+
+
 .transition-section p {
   font-size: 24px;
 }
@@ -404,7 +407,7 @@ p {
   border-radius: 4px;
   font-size: 0.9rem;
   z-index: 10; /* above the map */
-  background-color: #cdd1d7;
+  background-color: #dadada;
 }
 
 .legend-item {
@@ -536,7 +539,7 @@ p {
   margin: 4rem auto 4rem;
   padding: 2.5rem 2.5rem 3.25rem;
   border-radius: 0px;
-  background: #f8f8f4; /* off-white paper */
+  background: var(--offwhite); /* off-white paper */
   border: 1px solid #ddd;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
   font-family: "Georgia", "Times New Roman", serif;
@@ -648,14 +651,16 @@ p {
 /* GLOBE SECTION */
 /* ----------------- */
 #globe-section {
-  color: white;
-  background-color: var(--darkgrey);
+  background-color: white;
+  /* color: white; */
   width: 80%;
   padding: 1rem 2rem;
-  border-radius: 1rem;
   margin: 0 auto;
   text-align: center;
-  /* margin-top: 8rem; */
+  border: 1px solid #ddd;
+  border-left: 4px solid var(--redaccent);
+  border-right: 4px solid var(--redaccent);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
 #globe-container {
@@ -718,8 +723,8 @@ p {
   /* Base (unfilled) track */
   background: linear-gradient(
       to right,
-      #9b1b0d var(--percent),  /* filled portion (blue) */
-      #32363a var(--percent)   /* unfilled portion (gray) */
+      var(--redaccent) var(--percent),  /* filled portion (blue) */
+      #dadada var(--percent)   /* unfilled portion (gray) */
   );
 }
 
@@ -736,7 +741,7 @@ p {
   appearance: none;
   height: 16px;
   width: 16px;
-  background: #9b1b0d;      /* thumb color */
+  background: var(--redaccent);      /* thumb color */
   border-radius: 50%;
   border: 2px solid rgb(71, 6, 6);
   cursor: pointer;
@@ -777,8 +782,8 @@ p {
 /* Left column: */
 #emissions .vis-column {
   position: sticky;
-  top: 80px;
-  height: fit-content;
+  top: 1em;
+  /* height: fit-content; */
   flex: 1 1 50%;
   /* border: 1px solid salmon ; */
 }
@@ -841,6 +846,7 @@ p {
   color: #333;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   z-index: 2000;
+  opacity: 0;
 }
 
 /* --- Legend text styling --- */
@@ -856,7 +862,8 @@ p {
 
 #wetbulb_bar_chart {
   width: 100%;
-  height: 520px;
+  height: auto;
+  /* border: 1px solid red; */
 }
 
 .wb-bar {
@@ -924,7 +931,6 @@ p {
 /* scroll cards */
 .us-card {
   background: #ffffff;
-  border-radius: 6px;
   padding: 28px 32px;
   border: 1px solid #ddd;
   margin: 16px 0 40px;
@@ -938,6 +944,6 @@ p {
   top: 0;
   bottom: 0;
   width: 5px;
-  background: #c62828;
+  background: var(--redaccent)
 }
 
