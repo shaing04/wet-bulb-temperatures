@@ -47,7 +47,7 @@ const twbColor = d3
         "#BF3B23",  // 26–28
         "#801B0A",  // 28–30
         "#4A0707",  // 30–31
-        "white000"   // ≥31
+        "black000"   // ≥31
     ]);
 
 // ------------------------------
@@ -262,7 +262,7 @@ function drawCountriesLayer() {
         .append("path")
         .attr("d", geoPath)
         .attr("fill", "transparent")
-        .attr("stroke", "white")
+        .attr("stroke", "black")
         .attr("stroke-width", 0.3)
         .style("opacity", 0.95);
 
@@ -296,7 +296,7 @@ function attachCountryEvents() {
             if (selectedCountry !== d.properties.name) {
                 d3.select(event.currentTarget)
                     .attr("stroke-width", 2)
-                    .attr("stroke", "white")
+                    .attr("stroke", "black")
                     .attr("filter", "url(#country-shadow)");
             }
 
@@ -320,7 +320,7 @@ function attachCountryEvents() {
             hoverPause = false;
             d3.select(event.currentTarget)
                 .attr("stroke-width", 0.3)
-                .attr("stroke", "white")
+                .attr("stroke", "black")
                 .attr("filter", null);
             tooltipDiv.style.opacity = 0;
         })
@@ -353,7 +353,7 @@ function attachCountryEvents() {
             // Highlight the newly selected country
             d3.select(event.currentTarget)
                 .attr("stroke-width", 2.5)
-                .attr("stroke", "white")
+                .attr("stroke", "black")
                 .attr("filter", "url(#country-shadow)");
         });
 }
